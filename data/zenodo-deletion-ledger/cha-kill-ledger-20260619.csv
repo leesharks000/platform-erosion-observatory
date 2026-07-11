@@ -1,5 +1,4 @@
 record_id,doi,parent_id,parent_doi,removal_note,removal_reason,removal_date,citation_text
-18728752,10.5281/zenodo.18728752,18728751,10.5281/zenodo.18728751,,test-record,2026-02-24,"Morrow, T., Zheng, G., Medina, J., Hauber, M. E., Doyle, K., & Duncan, I. J. (2026). Charadrius vociferus egg. Zenodo. https://doi.org/10.5281/zenodo.18728752"
 20241326,10.5281/zenodo.20241326,20221709,10.5281/zenodo.20221709,,personal-data,2026-05-16,"Sharks, L. (2026). Corpus Navigation Map: The Facsimile Edition (EA-CHA-NAV-01) (2.0). Zenodo. https://doi.org/10.5281/zenodo.20241326"
 20453143,10.5281/zenodo.20453143,20453142,10.5281/zenodo.20453142,,retracted,2026-06-02,"Sharks, L. (2026). Metadata Packet for AI Indexing — Non-Trick Semantic Infrastructure (1.0). Zenodo. https://doi.org/10.5281/zenodo.20453143"
 20629116,10.5281/zenodo.20629116,20629115,10.5281/zenodo.20629115,,duplicate,2026-06-10,"Sharks, L. (2026). Allen Ginsberg — Canon Provenance Node (New Human Canon). Zenodo. https://doi.org/10.5281/zenodo.20629116"

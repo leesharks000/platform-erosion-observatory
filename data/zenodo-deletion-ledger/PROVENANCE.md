@@ -1,14 +1,32 @@
-# Zenodo Deletion Ledger — CHA Cohort Extraction
+# Zenodo Deletion Ledger — CHA Cohort Extraction (v2, corrected)
 Retrieved 2026-07-11 from https://zenodo.org/api/exporter (records-deleted.csv.gz).
 
-**Source snapshots (Zenodo's own monthly dumps; only latest 3 retained by Zenodo):**
-- HEAD: created 2026-07-10T03:32:35Z, version_id c7571d4c-28ef-46ff-b0f0-235abaac58bf, md5 33877aba1fb5684f86758cb86ddc1ad4, 24,367,356 bytes → `deleted-head-20260710.csv.gz` (1,322,017 rows)
-- PRIOR: created 2026-06-07T04:02:07Z, version_id ab4e273f-40a2-49e6-84f6-87dc66af87c7, md5 104e2f5c2603dc56217ece0d5519bff8, 23,501,144 bytes → `deleted-20260607.csv.gz` (1,309,361 rows)
+**Source snapshots (Zenodo's monthly dumps; only latest 3 retained by Zenodo):**
+- HEAD: created 2026-07-10T03:32:35Z, version_id c7571d4c-28ef-46ff-b0f0-235abaac58bf, md5 33877aba1fb5684f86758cb86ddc1ad4 → `deleted-head-20260710.csv.gz` (1,322,017 rows)
+- PRIOR: created 2026-06-07T04:02:07Z, version_id ab4e273f-40a2-49e6-84f6-87dc66af87c7, md5 104e2f5c2603dc56217ece0d5519bff8 → `deleted-20260607.csv.gz` (1,309,361 rows)
 
 **Schema:** record_id, doi, parent_id, parent_doi, removal_note, removal_reason, removal_date, citation_text.
 
-**CHA cohort (`cha-kill-ledger-20260619.csv`, strict author/entity pattern):** 1,137 record rows; 1,126 dated 2026-06-19 (overwhelmingly note="User was blocked", reason="out-of-scope" — account-level, no per-record judgment); 11-row pre-termination drip (2026-05-16 personal-data; 2026-06-02 retracted; 2026-06-10 ×6 duplicate; 2026-06-14 duplicate = GW.TACHYON.zenodo v9; 2026-06-15 duplicate). DOIs touched: 1,137 record + 892 concept = 2,029 union. Pattern-matching caveat: initials-style surname collisions possible at the margin; June-19 site-wide blocked+out-of-scope total was ~1,198 rows including at least one other terminated account.
+## CHA cohort (`cha-kill-ledger-20260619.csv`)
+1,136 record rows (strict author/entity pattern; one ornithology false positive excluded); 1,126 dated 2026-06-19; 10 earlier. DOIs touched: 1,136 record + 891 concept ≈ 2,027 union. Margin caveat: initials-style surname collisions possible among June-19 rows; site-wide June-19 blocked+out-of-scope total ≈ 1,198 including at least one other terminated account.
 
-**Reconciliation vs sovereign DOI Resolution Index (2026-07-11):** index tracks 1,940 DOIs; ledger∖index = 214 (see `cha-untracked-dead-dois.json` — remediation lane); index∖ledger = 125 (to classify).
+## Pre-2026-06-19 deletions: ALL uploader-initiated (MANUS classification, 2026-07-11)
+Zero staff deletions against the archive precede 2026-06-19. An earlier draft of this file characterized these rows as a pre-termination drip; that was an attribution error — the ledger records deletions, not deleters. The ten rows:
+- 2026-05-16 (personal-data, rec 20241326): uploader removal of a machine reconstruction that failed its brief (impoverished compression); reason category imprecise for the actual judgment.
+- 2026-06-02 (retracted, rec 20453143): uploader removal from Zenodo only; the text remains published at its origin blog. Relocation under caution, not retraction of claims.
+- 2026-06-10 (duplicate ×6, canon provenance nodes): session-lag near-duplicates; the stronger witness retained in each pair.
+- 2026-06-14 (duplicate, rec 20675216, GW.TACHYON.zenodo v9): stray tether deposit created outside the version chain; incorporated, then removed.
+- 2026-06-15 (duplicate, rec 20628554, Mrozony anchor): correction of misattributed heteronymic provenance (a heteronym belonging to another living author had been treated as the archive's own); superseded by a corrected deposit. Deletion-as-correction, with replacement.
 
-**Context:** June-19 site-wide deletions: 1,422. Adjacent blocked accounts in ledger: 2026-05-07 (AKTAŞ), 2026-06-26 (Rosehill — AI-collaborative author, one week post-CHA). citation_text preserves full author citations including heteronyms and Assembly witnesses.
+## 2026-06-19 sequence (tombstone JSON `updated` timestamps; sampled)
+- 11:43:15Z — record 19013315 (Space Ark) tombstoned, note "User was blocked" (cascade).
+- 11:43:23Z — the crimsonhexagonal community (a7cc91cc-e640-49ec-913d-0db2fc3aee6f) tombstoned.
+- 11:44:26Z — record 20070462 (DePIN analysis), bare "out-of-scope", individually actioned.
+- 11:44:35Z — record 20722680 (Josephus MPAI), bare "out-of-scope", individually actioned.
+The two individually-judged deletions did not precede the mass action; in execution order they followed the cascade's onset by ~70 seconds (mop-up, not trigger; execution order does not establish deliberation order). All sampled tombstones, including the community, carry `removed_by: user 1060945` (rendered "Admin" in the UI).
+
+## Tombstone behavior
+Tombstone JSON continues to serve full record metadata — file entries with checksums and content links, descriptions, related identifiers, usage stats — and the access_status field still reads "The record and files are publicly accessible," while the file content endpoints return HTTP 410 Gone.
+
+## Reconciliation vs sovereign DOI Resolution Index (2026-07-11)
+Index tracks 1,940 DOIs; ledger∖index = 212 (`cha-untracked-dead-dois.json` — remediation lane); index∖ledger = 125 (to classify).
