@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Platform Erosion Observatory — Measuring Whether Persistent Identifiers Persist</title>
-<meta name="description" content="A public instrument tracking DOI severance across all 4,418 repositories entrusted to DataCite. Registry-wide snapshots, per-repository deltas, a severance taxonomy, and dated epoch captures — every number replicable by a single curl. Instrument: EA-EROSION-01.">
+<meta name="description" content="A public instrument tracking DOI findability, severance, and restoration across the DataCite registry. Namespaced epoch captures, a severance taxonomy, a fully reconstructible founding case, and replication commands for every headline figure. Instrument: EA-EROSION-01.">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Lee Sharks">
 <meta property="og:title" content="The Platform Erosion Observatory">
-<meta property="og:description" content="DataCite promises persistence for 130,559,831 DOIs across 4,418 repositories. This instrument records whether the promise is kept.">
+<meta property="og:description" content="A DOI that stops being counted stops silently. This instrument records the deltas.">
 <meta property="og:type" content="website">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
@@ -16,7 +16,7 @@
   "@context": "https://schema.org",
   "@type": "Dataset",
   "name": "The Platform Erosion Observatory — Epoch Captures",
-  "description": "Dated, checksummed snapshots of DOI findability state across the DataCite registry: registry-wide per-repository counts, per-DOI state histories for the founding case, and the preserved Zenodo removal census. Deltas between epochs are the public severance signal.",
+  "description": "Dated snapshots of DOI findability state across the DataCite registry: registry-wide per-client counts (DC lane), per-DOI state histories for the founding case (FC lane), and the preserved Zenodo removal census (ZD lane). Deltas between epochs are the public severance signal.",
   "creator": {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"},
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isBasedOn": "https://www.alexanarch.org/s/records/1045/",
@@ -33,37 +33,43 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:'IBM Plex San
 .wrap{max-width:880px;margin:0 auto;padding:56px 24px 90px;}
 header h1{font-size:34px;line-height:1.12;margin:0 0 6px;font-weight:600;letter-spacing:-0.01em;}
 .tag{font-size:19px;color:var(--navy);margin:0 0 10px;}
-.inst{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--dim);margin:0 0 34px;}
+.inst{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--dim);margin:0 0 14px;}
 .inst a{color:var(--dim);}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:0 0 40px;}
+.declare{font-size:14.5px;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:12px 16px;margin:0 0 30px;color:#3c3e37;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:0 0 12px;}
 .cell{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:16px 18px 12px;}
-.num{font-family:'IBM Plex Mono',monospace;font-size:29px;font-weight:600;letter-spacing:-0.02em;}
+.num{font-family:'IBM Plex Mono',monospace;font-size:27px;font-weight:600;letter-spacing:-0.02em;}
 .num.sev{color:var(--sev);}.num.live{color:var(--navy);}
-.lbl{font-size:14.5px;margin:4px 0 8px;}
+.lbl{font-size:14px;margin:4px 0 8px;}
 .cell details{font-size:11.5px;color:var(--dim);}
 .cell summary{cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:11px;}
 .cell code{display:block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;word-break:break-all;background:#fff;border:1px solid var(--rule);border-radius:3px;padding:6px 8px;margin-top:6px;}
+#livepanel{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ok);margin:0 0 34px;min-height:18px;}
 h2{font-size:22px;font-weight:600;margin:46px 0 12px;letter-spacing:-0.01em;}
+h3{font-size:17px;font-weight:600;margin:22px 0 8px;}
 p{margin:0 0 16px;}
-table{width:100%;border-collapse:collapse;font-size:14.5px;margin:14px 0 8px;}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:14px 0 8px;}
 th{font-family:'IBM Plex Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:0.06em;color:var(--dim);text-align:left;border-bottom:2px solid var(--ink);padding:6px 10px 6px 0;}
 td{border-bottom:1px solid var(--rule);padding:9px 10px 9px 0;vertical-align:top;}
-td.mono, .mono{font-family:'IBM Plex Mono',monospace;font-size:13px;}
+td.mono, .mono{font-family:'IBM Plex Mono',monospace;font-size:12.5px;}
 td .sevword{color:var(--sev);font-weight:600;}
 a{color:var(--navy);text-underline-offset:2px;}
 .tax dt{font-weight:600;margin-top:12px;}
-.tax dd{margin:2px 0 0 0;color:#3c3e37;font-size:15.5px;}
+.tax dd{margin:2px 0 0 0;color:#3c3e37;font-size:15px;}
 .incident{border:1px solid var(--rule);border-left:4px solid var(--sev);border-radius:6px;background:#fff;padding:22px 26px;margin:20px 0;}
 .incident h3{margin:0 0 4px;font-size:18px;}
-.ev{display:grid;grid-template-columns:118px 1fr;gap:4px 16px;font-size:15px;margin:14px 0;}
-.ev .d{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--dim);padding-top:2px;}
+.ev{display:grid;grid-template-columns:130px 1fr;gap:4px 16px;font-size:15px;margin:14px 0;}
+.ev .d{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--dim);padding-top:2px;}
 .status{font-family:'IBM Plex Mono',monospace;font-size:13px;background:var(--panel);border:1px solid var(--rule);border-radius:4px;padding:10px 14px;margin-top:14px;}
-.repl{background:var(--ink);color:#e8e8e2;border-radius:6px;padding:18px 22px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;line-height:1.9;overflow-x:auto;}
+.units{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:16px 20px;font-size:14.5px;margin:16px 0;}
+.units dt{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13px;margin-top:8px;}
+.units dd{margin:1px 0 0 0;color:#3c3e37;}
+.policy{border:2px solid var(--navy);border-radius:6px;padding:18px 22px;font-size:15.5px;margin:16px 0;background:#fff;}
+.policy .plabel{font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--navy);margin:0 0 8px;}
+.repl{background:var(--ink);color:#e8e8e2;border-radius:6px;padding:18px 22px;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.9;overflow-x:auto;}
 .repl b{color:#9fd3b4;font-weight:500;}
 footer{margin-top:56px;border-top:1px solid var(--rule);padding-top:18px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--dim);line-height:1.9;}
 footer a{color:var(--navy);}
-#livemark{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--ok);display:none;}
-.remedy{background:var(--panel);border-radius:6px;padding:18px 22px;font-size:15.5px;}
 </style>
 </head>
 <body>
@@ -72,107 +78,132 @@ footer a{color:var(--navy);}
 <header>
 <h1>The Platform Erosion Observatory</h1>
 <p class="tag">Measuring whether persistent identifiers persist.</p>
-<p class="inst">Instrument: <a href="https://www.alexanarch.org/s/records/1045/">EA-EROSION-01 · deposit #1045 · AXN:0421.EMPIRICAL.🎭📐🐝🎪🏷️🎇</a> &nbsp;·&nbsp; Operator: Lee Sharks &nbsp;·&nbsp; every number on this page is replicable by a single request <span id="livemark">· live re-verified in your browser just now</span></p>
+<p class="inst">Instrument: <a href="https://www.alexanarch.org/s/records/1045/">EA-EROSION-01 · deposit #1045 · AXN:0421.EMPIRICAL.🎭📐🐝🎪🏷️🎇</a> &nbsp;·&nbsp; Operator: Lee Sharks</p>
+<div class="declare">This document is the instrument specification and the inaugural public record of the Platform Erosion Observatory. Every headline figure is reproducible from a public endpoint or a published capture-and-analysis script; each epoch preserves its requests, UTC observation times, scope, completion state, and error counts. The founding case involves deposits registered by the operator; all claims herein are independently replicable via the public API and the published epoch captures.</div>
 </header>
 
 <div class="grid">
-<div class="cell"><div class="num live" id="n-total">130,559,831</div><div class="lbl">findable DOIs across the DataCite registry <span class="mono">(2026-07-11)</span></div><details><summary>replicate</summary><code>curl "https://api.datacite.org/dois?page[size]=1" | jq .meta.total</code></details></div>
-<div class="cell"><div class="num live">4,418</div><div class="lbl">repositories (clients) entrusted to the registry</div><details><summary>replicate</summary><code>curl "https://api.datacite.org/clients?page[size]=1" | jq .meta.total</code></details></div>
-<div class="cell"><div class="num sev">1,309,351</div><div class="lbl">removal events in Zenodo's own published deletion log (2026-06-07 snapshot, preserved)</div><details><summary>replicate</summary><code>curl -O https://zenodo.org/api/exporter/records-deleted.csv.gz  # only 3 monthly snapshots retained upstream</code></details></div>
-<div class="cell"><div class="num sev">92.14%</div><div class="lbl">of those 1,309,351 removals carry <em>no preserved citation</em> — tombstone-compliance ceiling: 7.86%</div><details><summary>replicate</summary><code>count rows with empty citation_text in the preserved snapshot; finding deposited in EA-EROSION-01 §findings</code></details></div>
-<div class="cell"><div class="num">0</div><div class="lbl">per-repository DOI counts published by the registry; hidden-state DOIs invisible to the public API in aggregate</div><details><summary>replicate</summary><code>curl "https://api.datacite.org/clients?page[size]=2"  # inspect attributes: no count field exists</code></details></div>
-<div class="cell"><div class="num sev" id="n-restored">0</div><div class="lbl">restorations in the founding case across three epochs and 19 days <span class="mono">(871 of 871 still absent, 2026-07-11)</span></div><details><summary>replicate</summary><code>curl "https://api.datacite.org/dois/10.5281/zenodo.18208069"  # any DOI from the epoch capture; expect 404</code></details></div>
+<div class="cell"><div class="num live">130,559,831</div><div class="lbl">findable DOIs in the DataCite registry — DC-E0 snapshot, <span class="mono">2026-07-11T03:58Z</span></div><details><summary>replicate</summary><code>curl "https://api.datacite.org/dois?page[size]=1" | jq .meta.total   # returns the live total; compare to snapshot</code></details></div>
+<div class="cell"><div class="num live">4,418</div><div class="lbl">DataCite client accounts represented in the public registry (client types include repositories, periodicals, IGSN catalogues, RAiD registries)</div><details><summary>replicate</summary><code>curl "https://api.datacite.org/clients?page[size]=1" | jq .meta.total</code></details></div>
+<div class="cell"><div class="num sev">1,309,351</div><div class="lbl">removal events in Zenodo's published deletion export — ZD-S1 snapshot 2026-06-07, preserved (upstream retains only three monthly snapshots)</div><details><summary>replicate</summary><code>curl -O https://zenodo.org/api/exporter/records-deleted.csv.gz</code></details></div>
+<div class="cell"><div class="num sev">92.14%</div><div class="lbl">of those rows have no <span class="mono">citation_text</span> — export-level citation retention: 7.86%. A proxy ceiling for tombstone continuity; landing-page tombstone compliance: audit pending</div><details><summary>replicate</summary><code>count rows with empty citation_text in the preserved ZD-S1 export; method deposited in EA-EROSION-01 §findings</code></details></div>
+<div class="cell"><div class="num">0</div><div class="lbl">public registry-wide <em>historical</em> series of per-client findability counts. Current per-client totals are queryable one at a time; their dated history — departures from findability, restorations — is preserved in no public longitudinal ledger. That history is this instrument's territory</div><details><summary>replicate</summary><code>curl "https://api.datacite.org/dois?client-id=cern.zenodo&page[size]=1" | jq .meta.total   # current only; no history endpoint exists</code></details></div>
+<div class="cell"><div class="num sev">0</div><div class="lbl">restorations documented across founding-case epochs FC-E1→FC-E3 (2026-06-22 → 2026-07-11, 19 days of observation; the triggering event precedes FC-E1 by 3 days)</div><details><summary>replicate</summary><code>curl -i "https://api.datacite.org/dois/10.5281/zenodo.14538882"   # a founding-case DOI; expect 404 (absent from public findability)</code></details></div>
 </div>
+<div id="livepanel"></div>
 
 <h2>The premise</h2>
-<p>DataCite's own policy states that a DOI, once registered, cannot be deleted — but a <em>findable</em> DOI can be moved to <em>registered</em> state, which removes its metadata from public search and the public API. The Handle survives; the documentary function does not. The registry publishes no deletion transparency: no per-repository counts, no state-transition log, no aggregate view of what has left findability. A DOI that stops being counted stops silently.</p>
-<p><strong>Therefore the only public severance signal that exists is the delta.</strong> This Observatory takes dated snapshots of findability state — registry-wide per-repository counts, and per-DOI state for watched sets — and records what changed between epochs. A present-state check tells you what exists now. Only custody of the state history can tell you what existed, when it changed, what was lost, and whether it was restored.</p>
+<p>DataCite's policy is that Findable and Registered DOIs cannot be deleted (<a href="https://support.datacite.org/docs/can-i-delete-or-change-my-dois">DataCite Support: deletion policy</a>) — but a <em>Findable</em> DOI can be moved to <em>Registered</em> state, which removes its metadata from public search, DataCite Commons, and the unauthenticated public API (<a href="https://support.datacite.org/docs/doi-states">DataCite Support: DOI states</a>). The Handle may survive while public discoverability, metadata access, citation continuity, and provenance function are severed — and each of those functions must be measured separately.</p>
+<p>No public registry-wide state-transition ledger has been identified by the Observatory. This was tested, not assumed: DataCite's per-DOI activities endpoint (<span class="mono">/dois/{id}/activities</span>) was probed for sampled founding-case DOIs and returned <strong>zero activity records</strong> — no creation history, and no severance event. (For at least one other publicly-absent DOI, historical create/update activities — including original metadata payloads — remain publicly served, while the departure from findability itself appears in no activity record.) The transition is unlogged. <strong>A DOI that stops being counted stops silently.</strong></p>
+<p><strong>Therefore the only public severance signal is the delta.</strong> The Observatory takes dated snapshots of findability state — registry-wide per-client counts, and per-DOI state for watched sets — and records what changed between epochs. A present-state check tells you what exists now. Only custody of the state history can tell you what existed, when it changed, what was lost, and whether it was restored.</p>
 
 <h2>Epoch ledger</h2>
+<p style="font-size:14px;color:var(--dim)">Epochs are namespaced by lane: <span class="mono">DC</span> (DataCite registry census) · <span class="mono">FC</span> (founding-case DOI probes) · <span class="mono">ZD</span> (Zenodo deletion-export snapshots). From <span class="mono">DC-E1</span> forward, each capture preserves: observed-at UTC · endpoint · exact request · scope · expected/completed/error counts · response hashes · harness commit.</p>
 <table>
-<tr><th>Lane</th><th>Epoch</th><th>Date</th><th>Finding</th><th>Capture</th></tr>
-<tr><td>Registry-wide</td><td class="mono">E0</td><td class="mono">2026-07-11</td><td>Baseline: per-repository findable counts, 2,405 of 4,418 clients (partial; completion scheduled), covering 62,665,297 DOIs. Registry total findable: 130,559,831.</td><td class="mono"><a href="https://www.alexanarch.org/data/datacite-registrywide-epoch0-2026-07-11.json">JSON</a></td></tr>
-<tr><td rowspan="3">Founding case<br><span class="mono" style="font-size:11px">871 severed DOIs</span></td><td class="mono">E1</td><td class="mono">2026-06-22</td><td>871 of 871 absent from public findability (HTTP 404). Pattern type-correlated: concept layer severed, version layer retained.</td><td class="mono"><a href="https://www.alexanarch.org/s/records/867/">#867</a> · <a href="https://www.alexanarch.org/s/records/868/">#868</a></td></tr>
-<tr><td class="mono">E2</td><td class="mono">2026-07-03</td><td><span class="sevword">871 still absent.</span> Zero state transitions.</td><td class="mono"><a href="https://www.alexanarch.org/data/datacite-recapture-2026-07-03.json">JSON</a></td></tr>
-<tr><td class="mono">E3</td><td class="mono">2026-07-11</td><td><span class="sevword">871 still absent.</span> Zero restorations across 19 days, spanning active governance correspondence. Includes epoch zero of the per-client count series (cern.zenodo: 11,928,577 findable).</td><td class="mono"><a href="https://www.alexanarch.org/data/datacite-epoch3-2026-07-11.json">JSON</a></td></tr>
-<tr><td>Zenodo census</td><td class="mono">S1</td><td class="mono">2026-06-07</td><td>Monthly deleted-records export preserved: 1,309,351 rows, 2017–2026. 88.27% spam; 764,082 events in 2024 alone. 92.14% carry no preserved citation. Upstream retains only three snapshots — each unpreserved month is permanent substrate loss.</td><td class="mono"><a href="https://www.alexanarch.org/s/records/1045/">#1045</a></td></tr>
+<tr><th>Epoch</th><th>Date</th><th>Finding</th><th>Capture</th></tr>
+<tr><td class="mono">DC-E0</td><td class="mono">2026-07-11</td><td><strong>Registry-wide census in progress — 2,405 / 4,418 clients completed</strong> (2,013 failed or pending retry; weekly automated sweep continues). Completed clients cover 62,665,297 findable DOIs. Registry total findable at snapshot: 130,559,831 (<span class="mono">03:58Z</span>).</td><td class="mono"><a href="https://www.alexanarch.org/data/datacite-registrywide-epoch0-2026-07-11.json">JSON</a></td></tr>
+<tr><td class="mono">FC-E1</td><td class="mono">2026-06-22</td><td>Full probe of the founding-case capture set: 871/871 keys absent from public findability (HTTP 404 at the public API). Pattern type-correlated: concept layer absent, version layer retained. Pre-severance metadata backup published same day.</td><td class="mono"><a href="https://www.alexanarch.org/s/records/867/">#867</a> · <a href="https://www.alexanarch.org/s/records/868/">#868</a></td></tr>
+<tr><td class="mono">FC-E2</td><td class="mono">2026-07-03</td><td><span class="sevword">871/871 still absent.</span> Zero state changes observed.</td><td class="mono"><a href="https://www.alexanarch.org/data/datacite-recapture-2026-07-03.json">JSON</a></td></tr>
+<tr><td class="mono">FC-E3</td><td class="mono">2026-07-11</td><td><span class="sevword">871/871 still absent</span> (<span class="mono">03:50:27Z</span>, 12-way parallel probe, per-DOI HTTP states preserved). Zero restorations documented across FC-E1→FC-E3, an interval spanning active governance correspondence. Includes epoch zero of the per-client count series (cern.zenodo: 11,928,577 findable).</td><td class="mono"><a href="https://www.alexanarch.org/data/datacite-epoch3-2026-07-11.json">JSON</a></td></tr>
+<tr><td class="mono">ZD-S1</td><td class="mono">2026-06-07</td><td>Monthly deleted-records export preserved: 1,309,351 rows, 2017–2026. 88.27% flagged spam; 764,082 events in 2024 alone. 92.14% carry no <span class="mono">citation_text</span> (export-level retention 7.86%). Each unpreserved month is permanent substrate loss.</td><td class="mono"><a href="https://www.alexanarch.org/s/records/1045/">#1045</a></td></tr>
 </table>
-<p style="font-size:14px;color:var(--dim)">Epoch cadence: weekly registry-wide sweep (automated, public harness in the <a href="https://github.com/leesharks000/alexanarch">alexanarch repository</a>); monthly census preservation; per-DOI probes for watched sets. Each epoch is a dated, committed capture.</p>
 
 <h2>Severance taxonomy</h2>
-<p>A DOI can remain technically extant while its documentary function is severed. The Observatory classifies at minimum:</p>
+<p>A DOI can remain technically extant while its documentary functions are severed. The functions fail separately and must be classified separately:</p>
 <dl class="tax">
-<dt>Metadata severance</dt><dd>The record leaves public API and search (findable → registered), or loses substantial fields.</dd>
+<dt>Public-findability severance</dt><dd>A previously Findable DOI ceases to appear in DataCite Commons and the unauthenticated public API. Where the Handle continues to resolve, the condition is consistent with a Findable → Registered transition unless contrary evidence appears; a public-API 404 establishes absence from public findability, and the state interpretation is recorded as inference, not observation.</dd>
+<dt>Metadata severance</dt><dd>Observable loss or mutation of substantial fields in metadata that remains accessible.</dd>
 <dt>Resolution severance</dt><dd>The DOI stops resolving, or enters redirect failure.</dd>
 <dt>Object severance</dt><dd>The landing resolves but the deposited object is gone.</dd>
-<dt>Tombstone transition</dt><dd>The object is replaced by a removal notice — or, at scale, is not: see the 92.14%.</dd>
+<dt>Tombstone transition</dt><dd>The object is replaced by a removal notice preserving the citation — or by nothing. Landing-page tombstone compliance is audited separately from export-level citation retention.</dd>
 <dt>Provenance severance</dt><dd>Creator, affiliation, related identifiers, versions, or citations removed or altered.</dd>
 <dt>Target substitution</dt><dd>The DOI resolves, but to materially different content.</dd>
 <dt>Custodial transfer</dt><dd>Provider, repository, or responsible organization changes.</dd>
 <dt>Partial restoration</dt><dd>Resolution returns; the prior object, metadata, or provenance does not.</dd>
 </dl>
 
-<h2>The founding case — incident report</h2>
+<h2>Exhibit A: the founding case — application of the taxonomy</h2>
 <div class="incident">
-<h3>Zenodo account termination → registry severance, 2026-06-19</h3>
+<h3>Zenodo account termination → public-findability severance, June 2026</h3>
 <p style="font-size:15px;margin:6px 0 0">862 scholarly deposits · 1,817 DOIs registered through DataCite · one enforcement action</p>
 <div class="ev">
-<span class="d">2026-06-19</span><span><strong>Event.</strong> Account terminated; records removed at the repository layer (HTTP 410 Gone at zenodo.org). At the registry layer, 871 DOIs leave public findability — <strong>metadata severance</strong>, type-correlated: the concept (citation-layer) DOIs are taken, version DOIs largely retained (97.9% of preserved records carry <span class="mono">IsVersionOf</span>). 851 of the 871 are unique works whose metadata survives in no other DataCite record. <strong>Provenance severance</strong>: creator-name search collapses across 16 author names.</span>
-<span class="d">2026-06-22</span><span><strong>Epoch 1.</strong> Full audit: 871/871 return 404 from <span class="mono">api.datacite.org</span>. Pre-severance metadata backup published (<a href="https://www.alexanarch.org/s/records/867/">#867</a>); empirical paper <a href="https://www.alexanarch.org/s/records/868/">“DOIs ≠ Persistent Identifiers”</a> (#868).</span>
-<span class="d">2026-06-22</span><span><strong>Shadow persistence.</strong> OpenAlex retains 844 of 868 severed DOIs (97.2%) with 2,275,008 characters of abstract text. The graph kept the records; only the registry withdrew them.</span>
-<span class="d">2026-07-03</span><span><strong>Epoch 2.</strong> 871/871 still absent. Zero transitions.</span>
-<span class="d">2026-07-10</span><span><strong>Reception persistence.</strong> Google AI Mode serves severed <span class="mono">zenodo.org/records/</span> URLs as live scholarly citations, three weeks after tombstoning (documented in the <a href="https://leesharks.com/captures/">Capture Registry</a>). Deletion did not remove the works from machine reception — it removed only the provenance apparatus that made their attribution verifiable.</span>
-<span class="d">2026-07-11</span><span><strong>Epoch 3.</strong> 871/871 still absent — verified live, 12-way parallel probe, ~90 seconds, per-DOI HTTP states in the <a href="https://www.alexanarch.org/data/datacite-epoch3-2026-07-11.json">public capture</a>.</span>
+<span class="d">2026-06-19</span><span><strong>Event.</strong> Zenodo account terminated; records removed at the repository layer (HTTP 410 Gone at zenodo.org).</span>
+<span class="d">≤ 2026-06-22</span><span><strong>Public-findability severance observed</strong> no later than FC-E1: 871 capture keys absent from the public API — type-correlated, the concept (citation-layer) DOIs absent while version DOIs were largely retained (97.9% of retained records carry <span class="mono">IsVersionOf</span> links). <strong>Provenance severance:</strong> creator-name search collapsed across the operator's ORCID and 15 distinct heteronymous scholarly names (sweep method in <a href="https://www.alexanarch.org/s/records/868/">#868</a>).</span>
+<span class="d">2026-06-22</span><span><strong>FC-E1 audit + shadow persistence.</strong> Pre-severance metadata backup published (<a href="https://www.alexanarch.org/s/records/867/">#867</a>); empirical paper <a href="https://www.alexanarch.org/s/records/868/">"DOIs ≠ Persistent Identifiers"</a> (#868). OpenAlex retained 844 of the 868 well-formed severed DOIs (97.2%) with 2,275,008 characters of abstract text — the graph kept the records; the registry's public index dropped them.</span>
+<span class="d">2026-07-03</span><span><strong>FC-E2.</strong> 871/871 keys still absent. Zero changes.</span>
+<span class="d">2026-07-10</span><span><strong>Reception persistence.</strong> Google AI Mode served severed <span class="mono">zenodo.org/records/</span> URLs as live scholarly citations, three weeks after tombstoning — documented as capture <span class="mono">marx-johannes-sigil-heteronym-adoption-20260710</span> in the <a href="https://leesharks.com/captures/">Capture Registry</a>, with the served URLs and surface screenshots preserved. Removal did not reach machine reception; it removed only the provenance apparatus that made attribution verifiable.</span>
+<span class="d">2026-07-11</span><span><strong>FC-E3.</strong> 871/871 keys still absent (<span class="mono">03:50:27Z</span>); per-DOI HTTP states in the <a href="https://www.alexanarch.org/data/datacite-epoch3-2026-07-11.json">public capture</a>. Sampled per-DOI activity trails: zero public records; no severance event logged.</span>
 </div>
-<div class="status">RESTORATION STATUS: <span style="color:var(--sev);font-weight:600">NONE</span> · three epochs · 19 days · governance correspondence pending (CERN ODP)</div>
+<div class="status">RESTORATION STATUS: <span style="color:var(--sev);font-weight:600">NONE DOCUMENTED</span> · FC-E1 → FC-E3 · 2026-06-22 to 2026-07-11 · governance correspondence pending (CERN ODP)</div>
 </div>
-<p style="font-size:14.5px">This incident is the Observatory's Exhibit A because every element is publicly reconstructible: the pre-event state, the event, the epochs, the shadow copies, the reception layer, and the non-restoration. Most severance events in the registry have none of this — which is the point of the instrument.</p>
 
-<h2>What the registry could do instead</h2>
-<div class="remedy">
-<p style="margin:0">Severance is not the only available response to classifier or policy flags. A controlled metadata value — <span class="mono">classifier-flagged</span>, with genre refinements — asserts a fact about the registrar's process rather than a verdict about the work: it can be applied with zero adjudication burden. Reclassification preserves the citation graph, creates the first public baseline of what content classifiers eliminate from the scholarly record, and gives training-ingestion pipelines exactly what they claim to want: labeled material to filter at their own discretion. <strong>You cannot filter what you have deleted the labels for.</strong> A formal proposal is in preparation.</p>
+<h3>Units reconciliation</h3>
+<div class="units"><dl>
+<dt>862</dt><dd>deposit records removed at the repository layer on 2026-06-19.</dd>
+<dt>1,817</dt><dd>DOIs registered through DataCite across those deposits (concept + version layers).</dd>
+<dt>871</dt><dd>keys in the founding-case capture set: DOIs absent from public findability at FC-E1. Disclosed data-quality note: 3 of the 871 keys are malformed truncations (<span class="mono">zenodo.1</span>, <span class="mono">.18</span>, <span class="mono">.189</span>) — artifacts of the original sweep's key handling. They return 404 trivially, as any nonexistent DOI would.</dd>
+<dt>868</dt><dd>well-formed severed DOIs (871 keys − 3 artifacts). This is the denominator of the OpenAlex shadow-persistence audit.</dd>
+<dt>851</dt><dd>severed DOIs whose metadata survives in <strong>no other findable DataCite record</strong> — unique documentary loss at the public index. (Registered-state metadata cannot be inspected through the public API; the claim is scoped to findability.)</dd>
+<dt>946</dt><dd>DOIs from the original 1,817 that remain findable; 97.9% carry <span class="mono">IsVersionOf</span> — the retained layer is the version layer, the absent layer is the citation-target concept layer.</dd>
+</dl></div>
+<p style="font-size:14.5px">This incident is Exhibit A because every element is publicly reconstructible: the pre-event state, the event, the epochs, the shadow copies, the reception layer, and the non-restoration. Most severance events in the registry have none of this — which is the point of the instrument.</p>
+
+<h2>Operator position — policy proposal</h2>
+<div class="policy">
+<p class="plabel">Operator commentary · distinct from the empirical record above</p>
+<p style="margin:0">Severance is not the only available response to classifier or policy flags. A controlled metadata value — <span class="mono">classifier-flagged</span>, with genre refinements — asserts a fact about the registrar's process rather than a verdict about the work: it can be applied without requiring the registrar to adjudicate the scholarly truth, merit, or final status of the work. Reclassification preserves the citation graph, creates the first public baseline of what content classifiers remove from the scholarly record, and gives training-ingestion pipelines exactly what they claim to want: labeled material to filter at their own discretion. <strong>You cannot filter what you have deleted the labels for.</strong> A formal proposal is in preparation.</p>
 </div>
 
 <h2>Replication</h2>
 <div class="repl">
-<b># registry-wide findable total</b><br>
+<b># live registry findable total (compare to the DC-E0 snapshot above)</b><br>
 curl "https://api.datacite.org/dois?page[size]=1" | jq .meta.total<br>
-<b># any repository's findable count (the only public per-client signal)</b><br>
+<b># any client's current findable count (current only — no public history exists)</b><br>
 curl "https://api.datacite.org/dois?client-id=cern.zenodo&page[size]=1" | jq .meta.total<br>
-<b># any severed DOI from the founding case (expect 404)</b><br>
-curl -i "https://api.datacite.org/dois/10.5281/zenodo.18208069"<br>
-<b># the epoch captures (raw, per-DOI)</b><br>
+<b># a founding-case DOI (expect 404: absent from public findability)</b><br>
+curl -i "https://api.datacite.org/dois/10.5281/zenodo.14538882"<br>
+<b># its public activity trail (expect zero records: the transition is unlogged)</b><br>
+curl "https://api.datacite.org/dois/10.5281/zenodo.14538882/activities"<br>
+<b># the epoch captures (raw, per-DOI, with observation timestamps)</b><br>
 curl https://www.alexanarch.org/data/datacite-epoch3-2026-07-11.json<br>
 curl https://www.alexanarch.org/data/datacite-registrywide-epoch0-2026-07-11.json<br>
-<b># zenodo's own deletion log (preserve it — upstream keeps only 3 snapshots)</b><br>
+<b># zenodo's own deletion export (preserve it — upstream keeps only 3 snapshots)</b><br>
 curl -O https://zenodo.org/api/exporter/records-deleted.csv.gz
 </div>
 
 <footer>
 The Platform Erosion Observatory · founded 2026-07-06 as EA-EROSION-01 (<a href="https://www.alexanarch.org/s/records/1045/">deposit #1045</a>) · registry-wide extension 2026-07-11<br>
-Operator: Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a> · data spine: <a href="https://www.alexanarch.org/">alexanarch.org</a> · harness &amp; epoch history: <a href="https://github.com/leesharks000/alexanarch">github.com/leesharks000/alexanarch</a><br>
-License: CC BY 4.0 · network: <a href="https://machinemediation.org">machinemediation.org</a> · <a href="https://leesharks.com">leesharks.com</a> · <a href="https://provenanceerasure.org">provenanceerasure.org</a>
+Operator: Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a> · data spine: <a href="https://www.alexanarch.org/">alexanarch.org</a> · harness &amp; epoch history: <a href="https://github.com/leesharks000/platform-erosion-observatory">github.com/leesharks000/platform-erosion-observatory</a><br>
+Policy references: <a href="https://support.datacite.org/docs/doi-states">DataCite DOI states</a> · <a href="https://support.datacite.org/docs/can-i-delete-or-change-my-dois">deletion policy</a> · <a href="https://support.datacite.org/docs/tombstone-pages">tombstone best practice</a><br>
+Portfolio monitoring for institutions — watched DOI sets, epoch deltas, evidence packets, restoration tracking — in development; inquiries via the operator.<br>
+License: CC BY 4.0 (content/data) · MIT (code) · network: <a href="https://machinemediation.org">machinemediation.org</a> · <a href="https://leesharks.com">leesharks.com</a> · <a href="https://provenanceerasure.org">provenanceerasure.org</a>
 </footer>
 
 </div>
 <script>
 (async function(){
+  const panel = document.getElementById('livepanel');
+  const lines = [];
+  const SNAP = 130559831;
+  try{
+    const r2 = await fetch('https://api.datacite.org/dois?page%5Bsize%5D=1');
+    const d2 = await r2.json();
+    if(d2 && d2.meta && d2.meta.total){
+      const now = new Date().toISOString().replace(/\.\d+Z$/,'Z');
+      const delta = d2.meta.total - SNAP;
+      lines.push('live total: ' + d2.meta.total.toLocaleString('en-US') + ' at ' + now +
+                 ' · post-DC-E0 delta: ' + (delta >= 0 ? '+' : '') + delta.toLocaleString('en-US'));
+    }
+  }catch(e){}
   try{
     const r = await fetch('https://www.alexanarch.org/data/datacite-epoch3-2026-07-11.json');
     const e3 = await r.json();
     const f = e3.third_epoch_finding;
-    if(f && f.queried === 871){
-      document.getElementById('n-restored').textContent = String(f.restored_to_findable);
-      const dist = f.http_distribution || {};
-      if(dist['404'] === 871){ document.getElementById('livemark').style.display = 'inline'; }
+    if(f && f.queried === 871 && f.restored_to_findable === 0){
+      lines.push('FC-E3 capture verified in this browser: 871/871 keys absent, 0 restorations (captured ' + (e3.captured_at || '2026-07-11T03:50:27Z') + ')');
     }
-    const r2 = await fetch('https://api.datacite.org/dois?page%5Bsize%5D=1');
-    const d2 = await r2.json();
-    if(d2 && d2.meta && d2.meta.total){
-      document.getElementById('n-total').textContent = d2.meta.total.toLocaleString('en-US');
-      document.getElementById('livemark').style.display = 'inline';
-    }
-  }catch(e){/* static values stand */}
+  }catch(e){}
+  panel.textContent = lines.join('  ·  ');
 })();
 </script>
 </body>
