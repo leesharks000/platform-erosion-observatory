@@ -3,19 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Platform Erosion Observatory — Measuring Whether Persistent Identifiers Persist</title>
-<meta name="description" content="A public instrument tracking DOI findability, severance, and restoration across the DataCite registry. Namespaced epoch captures, a severance taxonomy, a fully reconstructible founding case, and replication commands for every headline figure. Instrument: EA-EROSION-01.">
+<title>Persistent Identifiers — The PID Erosion Observatory</title>
+<meta name="description" content="An identifier is a maintained relation between a string and an object. The PID Erosion Observatory (Persistent Identifier Erosion Observatory) measures whether that relation persists: DOI findability, severance, and restoration across the DataCite registry, with namespaced epoch captures and replication commands for every headline figure. Instrument: EA-EROSION-01.">
+<link rel="canonical" href="https://persistentidentifiers.org/">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Lee Sharks">
-<meta property="og:title" content="The Platform Erosion Observatory">
-<meta property="og:description" content="A DOI that stops being counted stops silently. This instrument records the deltas.">
+<meta property="og:title" content="Persistent Identifiers — The PID Erosion Observatory">
+<meta property="og:url" content="https://persistentidentifiers.org/">
+<meta property="og:description" content="A string of numbers divorced from its identified object is no longer an identifier. A DOI that stops being counted stops silently. This instrument records the deltas.">
 <meta property="og:type" content="website">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Dataset",
-  "name": "The Platform Erosion Observatory — Epoch Captures",
+  "name": "The PID Erosion Observatory (Persistent Identifier Erosion Observatory) — Epoch Captures",
+  "url": "https://persistentidentifiers.org/",
+  "alternateName": "Platform Erosion Observatory",
   "description": "Dated snapshots of DOI findability state across the DataCite registry: registry-wide per-client counts (DC lane), per-DOI state histories for the founding case (FC lane), and the preserved Zenodo removal census (ZD lane). Deltas between epochs are the public severance signal.",
   "creator": {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"},
   "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -68,6 +72,21 @@ a{color:var(--navy);text-underline-offset:2px;}
 .policy .plabel{font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--navy);margin:0 0 8px;}
 .repl{background:var(--ink);color:#e8e8e2;border-radius:6px;padding:18px 22px;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.9;overflow-x:auto;}
 .repl b{color:#9fd3b4;font-weight:500;}
+.masthead{font-family:'Source Serif 4',Georgia,serif;border-bottom:3px double var(--ink);padding:0 0 30px;margin:0 0 40px;}
+.masthead .site{font-family:'IBM Plex Mono',monospace;font-size:11.5px;text-transform:lowercase;letter-spacing:0.14em;color:var(--dim);margin:0 0 22px;}
+.masthead .axiom{font-size:26px;line-height:1.42;font-weight:400;margin:0 0 8px;letter-spacing:-0.005em;}
+.masthead .axiom b{font-weight:600;}
+.masthead .corollary{font-size:17.5px;font-style:italic;color:#3c3e37;margin:0 0 26px;}
+.qa{display:grid;grid-template-columns:1fr;gap:13px;margin:0;}
+.qa div{font-size:16px;line-height:1.55;}
+.qa .q{font-weight:600;font-style:normal;}
+.qa .a{color:#2c2e28;}
+.qa .a a{color:var(--sev);font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;text-decoration-thickness:1px;}
+.prov{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--dim);border:1px dashed var(--rule);border-radius:4px;padding:8px 12px;margin:14px 0 0;line-height:1.7;}
+.altid{border:2px solid var(--ink);border-radius:6px;padding:20px 24px;margin:16px 0;background:#fff;font-size:15.5px;}
+.altid .plabel{font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--ink);margin:0 0 8px;}
+.altid .theorem{font-family:'Source Serif 4',Georgia,serif;font-size:18px;line-height:1.5;margin:0 0 12px;}
+.axnbox{font-family:'IBM Plex Mono',monospace;font-size:12.5px;background:var(--panel);border:1px solid var(--rule);border-radius:4px;padding:10px 14px;margin:10px 0;word-break:break-all;line-height:1.8;}
 footer{margin-top:56px;border-top:1px solid var(--rule);padding-top:18px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--dim);line-height:1.9;}
 footer a{color:var(--navy);}
 </style>
@@ -75,14 +94,27 @@ footer a{color:var(--navy);}
 <body>
 <div class="wrap">
 
+<div class="masthead">
+<p class="site">persistentidentifiers.org</p>
+<p class="axiom">An identifier is a <b>maintained relation</b> between a string and an object. A string of numbers divorced from its identified object is no longer an identifier.</p>
+<p class="corollary">The persistence of the string is not the persistence of the identifier — it is what conceals the relation's death.</p>
+<div class="qa">
+<div><span class="q">What is a persistent identifier?</span> <span class="a">A string whose relation to its object is maintained indefinitely by a responsible organization — resolution, metadata, and citation continuity included.</span></div>
+<div><span class="q">What does persistence require?</span> <span class="a">Custody of state: a record of what the string identified, since when, and what has changed. No public state-transition ledger exists for the world's largest research-data registry — <a href="#premise">0 activity records</a> logged any departure from findability.</span></div>
+<div><span class="q">What happens when the relation is severed?</span> <span class="a">In the registrar's own deletion export: <a href="#stats">1,309,351 removal events</a>; in sampling, <a href="#stats">203 of 204</a> deleted DOIs absent from the registry's public index, <a href="#stats">0 of 25</a> retraction warnings surviving where the records persist elsewhere, and <a href="#stats">0 restorations</a> across all observed epochs.</span></div>
+<div><span class="q">Are DOIs persistent identifiers?</span> <span class="a">Measure below.</span></div>
+</div>
+</div>
+
 <header>
-<h1>The Platform Erosion Observatory</h1>
-<p class="tag">Measuring whether persistent identifiers persist.</p>
+<h1>The PID Erosion Observatory</h1>
+<p class="tag">Persistent Identifier Erosion Observatory — measuring whether persistent identifiers persist.</p>
 <p class="inst">Instrument: <a href="https://www.alexanarch.org/s/records/1045/">EA-EROSION-01 · deposit #1045 · AXN:0421.EMPIRICAL.🎭📐🐝🎪🏷️🎇</a> &nbsp;·&nbsp; Operator: Lee Sharks</p>
-<div class="declare">This document is the instrument specification and the inaugural public record of the Platform Erosion Observatory. Every headline figure is reproducible from a public endpoint or a published capture-and-analysis script; each epoch preserves its requests, UTC observation times, scope, completion state, and error counts. The founding case involves deposits registered by the operator; all claims herein are independently replicable via the public API and the published epoch captures.</div>
+<div class="declare">This document is the instrument specification and the public record of the PID Erosion Observatory. Every headline figure is reproducible from a public endpoint or a published capture-and-analysis script; each epoch preserves its requests, UTC observation times, scope, completion state, and error counts. The founding case involves deposits registered by the operator; all claims herein are independently replicable via the public API and the published epoch captures.</div>
+<div class="prov">PROVENANCE · founded 2026-07-06 as the Platform Erosion Observatory (EA-EROSION-01, <a href="https://www.alexanarch.org/s/records/1045/">deposit #1045</a>) · renamed the PID Erosion Observatory on 2026-07-12 upon acquisition of its sovereign domain, persistentidentifiers.org · the founding name remains in the deposit record · prior address platform-erosion-observatory.vercel.app remains live · this instrument logs its own state transitions.</div>
 </header>
 
-<div class="grid">
+<div class="grid" id="stats">
 <div class="cell"><div class="num live">130,559,831</div><div class="lbl">findable DOIs in the DataCite registry — DC-E0 snapshot, <span class="mono">2026-07-11T03:58Z</span></div><details><summary>replicate</summary><code>curl "https://api.datacite.org/dois?page[size]=1" | jq .meta.total   # returns the live total; compare to snapshot</code></details></div>
 <div class="cell"><div class="num live">4,418</div><div class="lbl">DataCite client accounts represented in the public registry (client types include repositories, periodicals, IGSN catalogues, RAiD registries)</div><details><summary>replicate</summary><code>curl "https://api.datacite.org/clients?page[size]=1" | jq .meta.total</code></details></div>
 <div class="cell"><div class="num sev">1,309,351</div><div class="lbl">removal events in Zenodo's published deletion export — ZD-S1 snapshot 2026-06-07, preserved (upstream retains only three monthly snapshots)</div><details><summary>replicate</summary><code>curl -O https://zenodo.org/api/exporter/records-deleted.csv.gz</code></details></div>
@@ -94,7 +126,7 @@ footer a{color:var(--navy);}
 </div>
 <div id="livepanel"></div>
 
-<h2>The premise</h2>
+<h2 id="premise">The premise</h2>
 <p>DataCite's policy is that Findable and Registered DOIs cannot be deleted (<a href="https://support.datacite.org/docs/can-i-delete-or-change-my-dois">DataCite Support: deletion policy</a>) — but a <em>Findable</em> DOI can be moved to <em>Registered</em> state, which removes its metadata from public search, DataCite Commons, and the unauthenticated public API (<a href="https://support.datacite.org/docs/doi-states">DataCite Support: DOI states</a>). The Handle may survive while public discoverability, metadata access, citation continuity, and provenance function are severed — and each of those functions must be measured separately.</p>
 <p>No public registry-wide state-transition ledger has been identified by the Observatory. This was tested, not assumed: DataCite's per-DOI activities endpoint (<span class="mono">/dois/{id}/activities</span>) was probed for sampled founding-case DOIs and returned <strong>zero activity records</strong> — no creation history, and no severance event. (For at least one other publicly-absent DOI, historical create/update activities — including original metadata payloads — remain publicly served, while the departure from findability itself appears in no activity record.) The transition is unlogged. <strong>A DOI that stops being counted stops silently.</strong></p>
 <p><strong>Therefore the only public severance signal is the delta.</strong> The Observatory takes dated snapshots of findability state — registry-wide per-client counts, and per-DOI state for watched sets — and records what changed between epochs. A present-state check tells you what exists now. Only custody of the state history can tell you what existed, when it changed, what was lost, and whether it was restored.</p>
@@ -162,6 +194,17 @@ footer a{color:var(--navy);}
 <p style="margin:0">Severance is not the only available response to classifier or policy flags. A controlled metadata value — <span class="mono">classifier-flagged</span>, with genre refinements — asserts a fact about the registrar's process rather than a verdict about the work: it can be applied without requiring the registrar to adjudicate the scholarly truth, merit, or final status of the work. Reclassification preserves the citation graph, creates the first public baseline of what content classifiers remove from the scholarly record, and gives training-ingestion pipelines exactly what they claim to want: labeled material to filter at their own discretion. <strong>You cannot filter what you have deleted the labels for.</strong> A formal proposal is in preparation.</p>
 </div>
 
+<h2>The class that cannot be severed silently</h2>
+<p style="font-size:14px;color:var(--dim)">Operator commentary · distinct from the empirical record above</p>
+<div class="altid">
+<p class="plabel">Content-derived identifiers</p>
+<p class="theorem">A string divorced from its object is no longer an identifier. An identifier <em>derived from</em> its object cannot be divorced from it undetected: either half verifies the other.</p>
+<p>Assigned identifiers — DOIs among them — depend on an institution maintaining the relation between string and object; the epochs above measure what happens when the institution stops. Content-derived identifiers compute the string <em>from</em> the object, so the relation is a mathematical property rather than an institutional promise. The class is established practice, not proposal: <a href="https://www.swhid.org/">SWHIDs</a> (Software Heritage's ISO-standardized intrinsic identifiers), IPFS CIDs, and git commit hashes all identify by content. Severance of a content-derived identifier is detectable by anyone holding either half — which is to say, the alternative to institutional memory is not better institutions but identifiers that do not need them.</p>
+<p>The <strong>AXN</strong> is this archive's implementation: a content-derived hex identifier paired with a six-emoji glyph serving as a human-verifiable checksum, chained under SHA-256 integrity. This instrument is itself identified by one:</p>
+<div class="axnbox">AXN:0421.EMPIRICAL.🎭📐🐝🎪🏷️🎇 &nbsp;→&nbsp; EA-EROSION-01, <a href="https://www.alexanarch.org/s/records/1045/">deposit #1045</a> (the PID Erosion Observatory's own charter)<br>verification: recompute from content · registry: <a href="https://www.alexanarch.org/">alexanarch.org</a> data spine · no institution required to hold the relation open</div>
+<p style="margin:0">Had the 1,817 DOIs of the founding case been paired with content-derived identifiers, their severance would have been detectable, provable, and reversible from any surviving copy. The records above show what the assigned-identifier regime does instead.</p>
+</div>
+
 <h2>Replication</h2>
 <div class="repl">
 <b># live registry findable total (compare to the DC-E0 snapshot above)</b><br>
@@ -180,7 +223,7 @@ curl -O https://zenodo.org/api/exporter/records-deleted.csv.gz
 </div>
 
 <footer>
-The Platform Erosion Observatory · founded 2026-07-06 as EA-EROSION-01 (<a href="https://www.alexanarch.org/s/records/1045/">deposit #1045</a>) · registry-wide extension 2026-07-11<br>
+The PID Erosion Observatory (Persistent Identifier Erosion Observatory) · persistentidentifiers.org · founded 2026-07-06 as the Platform Erosion Observatory, EA-EROSION-01 (<a href="https://www.alexanarch.org/s/records/1045/">deposit #1045</a>) · registry-wide extension 2026-07-11<br>
 Operator: Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a> · data spine: <a href="https://www.alexanarch.org/">alexanarch.org</a> · harness &amp; epoch history: <a href="https://github.com/leesharks000/platform-erosion-observatory">github.com/leesharks000/platform-erosion-observatory</a><br>
 Policy references: <a href="https://support.datacite.org/docs/doi-states">DataCite DOI states</a> · <a href="https://support.datacite.org/docs/can-i-delete-or-change-my-dois">deletion policy</a> · <a href="https://support.datacite.org/docs/tombstone-pages">tombstone best practice</a><br>
 Portfolio monitoring for institutions — watched DOI sets, epoch deltas, evidence packets, restoration tracking — in development; inquiries via the operator.<br>
