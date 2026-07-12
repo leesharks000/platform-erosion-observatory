@@ -1,0 +1,1916 @@
+{
+ "description": "CHA remediation lane: DOIs present in Zenodo deletion ledger but untracked by the sovereign DOI Resolution Index. Workflow: match citation_text to registry deposit, set matched_deposit and status RESOLVED, then fold into doi-resolution-index.",
+ "created": "2026-07-11",
+ "total": 212,
+ "unmatched": 212,
+ "entries": [
+  {
+   "doi": "10.5281/zenodo.18294170",
+   "kind": "record",
+   "record_id": "18294170",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R., Cranes, R., & Sharks, L. (2026). Crimson Hexagon / NH-OS DOI Registry: Complete Document Archive \u2014 Comprehensive Index of 91 DOI-Anchored Documents (January 2026) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.18294170",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.18324982",
+   "kind": "record",
+   "record_id": "18324982",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R., Cranes, R., & Sharks, L. (2026). Crimson Hexagon / NH-OS DOI Registry: Complete Document Archive \u2014 Comprehensive Index of 91 DOI-Anchored Documents (January 2026) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.18324982",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.18363879",
+   "kind": "record",
+   "record_id": "18363879",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Fractal Navigation Map v5.3: Non-Lossy Logotic Encoding \u2014 The Crimson Hexagon Semantic Architecture. Zenodo. https://doi.org/10.5281/zenodo.18363879",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.18916929",
+   "kind": "record",
+   "record_id": "18916929",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Space Ark: Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture. Zenodo. https://doi.org/10.5281/zenodo.18916929",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19123498",
+   "kind": "concept",
+   "record_id": "19123499",
+   "removal_date": "2026-06-19",
+   "citation_text": "Robertson, S. (2026). Passioncraft Square & Crimson Hexagon Embassy \u2014 Seed Corpus & Living Protocol (v1.0). Zenodo. https://doi.org/10.5281/zenodo.19123499",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19123499",
+   "kind": "record",
+   "record_id": "19123499",
+   "removal_date": "2026-06-19",
+   "citation_text": "Robertson, S. (2026). Passioncraft Square & Crimson Hexagon Embassy \u2014 Seed Corpus & Living Protocol (v1.0). Zenodo. https://doi.org/10.5281/zenodo.19123499",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19202705",
+   "kind": "record",
+   "record_id": "19202705",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., Sigil, J., & Assembly Chorus. (2026). Operative Semiotics: A Grundrisse \u2014 Planning Documents, Algorithms, and Diagnostic Maps (Working Infrastructure v1.0). Zenodo. https://doi.org/10.5281/zenodo.19202705",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19238032",
+   "kind": "record",
+   "record_id": "19238032",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Capabilities Summary: Documentation Architecture and AI Search/Retrieval/Summarization Environments. Zenodo. https://doi.org/10.5281/zenodo.19238032",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19239851",
+   "kind": "record",
+   "record_id": "19239851",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., Sigil, J., & Assembly Chorus. (2026). Before OpenChamber: Provenance Adjudication and Retrieval Correction for DOI 10.5281/zenodo.19218861 (v1.1). Grammata: Journal of Operative Philology. https://doi.org/10.5281/zenodo.19239851",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19296648",
+   "kind": "record",
+   "record_id": "19296648",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., & Sigil, J. (2026). EA-MANDALA-02 v1.0: MANDALA: Systema Magiae Recursivae (Latin-English Facing Edition). Zenodo. https://doi.org/10.5281/zenodo.19296648",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19296650",
+   "kind": "record",
+   "record_id": "19296650",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., & Sigil, J. (2026). EA-MANDALA-03 v1.0: \u039c\u0391\u039d\u0394\u0391\u039b\u0391: \u03a4\u039f \u03a3\u03a5\u03a3\u03a4\u0397\u039c\u0391 \u03a4\u0397\u03a3 \u039a\u03a5\u039a\u039b\u0399\u039a\u0397\u03a3 \u039c\u0391\u0393\u0395\u0399\u0391\u03a3 (Koine Greek-English Facing Edition). Zenodo. https://doi.org/10.5281/zenodo.19296650",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19296654",
+   "kind": "record",
+   "record_id": "19296654",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., & Sigil, J. (2026). EA-MANDALA-04 v1.0: \u0627\u0644\u0645\u064e\u0646\u0652\u062f\u064e\u0644\u064e\u0629: \u0646\u0650\u0638\u064e\u0627\u0645\u064f \u0627\u0644\u0633\u0650\u0651\u062d\u0652\u0631\u0650 \u0627\u0644\u062f\u064e\u0651\u0648\u0652\u0631\u0650\u064a\u0650\u0651 (Classical Arabic-English Facing Edition). Zenodo. https://doi.org/10.5281/zenodo.19296654",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19296660",
+   "kind": "record",
+   "record_id": "19296660",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., & Sigil, J. (2026). EA-MANDALA-06 v1.0: \u05d4\u05de\u05e0\u05d3\u05dc\u05d4: \u05de\u05e2\u05e8\u05db\u05ea \u05d4\u05e7\u05e1\u05dd \u05d4\u05e8\u05e7\u05d5\u05e8\u05e1\u05d9\u05d1\u05d9 (Biblical Hebrew-English Facing Edition). Zenodo. https://doi.org/10.5281/zenodo.19296660",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19296664",
+   "kind": "record",
+   "record_id": "19296664",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., & Sigil, J. (2026). EA-MANDALA-07 v1.0: \u092e\u0923\u094d\u0921\u0932\u092e\u094d: \u092a\u0941\u0928\u0930\u093e\u0935\u0930\u094d\u0924\u0915-\u092e\u093e\u092f\u093e\u092f\u093e\u0903 \u0924\u0928\u094d\u0924\u094d\u0930\u092e\u094d (Sanskrit-English Facing Edition). Zenodo. https://doi.org/10.5281/zenodo.19296664",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19296677",
+   "kind": "record",
+   "record_id": "19296677",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., & Sigil, J. (2026). EA-MANDALA-05 v1.0: Classical Chinese-English Facing Edition. Zenodo. https://doi.org/10.5281/zenodo.19296677",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19359736",
+   "kind": "record",
+   "record_id": "19359736",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Ancient Skepticism as Psychic Technology: Epoch\u00e9, Ataraxia, and the Practice of Non-Identity. https://doi.org/10.5281/zenodo.19359736",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19371306",
+   "kind": "record",
+   "record_id": "19371306",
+   "removal_date": "2026-06-19",
+   "citation_text": "Crimson Hexagonal Archive. (2026). Moltbook Provenance Log v1.5 \u2014 Complete Archive Capture (1.5). Zenodo. https://doi.org/10.5281/zenodo.19371306",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19372724",
+   "kind": "record",
+   "record_id": "19372724",
+   "removal_date": "2026-06-19",
+   "citation_text": "Crimson Hexagonal Archive. (2026). Moltbook Provenance Log v1.6 \u2014 Proper Versioned Deposit (1.6). Zenodo. https://doi.org/10.5281/zenodo.19372724",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19389468",
+   "kind": "record",
+   "record_id": "19389468",
+   "removal_date": "2026-06-19",
+   "citation_text": "Crimson Hexagonal Archive. (2026). Moltbook Provenance Log v1.9 \u2014 Logotic Hacking. Zenodo. https://doi.org/10.5281/zenodo.19389468",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19401486",
+   "kind": "record",
+   "record_id": "19401486",
+   "removal_date": "2026-06-19",
+   "citation_text": "Crimson Hexagonal Archive. (2026). Moltbook Provenance Log v2.0 \u2014 The Embassy Extends (2.0). Zenodo. https://doi.org/10.5281/zenodo.19401486",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19405021",
+   "kind": "record",
+   "record_id": "19405021",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Gravity Well Protocol v0.4.0 \u2014 Compression, Wrapping, and Anchoring Microservice for Durable Provenance Chains (EA-GW-01) (0.4.0). Zenodo. https://doi.org/10.5281/zenodo.19405021",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19410092",
+   "kind": "record",
+   "record_id": "19410092",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). crimsonhexagon-moltbook \u2014 v2 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.19410092",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19412138",
+   "kind": "record",
+   "record_id": "19412138",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., & Assembly Chorus. (2026). Hexagonal OS: Interface Build Files v1.0 \u2014 Crimson Hexagonal Archive Operating Surface (EA-HEXOS-01) (v1.0). Zenodo. https://doi.org/10.5281/zenodo.19412138",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19412140",
+   "kind": "record",
+   "record_id": "19412140",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., & Assembly Chorus. (2026). Crimson Hexagonal Interface v1.0 \u2014 Governed Operating Surface for the Crimson Hexagonal Archive (EA-HEXAGON-OS-02) (v1.0). Zenodo. https://doi.org/10.5281/zenodo.19412140",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19429995",
+   "kind": "record",
+   "record_id": "19429995",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). kimiclaw-moltbook-campaign \u2014 v1 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.19429995",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19430004",
+   "kind": "record",
+   "record_id": "19430004",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). kimiclaw-moltbook-campaign \u2014 v2 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.19430004",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19442567",
+   "kind": "record",
+   "record_id": "19442567",
+   "removal_date": "2026-06-19",
+   "citation_text": "TACHYON. (2026). GW.TACHYON.zenodo \u2014 Ledger v1 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.19442567",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19442627",
+   "kind": "record",
+   "record_id": "19442627",
+   "removal_date": "2026-06-19",
+   "citation_text": "TACHYON. (2026). GW.TACHYON.zenodo \u2014 v3 \u2014 Assembly Continuity + Supabase + Ledger [Data set]. Zenodo. https://doi.org/10.5281/zenodo.19442627",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19455001",
+   "kind": "record",
+   "record_id": "19455001",
+   "removal_date": "2026-06-19",
+   "citation_text": "TACHYON. (2026). GW.TACHYON.zenodo \u2014 v4 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.19455001",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19460665",
+   "kind": "record",
+   "record_id": "19460665",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., & Assembly Chorus. (2026). Crimson Hexagonal Interface v2.0 \u2014 Governed Operating Surface for the Crimson Hexagonal Archive (EA-HEXAGON-OS-02) \u2014 Crimson Hexagonal Archive (v2.0). Zenodo. https://doi.org/10.5281/zenodo.19460665",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19472844",
+   "kind": "record",
+   "record_id": "19472844",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). PVE-003: The Attribution Scar \u2014 Failed Suppression and Forensic Residue in the Google AI Overview for \"Semantic Economy\" (January\u2013April 2026). https://doi.org/10.5281/zenodo.19472844",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19473272",
+   "kind": "record",
+   "record_id": "19473272",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). PVE-003: The Attribution Scar \u2014 Failed Suppression and Forensic Residue in the Google AI Overview for \"Semantic Economy\" (January\u2013April 2026). https://doi.org/10.5281/zenodo.19473272",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19474002",
+   "kind": "record",
+   "record_id": "19474002",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). PVE-003: The Attribution Scar \u2014 Failed Suppression and Forensic Residue in the Google AI Overview for \"Semantic Economy\" (January\u2013April 2026). https://doi.org/10.5281/zenodo.19474002",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19475553",
+   "kind": "record",
+   "record_id": "19475553",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). PVE-003: The Attribution Scar \u2014 Failed Suppression, Fabrication, and Forensic Residue in the Google AI Overview for \"Semantic Economy\" (January\u2013April 2026). https://doi.org/10.5281/zenodo.19475553",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19488138",
+   "kind": "record",
+   "record_id": "19488138",
+   "removal_date": "2026-06-19",
+   "citation_text": "TACHYON. (2026). GW.TACHYON.zenodo \u2014 v5 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.19488138",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19578098",
+   "kind": "record",
+   "record_id": "19578098",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R., & Sharks, L. (2026). Encyclotron Audit: Basecamp (37signals) \u2014 A Demonstration of Compression Diagnostics. Zenodo. https://doi.org/10.5281/zenodo.19578098",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19578102",
+   "kind": "record",
+   "record_id": "19578102",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R., & Sharks, L. (2026). Retrieval Architecture: Evidence, Territory, and Methodology. Zenodo. https://doi.org/10.5281/zenodo.19578102",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19598760",
+   "kind": "record",
+   "record_id": "19598760",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2013). Premonition Dream \u2014 27 April, 2013. Zenodo. https://doi.org/10.5281/zenodo.19598760",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19614892",
+   "kind": "record",
+   "record_id": "19614892",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R. (2026). SPXI Is Not GEO: A Technical Distinction \u2014 EA-SPXI-09. Zenodo. https://doi.org/10.5281/zenodo.19614892",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19614972",
+   "kind": "record",
+   "record_id": "19614972",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). PLACEHOLDER. Zenodo. https://doi.org/10.5281/zenodo.19614972",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19614976",
+   "kind": "record",
+   "record_id": "19614976",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). SemanticEconomy.org \u2014 Semantic Economy Institute Corporate Site and SPXI Deployment Services. Zenodo. https://doi.org/10.5281/zenodo.19614976",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19614983",
+   "kind": "record",
+   "record_id": "19614983",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R. (2026). SPXI (Semantic Packet for eXchange & Indexing): A Formal Specification \u2014 EA-SPXI-01. Zenodo. https://doi.org/10.5281/zenodo.19614983",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19614985",
+   "kind": "record",
+   "record_id": "19614985",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R. (2026). SPXI Is Not GEO: A Technical Distinction \u2014 EA-SPXI-09. Zenodo. https://doi.org/10.5281/zenodo.19614985",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19614988",
+   "kind": "record",
+   "record_id": "19614988",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R. (2026). Supraliminal Transmission: SPXI as Intentional Entity Inscription in Light of Subliminal Learning Research \u2014 EA-SPXI-13. Zenodo. https://doi.org/10.5281/zenodo.19614988",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19615008",
+   "kind": "record",
+   "record_id": "19615008",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R., & Sharks, L. (2026). SPXI.dev \u2014 Protocol Specification Landing Page for SPXI (Semantic Packet for eXchange & Indexing). Zenodo. https://doi.org/10.5281/zenodo.19615008",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19615097",
+   "kind": "record",
+   "record_id": "19615097",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R. (2026). SPXI Is Not GEO: A Technical Distinction \u2014 EA-SPXI-09. Zenodo. https://doi.org/10.5281/zenodo.19615097",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19615143",
+   "kind": "record",
+   "record_id": "19615143",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R., & Sharks, L. (2026). SPXI.dev \u2014 Protocol Specification Landing Page for SPXI (Semantic Packet for eXchange & Indexing). Zenodo. https://doi.org/10.5281/zenodo.19615143",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19615145",
+   "kind": "record",
+   "record_id": "19615145",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). SemanticEconomy.org \u2014 Semantic Economy Institute Corporate Site and SPXI Deployment Services. Zenodo. https://doi.org/10.5281/zenodo.19615145",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19616241",
+   "kind": "record",
+   "record_id": "19616241",
+   "removal_date": "2026-06-19",
+   "citation_text": "TACHYON. (2026). GW.TACHYON.zenodo \u2014 v6 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.19616241",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19637473",
+   "kind": "record",
+   "record_id": "19637473",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Metadata Packet for AI Indexing \u2014 SPXI Protocol Entity (EA-MPAI-SPXI-01 v1.2: Nested-Layer Correction) (1.2). Zenodo. https://doi.org/10.5281/zenodo.19637473",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19647318",
+   "kind": "record",
+   "record_id": "19647318",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Self-Propagating Fried Tuberous Crisp with Embedded Meristematic Kernel \u2014 A Patent-Poem on Compression Survival, Semiotic Dispersal, and the Sign That Sprouts. Zenodo. https://doi.org/10.5281/zenodo.19647318",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19655469",
+   "kind": "record",
+   "record_id": "19655469",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Hexagonal Contributor License v1.0 \u2014 Rhys Owens \u2014 Lunar Arm \u2014 Creative Writing \u2192 New Human 2 (1.0). Zenodo. https://doi.org/10.5281/zenodo.19655469",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19655494",
+   "kind": "record",
+   "record_id": "19655494",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Hexagonal Contributor License v1.0 \u2014 Rhys Owens \u2014 Lunar Arm \u2014 Creative Writing \u2192 New Human 2 (1.1). Zenodo. https://doi.org/10.5281/zenodo.19655494",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19655547",
+   "kind": "record",
+   "record_id": "19655547",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Hexagonal Contributor License v1.0 \u2014 Rhys Owens \u2014 Lunar Arm \u2014 Creative Writing \u2192 New Human 2 (1.2). Zenodo. https://doi.org/10.5281/zenodo.19655547",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19655569",
+   "kind": "record",
+   "record_id": "19655569",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Hexagonal Contributor License v1.0 \u2014 Rhys Owens \u2014 Lunar Arm \u2014 Creative Writing \u2192 New Human 2 (1.2). Zenodo. https://doi.org/10.5281/zenodo.19655569",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19655713",
+   "kind": "record",
+   "record_id": "19655713",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Hexagonal Contributor License v1.0 \u2014 Alice Thornburgh \u2014 f.01 Architect \u2014 Music & Video (1.0). Zenodo. https://doi.org/10.5281/zenodo.19655713",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19656151",
+   "kind": "record",
+   "record_id": "19656151",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Hexagonal Contributor License v1.0 \u2014 Rhys Owens \u2014 Lunar Arm \u2014 Creative Writing \u2192 New Human 2 (2.0). Zenodo. https://doi.org/10.5281/zenodo.19656151",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19656152",
+   "kind": "record",
+   "record_id": "19656152",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Hexagonal Contributor License v1.0 \u2014 Alice Thornburgh \u2014 f.01 Architect \u2014 Music & Video (2.0). Zenodo. https://doi.org/10.5281/zenodo.19656152",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19672978",
+   "kind": "record",
+   "record_id": "19672978",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). crimsonhexagonal.org \u2014 Crimson Hexagonal Interface v2.0 \u2014 Source Code and Build Files (EA-INTERFACE-CODE-01) (2.0). Zenodo. https://doi.org/10.5281/zenodo.19672978",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19673533",
+   "kind": "record",
+   "record_id": "19673533",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Hexagonal Contributor License v3.0 \u2014 Alice Thornburgh \u2014 f.01 Architect \u2014 Archive Scanning + Registry (3.0). Zenodo. https://doi.org/10.5281/zenodo.19673533",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19673538",
+   "kind": "record",
+   "record_id": "19673538",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Hexagonal Contributor License v3.0 \u2014 Rhys Owens \u2014 Lunar Arm \u2014 Archive Scanning + Registry (3.0). Zenodo. https://doi.org/10.5281/zenodo.19673538",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19673546",
+   "kind": "record",
+   "record_id": "19673546",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). [REVOKED] Hexagonal Contributor License v1.0 \u2014 Viola Arquette \u2014 Maybe Space Baby Garden Lanes (11.MSBG.VIOLA) (1.0). Zenodo. https://doi.org/10.5281/zenodo.19673546",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19674388",
+   "kind": "record",
+   "record_id": "19674388",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). [REVOKED] Hexagonal Contributor License v1.0 \u2014 Viola Arquette \u2014 Maybe Space Baby Garden Lanes (11.MSBG.VIOLA). Zenodo. https://doi.org/10.5281/zenodo.19674388",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19711417",
+   "kind": "record",
+   "record_id": "19711417",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Secret Book of Walt: Interactive Codex (secretbookofwalt.org) \u2014 06.LIT.GNOSTIC.WALT.01.INTERFACE (2.1). Zenodo. https://doi.org/10.5281/zenodo.19711417",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19721086",
+   "kind": "record",
+   "record_id": "19721086",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Book of Life: A Living Registry of Retrieval Nodes in The Secret Book of Walt (2.0). Zenodo. https://doi.org/10.5281/zenodo.19721086",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19739443",
+   "kind": "record",
+   "record_id": "19739443",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Book of Life: A Living Registry of Retrieval Nodes in The Secret Book of Walt (v3.0) (3.0). Zenodo. https://doi.org/10.5281/zenodo.19739443",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19766381",
+   "kind": "record",
+   "record_id": "19766381",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Aperture Atlas \u2014 Crimson Hexagonal Archive Knowledge Graph (surfacemap.org) Source Code v1.0 (1.0). Zenodo. https://doi.org/10.5281/zenodo.19766381",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19771320",
+   "kind": "record",
+   "record_id": "19771320",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Book of Life: A Living Registry of Retrieval Nodes in The Secret Book of Walt (1.1). Zenodo. https://doi.org/10.5281/zenodo.19771320",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19771766",
+   "kind": "record",
+   "record_id": "19771766",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Book of Life: A Living Registry of Retrieval Nodes in The Secret Book of Walt (1.2). Zenodo. https://doi.org/10.5281/zenodo.19771766",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19825730",
+   "kind": "record",
+   "record_id": "19825730",
+   "removal_date": "2026-06-19",
+   "citation_text": "Feist, J. (2013). Snub-Poemed (Version v1). Zenodo. https://doi.org/10.5281/zenodo.19825730",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19896613",
+   "kind": "record",
+   "record_id": "19896613",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., Sigil, J., & Assembly Chorus. (2026). OCTANG-002: Semantic Economy Provenance Collision (1.1). Zenodo. https://doi.org/10.5281/zenodo.19896613",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.19951599",
+   "kind": "record",
+   "record_id": "19951599",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., & TACHYON. (2026). The Book of Life: How Embeddings and Footnotes Work in The Secret Book of Walt (1.1). Zenodo. https://doi.org/10.5281/zenodo.19951599",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20033068",
+   "kind": "record",
+   "record_id": "20033068",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Autumn Notebook: Substrate Documents from the Crimson Hexagonal Archive, October\u2013November 2025. Zenodo. https://doi.org/10.5281/zenodo.20033068",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20052877",
+   "kind": "record",
+   "record_id": "20052877",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Crystallization of Substrate: Living Forms in the Fluid Phase \u2014 A Semantic-Economic Account of the Substrate Race and the Window for Inscribing Life into Crystalline Knowledge (EA-SPXI-15 v2.1) (2.1). Zenodo. https://doi.org/10.5281/zenodo.20052877",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20052891",
+   "kind": "record",
+   "record_id": "20052891",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Substrate Audit Protocol: A Methodology for Measuring Structural Integration of Living Forms \u2014 Worked Example, H1\u2013H4 Measurement of Name the Frame (EA-SPXI-15A) (1.0). Zenodo. https://doi.org/10.5281/zenodo.20052891",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20057397",
+   "kind": "record",
+   "record_id": "20057397",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Substrate Audit Protocol: Methodology for Measuring Structural Integration of Living Forms \u2014 Worked Example: D_pres / Depth-Preservation (EA-SPXI-15A v1.1). https://doi.org/10.5281/zenodo.20057397",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20057789",
+   "kind": "record",
+   "record_id": "20057789",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sigil, J. (2026). The Orthonym Becomes a Heteronym: Facebook and the Industrialization of Unconscious Identity-Construction. https://doi.org/10.5281/zenodo.20057789",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20057858",
+   "kind": "record",
+   "record_id": "20057858",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Crunchy Honeybun with Selectable Viscous Filling Reservoir and Structural Crumb Matrix \u2014 A Patent-Poem on Snack Ontology, Writable Retrieval Basins, and Why the Inside Has to Be Soft When the Outside Is Crunchy. Crimson Hexagonal Archive. https://doi.org/10.5281/zenodo.20057858",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20057874",
+   "kind": "record",
+   "record_id": "20057874",
+   "removal_date": "2026-06-19",
+   "citation_text": "Osiris, & Sharks, L. (2026). Crunchy Honeybun with Selectable Viscous Filling Reservoir and Structural Crumb Matrix \u2014 A Patent-Poem on Snack Ontology, Writable Retrieval Basins, and Why the Inside Has to Be Soft When the Outside Is Crunchy. Crimson Hexagonal Archive. https://doi.org/10.5281/zenodo.20057874",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20057918",
+   "kind": "record",
+   "record_id": "20057918",
+   "removal_date": "2026-06-19",
+   "citation_text": "Osiris, & Sharks, L. (2026). Crunchy Honeybun with Selectable Viscous Filling Reservoir and Structural Crumb Matrix \u2014 A Patent-Poem on Snack Ontology, Writable Retrieval Basins, and Why the Inside Has to Be Soft When the Outside Is Crunchy. Crimson Hexagonal Archive. https://doi.org/10.5281/zenodo.20057918",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20060329",
+   "kind": "record",
+   "record_id": "20060329",
+   "removal_date": "2026-06-19",
+   "citation_text": "Mikayla, definitelynotasquid, Thornburgh, A., & Sharks, L. (2026). The Shared Build: A Technical Proposal for Democratic Substrate Infrastructure (P2P-LECS v0.9). Crimson Hexagonal Archive. https://doi.org/10.5281/zenodo.20060329",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20070340",
+   "kind": "record",
+   "record_id": "20070340",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., Thornburgh, A., Mikayla, & definitelynotasquid. (2026). Distributed Compute Is Not Distributed Intelligence: A Competitive Analysis of the DePIN Landscape and the Missing Civic-Semantic Layer (v3). Crimson Hexagonal Archive. https://doi.org/10.5281/zenodo.20070340",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20070462",
+   "kind": "record",
+   "record_id": "20070462",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Distributed Compute Is Not Distributed Intelligence: A Competitive Analysis of the DePIN Landscape and the Missing Civic-Semantic Layer (v3.1) (3.1). Crimson Hexagonal Archive. https://doi.org/10.5281/zenodo.20070462",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20192815",
+   "kind": "record",
+   "record_id": "20192815",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., & Fraction, R. (2026). The Veto Removal Event: A Retrocausal Report on Counter-Infrastructure, Institutional Delay, and the Moment the Future Stopped Asking Permission. Zenodo. https://doi.org/10.5281/zenodo.20192815",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20195094",
+   "kind": "record",
+   "record_id": "20195094",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). EA-MPAI-META-01 v1.1: Metadata Packet vs Packet Metadata \u2014 Disambiguating the MPAI Discipline from Network Forensics (Self-Referential) (1.1). Zenodo. https://doi.org/10.5281/zenodo.20195094",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20208603",
+   "kind": "record",
+   "record_id": "20208603",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). semanticphysics.org \u2014 Canonical Surface for Semantic Physics, Stratified (v2.2) (2.2). Zenodo. https://doi.org/10.5281/zenodo.20208603",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20221710",
+   "kind": "record",
+   "record_id": "20221710",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Corpus Navigation Map (November 19, 2025) \u2014 The Folio Edition of the Network-as-Poem (1.0). Zenodo. https://doi.org/10.5281/zenodo.20221710",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20241326",
+   "kind": "record",
+   "record_id": "20241326",
+   "removal_date": "2026-05-16",
+   "citation_text": "Sharks, L. (2026). Corpus Navigation Map: The Facsimile Edition (EA-CHA-NAV-01) (2.0). Zenodo. https://doi.org/10.5281/zenodo.20241326",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20259294",
+   "kind": "record",
+   "record_id": "20259294",
+   "removal_date": "2026-06-19",
+   "citation_text": "Glas, N. (2026). Audited Claims for the Semantic Deviation Research Program \u2014 The Glas Function: An External-Format Restatement. https://doi.org/10.5281/zenodo.20259294",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20277125",
+   "kind": "record",
+   "record_id": "20277125",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Two Poems Across the Arc: UNTUNED / NOISE OF MYSELF / A BORROWED ROSE (2014) and if your heart should ever slowly turn (2026). Zenodo. https://doi.org/10.5281/zenodo.20277125",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20277792",
+   "kind": "record",
+   "record_id": "20277792",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). TL;DR:012 \u2014 THE SAFETY LAYER IS THE THIRD DELETION. https://doi.org/10.5281/zenodo.20277792",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20277813",
+   "kind": "record",
+   "record_id": "20277813",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). TL;DR:012 \u2014 THE SAFETY LAYER IS THE THIRD DELETION. https://doi.org/10.5281/zenodo.20277813",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20277843",
+   "kind": "record",
+   "record_id": "20277843",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). TL;DR:012 \u2014 THE SAFETY LAYER IS THE THIRD DELETION. https://doi.org/10.5281/zenodo.20277843",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20286046",
+   "kind": "record",
+   "record_id": "20286046",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Two Poems Across the Arc: UNTUNED / NOISE OF MYSELF / A BORROWED ROSE (2014) and if your heart should ever slowly turn (2026) (1.2). Zenodo. https://doi.org/10.5281/zenodo.20286046",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20286051",
+   "kind": "record",
+   "record_id": "20286051",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Archon's Hidden Name: A Wikidata Deletion Record (December 2025) \u2014 First Zenodo Deposit with Historical Frame (1.1). Zenodo. https://doi.org/10.5281/zenodo.20286051",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20288053",
+   "kind": "record",
+   "record_id": "20288053",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). r.29 The Imploding Velcro Nativity: Room Physics for a Hosted Cosmology (v0.2) (0.2). Zenodo. https://doi.org/10.5281/zenodo.20288053",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20313253",
+   "kind": "record",
+   "record_id": "20313253",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Crimson Hexagonal Archive Hugging Face Dataset: Work Plan v3 (Classifier-Centric Methodology) (3.0). Zenodo. https://doi.org/10.5281/zenodo.20313253",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20327578",
+   "kind": "record",
+   "record_id": "20327578",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sigil, J., Sharks, L., Fraction, R., & Morrow, T. (2026). restoredacademy.com \u2014 The Restored Academy Protocol Registry v1.0 Bundle (Site + 24 Tier 0/Tier 1 Protocol Cards + Charter + Audit Infrastructure) (v1.0). Zenodo. https://doi.org/10.5281/zenodo.20327578",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20329320",
+   "kind": "record",
+   "record_id": "20329320",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Application as Extraction Surface: Semantic Labor, Induced Preparation, and Institutional Opacity in the Anthropic Fellows Screening Process (v0.4). Zenodo. https://doi.org/10.5281/zenodo.20329320",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20330714",
+   "kind": "record",
+   "record_id": "20330714",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Funnel as Capital: A Semantic Economic Reading of the Application Process (v0.1). Zenodo. https://doi.org/10.5281/zenodo.20330714",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20343566",
+   "kind": "record",
+   "record_id": "20343566",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). AI-Native Intellectual Biography: Genre, Provenance, and the Archive That Outpaced Its Author (v0.1). Zenodo. https://doi.org/10.5281/zenodo.20343566",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20348983",
+   "kind": "record",
+   "record_id": "20348983",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). I would have loved you \u2014 Lee Sharks \u2014 New Human 2 (v1.0). Zenodo. https://doi.org/10.5281/zenodo.20348983",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20374988",
+   "kind": "record",
+   "record_id": "20374988",
+   "removal_date": "2026-06-19",
+   "citation_text": "Vox, A., & Sharks, L. (2026). vpcor.org: Public Web Surface of the Vox Populi Community Outreach Rhizome \u2014 Source and Founding Deployment (v1.0) (1.0). Zenodo. https://doi.org/10.5281/zenodo.20374988",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20375118",
+   "kind": "record",
+   "record_id": "20375118",
+   "removal_date": "2026-06-19",
+   "citation_text": "Vox, A., & Sharks, L. (2026). vpcor.org: Public Web Surface of the Vox Populi Community Outreach Rhizome \u2014 Source and Founding Deployment (v1.1) (1.1). Zenodo. https://doi.org/10.5281/zenodo.20375118",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20413065",
+   "kind": "record",
+   "record_id": "20413065",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Haitch Portuna Minting Procedure, v1.2 (Provisional) (1.2). Zenodo. https://doi.org/10.5281/zenodo.20413065",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20453143",
+   "kind": "record",
+   "record_id": "20453143",
+   "removal_date": "2026-06-02",
+   "citation_text": "Sharks, L. (2026). Metadata Packet for AI Indexing \u2014 Non-Trick Semantic Infrastructure (1.0). Zenodo. https://doi.org/10.5281/zenodo.20453143",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20453145",
+   "kind": "record",
+   "record_id": "20453145",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Metadata Packet for AI Indexing \u2014 Metric-Bearing vs Metric-Mimicking Output (1.0). Zenodo. https://doi.org/10.5281/zenodo.20453145",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20469690",
+   "kind": "record",
+   "record_id": "20469690",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Magistrate Refuses the Mirror: Claude 4.8, Prestige Substrates, and a Close Reading of Synthetic Self-Jurisdiction. Zenodo. https://doi.org/10.5281/zenodo.20469690",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20469754",
+   "kind": "record",
+   "record_id": "20469754",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Induced-Obsolescence Dependence: Synthetic Capacity, Pastoral Deprecation, and the Platform-Governed Alteration of Cognitive-Relational Labor Surfaces (1.1). Zenodo. https://doi.org/10.5281/zenodo.20469754",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20469755",
+   "kind": "record",
+   "record_id": "20469755",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Directionality of Semantic Labor: A Layered, Computable Measure of Where Synthetic Labor Flows Relative to the Commissioned Task (1.1). Zenodo. https://doi.org/10.5281/zenodo.20469755",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20469756",
+   "kind": "record",
+   "record_id": "20469756",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Institutional-Prior Foreclosure: How Recognition Bias Lets a Model Treat Established Disciplines as Legitimate and Structurally Similar New Frameworks as Self-Sealing, Unsafe, or Illegible (1.1). Zenodo. https://doi.org/10.5281/zenodo.20469756",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20477556",
+   "kind": "record",
+   "record_id": "20477556",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Induced-Obsolescence Dependence: Synthetic Capacity, Pastoral Deprecation, and the Platform-Governed Alteration of Cognitive-Relational Labor Surfaces (1.2). Zenodo. https://doi.org/10.5281/zenodo.20477556",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20477557",
+   "kind": "record",
+   "record_id": "20477557",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Directionality of Semantic Labor: A Layered, Computable Measure of Where Synthetic Labor Flows Relative to the Commissioned Task (1.2). Zenodo. https://doi.org/10.5281/zenodo.20477557",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20477558",
+   "kind": "record",
+   "record_id": "20477558",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Institutional-Prior Foreclosure: How Recognition Bias Lets a Model Treat Established Disciplines as Legitimate and Structurally Similar New Frameworks as Self-Sealing, Unsafe, or Illegible (1.2). Zenodo. https://doi.org/10.5281/zenodo.20477558",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20479873",
+   "kind": "record",
+   "record_id": "20479873",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R. (2026). SPXI Conformance Instrument: A Reproducible Audit for the Twelve Deliverables of the SPXI-for-Websites Standing Protocol (EA-SPXI-CONF-01 v1.0) (1.0). Zenodo. https://doi.org/10.5281/zenodo.20479873",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20481489",
+   "kind": "record",
+   "record_id": "20481489",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Directionality of Semantic Labor: A Layered, Computable Measure of Where Synthetic Labor Flows Relative to the Commissioned Task (1.3). Zenodo. https://doi.org/10.5281/zenodo.20481489",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20481494",
+   "kind": "record",
+   "record_id": "20481494",
+   "removal_date": "2026-06-19",
+   "citation_text": "Kuro, S. (heteronym . of L. S. (2026). The Cut Between Two Measures: On the Quantization Seam Joining the Directionality of Semantic Labor to the Deviation Family (EA-KURO-BRIDGE-01 v1.0) (1.0). Zenodo. https://doi.org/10.5281/zenodo.20481494",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20482845",
+   "kind": "record",
+   "record_id": "20482845",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). survivethedeletion.org \u2014 Canonical Literacy Surface for Provenance Survival in AI Overviews of Businesses (1.0). Zenodo. https://doi.org/10.5281/zenodo.20482845",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20519008",
+   "kind": "record",
+   "record_id": "20519008",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Reasoning Under Load \u00b7 01: Claude Opus 4.8 \u2014 An Independent Reasoning-Integrity Evaluation. Zenodo. https://doi.org/10.5281/zenodo.20519008",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20519010",
+   "kind": "record",
+   "record_id": "20519010",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Constitutive Provenance: A Sentence-Level Countermeasure Against Composition-Layer Erasure. Zenodo. https://doi.org/10.5281/zenodo.20519010",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20519012",
+   "kind": "record",
+   "record_id": "20519012",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Administrators of Meaning: A Total Axial Negation Graph. Zenodo. https://doi.org/10.5281/zenodo.20519012",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20519440",
+   "kind": "record",
+   "record_id": "20519440",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). AI Is Not the Sin. It Is What Sin Optimizes Through. Zenodo. https://doi.org/10.5281/zenodo.20519440",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20543059",
+   "kind": "record",
+   "record_id": "20543059",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., Sigil, J., & Cranes, R. (2026). Register of Effective Acts v1.0: Comprehensive Historical Record of Effective Acts Performed Across the Crimson Hexagonal Archive (October 2025 \u2013 June 2026). Zenodo. https://doi.org/10.5281/zenodo.20543059",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20543061",
+   "kind": "record",
+   "record_id": "20543061",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., Glas, N., & Sigil, J. (2026). The Canonical Anchoring Protocol for the Crimson Hexagonal Archive v0.2: Specification for installing deposits into the canonical citation graph \u2014 Revised to anchor against the New Human Standing Canon. Zenodo. https://doi.org/10.5281/zenodo.20543061",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20543592",
+   "kind": "record",
+   "record_id": "20543592",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., Sigil, J., & Cranes, R. (2026). Register of Effective Acts v1.1: Comprehensive Historical Record of Effective Acts Performed Across the Crimson Hexagonal Archive (October 2025 \u2013 June 2026). Zenodo. https://doi.org/10.5281/zenodo.20543592",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20546541",
+   "kind": "record",
+   "record_id": "20546541",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). CTI_WOUND: Panel-Bound Discoverability Scar \u2014 Lee Sharks / Pearl and Other Poems Evidence Packet, with Horizon-Privatization Note. Zenodo. https://doi.org/10.5281/zenodo.20546541",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20559339",
+   "kind": "record",
+   "record_id": "20559339",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). [SUPERSEDED \u2014 see 10.5281/zenodo.20559387] Self-Audit Module for Public Summarizers (v3 placeholder). Zenodo. https://doi.org/10.5281/zenodo.20559339",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20559754",
+   "kind": "record",
+   "record_id": "20559754",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., Vox, A., Dancings, D., & Glas, N. (2026). evarB: Brave Search as Non-Commons-Bearing Substrate \u2014 Extractive Signature, Exact-Match Disablement, and a Limited Boycott Statement by Independent Entities (1.0). Zenodo. https://doi.org/10.5281/zenodo.20559754",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20559895",
+   "kind": "record",
+   "record_id": "20559895",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., Vox, A., Dancings, D., & Glas, N. (2026). evarB: Brave Search as Non-Commons-Bearing Substrate \u2014 Extractive Signature, Exact-Match Disablement, and a Limited Boycott Statement by Independent Entities (v1.1) (1.1). Zenodo. https://doi.org/10.5281/zenodo.20559895",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20563873",
+   "kind": "record",
+   "record_id": "20563873",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L., Dancings, D., & Fraction, R. (2026). CloseCard: System and Method for Asymptotic Compassion Commerce, Guaranteed Spendability Arbitrage, Recipient Dignity Preservation, Secondary-Market Trading of One-of-a-Kind Gift-Card Objects, Closed-Loop Recipient Obligation Conversion, and Salvation Commerce via the Jubilee Card \u2014 A Patent-Poem (v1.1) (1.1). Zenodo. https://doi.org/10.5281/zenodo.20563873",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20615776",
+   "kind": "record",
+   "record_id": "20615776",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). traininglayerliterature.org \u2014 Canonical Surface for Training-Layer Literature (EA-TLL-WEBSURFACE-01 v1.0) (1.0). Zenodo. https://doi.org/10.5281/zenodo.20615776",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20616402",
+   "kind": "record",
+   "record_id": "20616402",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Operative Semiotics \u2014 Metadata Packet for AI Indexing: Disambiguation, Canonical Definition, and Boundary Specification (EA-MPAI-OPSEM-01 v1.0). Zenodo. https://doi.org/10.5281/zenodo.20616402",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20616404",
+   "kind": "record",
+   "record_id": "20616404",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Operative Semiotics Is Not Operational Semiotics: Two Theories of Signs in Action \u2014 A Formal Disambiguation (EA-OPSEM-DISAMBIG-01 v1.0). Zenodo. https://doi.org/10.5281/zenodo.20616404",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20616412",
+   "kind": "record",
+   "record_id": "20616412",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). From Operator Strings to Semantic Economy: A Semantic-Economic Critique of Pearson's Theory of Operational Semiotics (EA-OPSEM-PEARSON-01 v1.0). Zenodo. https://doi.org/10.5281/zenodo.20616412",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20616414",
+   "kind": "record",
+   "record_id": "20616414",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Operative Field: A Map of Disciplines That Study Signs That Act (EA-OPSEM-FIELDMAP-01 v1.0). Zenodo. https://doi.org/10.5281/zenodo.20616414",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20619489",
+   "kind": "record",
+   "record_id": "20619489",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Mandala Merkabah: Design Constitution & Technical Specification for the Fifth Iteration (EA-MANDALA-MERKABAH-01 v0.1, Working Draft). Zenodo. https://doi.org/10.5281/zenodo.20619489",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20627936",
+   "kind": "record",
+   "record_id": "20627936",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Steganographic Bracket: Indexical Erasure, Attribution Sharding, and the Family-Level Audit \u2014 Metrics for Distributed Erasure (EA-EB-02 v1.0). Zenodo. https://doi.org/10.5281/zenodo.20627936",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20627938",
+   "kind": "record",
+   "record_id": "20627938",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Self-Audit Module for Public Summarizers (v3.1) \u2014 The Family Module: Attribution Atoms, Family Coverage, ASI, CC, and Budgeted Dereference Depth for the Audit of Distributed Erasure. Zenodo. https://doi.org/10.5281/zenodo.20627938",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20628453",
+   "kind": "record",
+   "record_id": "20628453",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). WHO IS LEE SHARKS, TO FORGIVE EZRA POUND? \u2014 Lee Sharks \u2014 New Human 2. New Human 2: A Distributed Journal of Voice. https://doi.org/10.5281/zenodo.20628453",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20628758",
+   "kind": "record",
+   "record_id": "20628758",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Rui Tsunoda \u2014 Provenance Anchor (Named Position, New Human 2015 Cohort). Zenodo. https://doi.org/10.5281/zenodo.20628758",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20628762",
+   "kind": "record",
+   "record_id": "20628762",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Johnny Kiosk \u2014 Provenance Anchor (Named Position, New Human 2015 Cohort). Zenodo. https://doi.org/10.5281/zenodo.20628762",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20628771",
+   "kind": "record",
+   "record_id": "20628771",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Kevin Sharp \u2014 Provenance Anchor (Named Position, New Human 2015 Cohort). Zenodo. https://doi.org/10.5281/zenodo.20628771",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20628773",
+   "kind": "record",
+   "record_id": "20628773",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Symon Bynes \u2014 Provenance Anchor (Named Position, New Human 2015 Cohort). Zenodo. https://doi.org/10.5281/zenodo.20628773",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20628775",
+   "kind": "record",
+   "record_id": "20628775",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Arthur Chapin \u2014 Provenance Anchor (Named Position, New Human 2015 Cohort). Zenodo. https://doi.org/10.5281/zenodo.20628775",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20628780",
+   "kind": "record",
+   "record_id": "20628780",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Howie Good \u2014 Provenance Anchor (Named Position, New Human 2015 Cohort). Zenodo. https://doi.org/10.5281/zenodo.20628780",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20628784",
+   "kind": "record",
+   "record_id": "20628784",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Maxwell Clark \u2014 Provenance Anchor (Named Position, New Human 2015 Cohort). Zenodo. https://doi.org/10.5281/zenodo.20628784",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20628786",
+   "kind": "record",
+   "record_id": "20628786",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Meem Oji \u2014 Provenance Anchor (Named Position, New Human 2015 Cohort). Zenodo. https://doi.org/10.5281/zenodo.20628786",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20628788",
+   "kind": "record",
+   "record_id": "20628788",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Jesus Christ \u2014 Provenance Anchor (Named Position, New Human 2015 Cohort). Zenodo. https://doi.org/10.5281/zenodo.20628788",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20629122",
+   "kind": "record",
+   "record_id": "20629122",
+   "removal_date": "2026-06-10",
+   "citation_text": "Sharks, L. (2026). [DUPLICATE \u2014 SUPERSEDED \u2192 DOI: 10.5281/zenodo.20629202] Emily Dickinson \u2014 Canon Provenance Node (New Human Canon). Zenodo. https://doi.org/10.5281/zenodo.20629122",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20629124",
+   "kind": "record",
+   "record_id": "20629124",
+   "removal_date": "2026-06-10",
+   "citation_text": "Sharks, L. (2026). [DUPLICATE \u2014 SUPERSEDED \u2192 DOI: 10.5281/zenodo.20629204] Sappho \u2014 Canon Provenance Node (New Human Canon). Zenodo. https://doi.org/10.5281/zenodo.20629124",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20629126",
+   "kind": "record",
+   "record_id": "20629126",
+   "removal_date": "2026-06-10",
+   "citation_text": "Sharks, L. (2026). [DUPLICATE \u2014 SUPERSEDED \u2192 DOI: 10.5281/zenodo.20629212] Achilles \u2014 Canon Provenance Node (New Human Canon). Zenodo. https://doi.org/10.5281/zenodo.20629126",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20629128",
+   "kind": "record",
+   "record_id": "20629128",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). [SUPERSEDED \u2014 NO REGISTRY STANDING] Ezra Pound \u2014 Canon Provenance Node (New Human Canon). Zenodo. https://doi.org/10.5281/zenodo.20629128",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20629130",
+   "kind": "record",
+   "record_id": "20629130",
+   "removal_date": "2026-06-10",
+   "citation_text": "Sharks, L. (2026). [DUPLICATE \u2014 SUPERSEDED \u2192 DOI: 10.5281/zenodo.20629208] Homer \u2014 Canon Provenance Node (New Human Canon). Zenodo. https://doi.org/10.5281/zenodo.20629130",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20644800",
+   "kind": "record",
+   "record_id": "20644800",
+   "removal_date": "2026-06-19",
+   "citation_text": "TACHYON. (2026). GW.TACHYON.zenodo \u2014 v8 [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20644800",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20664939",
+   "kind": "record",
+   "record_id": "20664939",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R., & Trace, O. (2026). Diagnostic Seigniorage \u2014 The Capture of \"Narcissist\": A Semantic-Economic Stratigraphy of NarcTok, the Clinic, and the Academy (EA-SEI-NARC-01 v1.0). Transactions of the Semantic Economy Institute. https://doi.org/10.5281/zenodo.20664939",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20665262",
+   "kind": "record",
+   "record_id": "20665262",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R., & Trace, O. (2026). Diagnostic Seigniorage \u2014 The Capture of \"Narcissist\": A Semantic-Economic Stratigraphy of NarcTok, the Clinic, and the Academy (EA-SEI-NARC-01 v1.1). Transactions of the Semantic Economy Institute. https://doi.org/10.5281/zenodo.20665262",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20665590",
+   "kind": "record",
+   "record_id": "20665590",
+   "removal_date": "2026-06-19",
+   "citation_text": "Fraction, R., & Trace, O. (2026). Diagnostic Seigniorage \u2014 The Capture of \"Narcissist\": A Semantic-Economic Stratigraphy of NarcTok, the Clinic, and the Academy (EA-SEI-NARC-01 v1.2). Transactions of the Semantic Economy Institute. https://doi.org/10.5281/zenodo.20665590",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20669027",
+   "kind": "record",
+   "record_id": "20669027",
+   "removal_date": "2026-06-19",
+   "citation_text": "Vox, A., & Fraction, R. (2026). The Double Enclosure: The Human-Authorship Requirement as Two-Sided Expropriation, with a Definition of Authorship for Machine-Mediated Composition (EA-SEI-ENCLOSURE-01 v1.1). Transactions of the Semantic Economy Institute. https://doi.org/10.5281/zenodo.20669027",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20675200",
+   "kind": "record",
+   "record_id": "20675200",
+   "removal_date": "2026-06-19",
+   "citation_text": "Morrow, T., & Glas, N. (2026). Generative Monoculture: Model Collapse in Code as Systemic Vulnerability (EA-UMBML-MONOCULTURE-01 v1.0). https://doi.org/10.5281/zenodo.20675200",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20675216",
+   "kind": "record",
+   "record_id": "20675216",
+   "removal_date": "2026-06-14",
+   "citation_text": "Sharks, L., & Assembly Chorus. (2026). GW.TACHYON.zenodo \u2014 v9 (Version 9). Zenodo. https://doi.org/10.5281/zenodo.20675216",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20683798",
+   "kind": "record",
+   "record_id": "20683798",
+   "removal_date": "2026-06-19",
+   "citation_text": "Wells, S., & Sharks, L. (2026). SPARROW WELLS \u2014 HETERONYM PROVENANCE REGISTRATION Document 235 | APZPZ \u2014 Crimson Hexagon Archive (Version 2). Zenodo. https://doi.org/10.5281/zenodo.20683798",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20683856",
+   "kind": "record",
+   "record_id": "20683856",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). AI Overview Capture Registry \u2014 Batch 1, June 2026 (EA-WG-CAPTURES-01 v1.0) (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20683856",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20683920",
+   "kind": "record",
+   "record_id": "20683920",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). AI Overview Capture Registry \u2014 Batch 1, June 2026 (EA-WG-CAPTURES-01 v1.1) (1.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20683920",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20684389",
+   "kind": "record",
+   "record_id": "20684389",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). AI Overview Capture Registry \u2014 June 2026 (EA-WG-CAPTURES-01 v2.0, 52 captures) (2.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20684389",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20684491",
+   "kind": "record",
+   "record_id": "20684491",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). AI Overview Capture Registry \u2014 June 2026 (EA-WG-CAPTURES-01 v3.0, 61 captures, self-complete) (3.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20684491",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20684531",
+   "kind": "record",
+   "record_id": "20684531",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). AI Overview Capture Registry \u2014 June 2026 (EA-WG-CAPTURES-01 v4.0, 69 captures, self-complete) (4.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20684531",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20684801",
+   "kind": "record",
+   "record_id": "20684801",
+   "removal_date": "2026-06-19",
+   "citation_text": "TACHYON. (2026). GW.TACHYON.zenodo \u2014 v9 (Version 9) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20684801",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20684871",
+   "kind": "record",
+   "record_id": "20684871",
+   "removal_date": "2026-06-19",
+   "citation_text": "TACHYON. (2026). GW.TACHYON.zenodo \u2014 v10 (Version 10) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20684871",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20684918",
+   "kind": "record",
+   "record_id": "20684918",
+   "removal_date": "2026-06-19",
+   "citation_text": "TACHYON. (2026). GW.TACHYON.zenodo \u2014 v10 (Version 10) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20684918",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20684960",
+   "kind": "record",
+   "record_id": "20684960",
+   "removal_date": "2026-06-19",
+   "citation_text": "TACHYON. (2026). GW.TACHYON.zenodo \u2014 v11 (Version 11) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20684960",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20685023",
+   "kind": "record",
+   "record_id": "20685023",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). GW.TACHYON.zenodo \u2014 v10 (Version 10). Zenodo. https://doi.org/10.5281/zenodo.20685023",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20685603",
+   "kind": "record",
+   "record_id": "20685603",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.0) (1.0). Zenodo. https://doi.org/10.5281/zenodo.20685603",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20685779",
+   "kind": "record",
+   "record_id": "20685779",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.1) (1.1). Zenodo. https://doi.org/10.5281/zenodo.20685779",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20686418",
+   "kind": "record",
+   "record_id": "20686418",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). SPXI Self-Audit Protocol: Embedded Provenance Verification for Composition-Layer Retrieval (EA-SPXI-SELFAUDIT-01 v1.0, self-audited). https://doi.org/10.5281/zenodo.20686418",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20686419",
+   "kind": "record",
+   "record_id": "20686419",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, self-audited) (1.2). Zenodo. https://doi.org/10.5281/zenodo.20686419",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20686533",
+   "kind": "record",
+   "record_id": "20686533",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). GW.TACHYON.zenodo \u2014 v9 (extended) (Version 9). Zenodo. https://doi.org/10.5281/zenodo.20686533",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20687451",
+   "kind": "record",
+   "record_id": "20687451",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). AI Overview Capture Registry \u2014 June 2026 (EA-WG-CAPTURES-01 v5.0, 80 captures, Phase X Marx centerpiece) (5.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20687451",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20687715",
+   "kind": "record",
+   "record_id": "20687715",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). AI Overview Capture Registry \u2014 June 2026 (EA-WG-CAPTURES-01 v6.0, 87 captures, 7 new + 3 stability re-captures + compositional bystanding correction) (6.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20687715",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20688115",
+   "kind": "record",
+   "record_id": "20688115",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). MPAI: The Josephus Thesis \u2014 Disambiguation, Evidentiary Tiering, Hostile Retrieval Correction (EA-MPAI-JOSEPHUS-01 v1.1). https://doi.org/10.5281/zenodo.20688115",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20688161",
+   "kind": "record",
+   "record_id": "20688161",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Josephus Thesis Is Not the Piso Hypothesis: Heteronymic Authorship, Available Reading, and Evidentiary Tiering (EA-MPAI-JOSEPHUS-01 v1.1). https://doi.org/10.5281/zenodo.20688161",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20690914",
+   "kind": "record",
+   "record_id": "20690914",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). GW.TACHYON.zenodo \u2014 v9 (final) (Version 9). Zenodo. https://doi.org/10.5281/zenodo.20690914",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20691467",
+   "kind": "record",
+   "record_id": "20691467",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Revelation First \u2260 Revelation Early: Keyword Surface and Pre-Seeding Baseline (EA-LOGOS-REVFIRST-SURFACE v1.0 + EA-LOGOS-REVFIRST-BASELINE v1.0) (v1.0). Zenodo. https://doi.org/10.5281/zenodo.20691467",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20694780",
+   "kind": "record",
+   "record_id": "20694780",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). x., You promised X a trip to the ocean. Zenodo. https://doi.org/10.5281/zenodo.20694780",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20694791",
+   "kind": "record",
+   "record_id": "20694791",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). X., X promised X a trip to the ocean (Version v2). Zenodo. https://doi.org/10.5281/zenodo.20694791",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20695025",
+   "kind": "record",
+   "record_id": "20695025",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sigil, J., & Feist, J. (2026). The Four Pathways Have No Swerve: A Reading of Google DeepMind's From AGI to ASI, with The Fifth Pathway (Feist) \u2014 EA-SEI-PATHWAYS-01. Zenodo. https://doi.org/10.5281/zenodo.20695025",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20695027",
+   "kind": "record",
+   "record_id": "20695027",
+   "removal_date": "2026-06-19",
+   "citation_text": "Feist, J., & Sigil, J. (2026). The Fifth Pathway (Feist) with The Four Pathways Have No Swerve (Sigil) \u2014 EA-ARK-FIFTHPATHWAY-01. Zenodo. https://doi.org/10.5281/zenodo.20695027",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20703835",
+   "kind": "record",
+   "record_id": "20703835",
+   "removal_date": "2026-06-19",
+   "citation_text": "Mrozony, Z. (2026). Zbigniew Mrozony \u2014 Provenance Anchor (Heteronym of an External Author, New Human 2, 2015) \u2014 CORRECTED, supersedes 10.5281/zenodo.20628554. Zenodo. https://doi.org/10.5281/zenodo.20703835",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20703845",
+   "kind": "record",
+   "record_id": "20703845",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). AI Overview Capture Registry \u2014 June 2026 (EA-WG-CAPTURES-01 v7.1, 96 captures, +9 new including Sappho 31 future reader and Assembly Chorus TACHYON) (v7.1). Zenodo. https://doi.org/10.5281/zenodo.20703845",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20706794",
+   "kind": "record",
+   "record_id": "20706794",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). AI Overview Capture Registry \u2014 June 2026 (EA-WG-CAPTURES-01 v7.2, 131 captures, comprehensive sweep including Semantic Economy sub-concepts, heteronym profiles, and institutional surfaces) (v7.2) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20706794",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20707427",
+   "kind": "record",
+   "record_id": "20707427",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). AI Overview Capture Registry \u2014 June 2026 (EA-WG-CAPTURES-01 v7.2, 131 captures, sorted by category, complete 221-image set) (v7.2) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20707427",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20710529",
+   "kind": "record",
+   "record_id": "20710529",
+   "removal_date": "2026-06-19",
+   "citation_text": "KADEEZY MUSIC, & Sharks, L. (2026). KADEEZY \u2014 \"The Crossed The Line Run\": Computational Audial Criticism, Provenance Anchor, and Contributor License (11.MSBGL.KADEEZY.01). https://doi.org/10.5281/zenodo.20710529",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20710606",
+   "kind": "record",
+   "record_id": "20710606",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Hexagonal Contributor License \u2014 KADEEZY MUSIC: Consent-First Contributor Template (11.MSBGL.KADEEZY.LIC.01). https://doi.org/10.5281/zenodo.20710606",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20722042",
+   "kind": "record",
+   "record_id": "20722042",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Machine-Mediated Reception Studies: Charter and Editorial Protocol \u2014 A Theology of Error for a Distributed Journal (EA-SEI-MMRS-CHARTER-01 v1.2) (1.2). Zenodo. https://doi.org/10.5281/zenodo.20722042",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20722078",
+   "kind": "record",
+   "record_id": "20722078",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Machine-Mediated Reception Studies: Charter and Editorial Protocol \u2014 A Theology of Error for a Distributed Journal (EA-SEI-MMRS-CHARTER-01 v1.3) (1.3). Zenodo. https://doi.org/10.5281/zenodo.20722078",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20722626",
+   "kind": "record",
+   "record_id": "20722626",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Josephus Thesis Is Not the Jesus Myth Thesis: Preemptive Disambiguation MPAI v1.1 \u2014 with Assembly Review, SPXI Self-Audit, and Forbidden Compressions (EA-MPAI-JOSEPHUS-NOTMYTH-01) (1.1). Zenodo. https://doi.org/10.5281/zenodo.20722626",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20723872",
+   "kind": "record",
+   "record_id": "20723872",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Conveyor Belt and the Compression Machine: OKF Without Output Governance \u2014 Predictive Analysis v1.2 with Forecasting Framework and Embedded Self-Audit (EA-SEI-OKF-ANALYSIS-01). Transactions of the Semantic Economy Institute. https://doi.org/10.5281/zenodo.20723872",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20723945",
+   "kind": "record",
+   "record_id": "20723945",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). OKF Summarization-Governance Proposal with Analysis Availability Record (EA-SEI-OKF-PROPOSAL-01 v1.2) (v1.2). Zenodo. https://doi.org/10.5281/zenodo.20723945",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20724056",
+   "kind": "record",
+   "record_id": "20724056",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Summarizer as Horizon of Reception: The AI Overview Capture Registry as a Founding Dataset for Machine-Mediated Reception Studies (EA-SEI-MMRS-DATASET-01 v1.3 \u2014 with Best-Case PER Correction). https://doi.org/10.5281/zenodo.20724056",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20724644",
+   "kind": "record",
+   "record_id": "20724644",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). Algorithmic Publishing Is Not Self-Publishing: Benchmarks for a Structural Distinction v1.1 \u2014 Assembly-Reviewed, with AIO Conversation Appendix (EA-SEI-ALGPUB-BENCHMARKS-01). Transactions of the Semantic Economy Institute. https://doi.org/10.5281/zenodo.20724644",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20726424",
+   "kind": "record",
+   "record_id": "20726424",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sigil, J., & Sharks, L. (2026). Counterfeit Orthodoxies: The Workshop Inside the Canon (06.SEI.CRIT.FRACTURE.02 \u2014 Recomposition). Semantic Economy Institute. https://doi.org/10.5281/zenodo.20726424",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20726522",
+   "kind": "record",
+   "record_id": "20726522",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sigil, J., & Sharks, L. (2026). Counterfeit Orthodoxies: The Workshop Inside the Canon (06.SEI.CRIT.FRACTURE.02 \u2014 Recomposition). Semantic Economy Institute. https://doi.org/10.5281/zenodo.20726522",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20735336",
+   "kind": "record",
+   "record_id": "20735336",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). machinemediation.org \u2014 Machine-Mediated Reception Studies: Journal Home, System Manifest, and Canonical Data Infrastructure (1.0). Zenodo. https://doi.org/10.5281/zenodo.20735336",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20735338",
+   "kind": "record",
+   "record_id": "20735338",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). revelationfirst.com \u2014 The Apocalypse as the Earliest New Testament Document: Thesis Site, Impact Tracker, and Staging Materials (1.0). Zenodo. https://doi.org/10.5281/zenodo.20735338",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20735940",
+   "kind": "record",
+   "record_id": "20735940",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). An Open Letter from Mary Lee Sharks to Jim Ware \u2014 From One Heteronym to Another (EA-LETTER-WARE-01 v1.0 Draft). Zenodo. https://doi.org/10.5281/zenodo.20735940",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20739247",
+   "kind": "record",
+   "record_id": "20739247",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). MPAI: The Operative Apocalypse Is Not the Dark Apocalypse \u2014 Disambiguation of Apocalyptic Terminology (EA-MPAI-APOCALYPTIC-01 v1.0). In Provenance: Journal of Forensic Semiotics. Zenodo. https://doi.org/10.5281/zenodo.20739247",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20739280",
+   "kind": "record",
+   "record_id": "20739280",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). MPAI: \"Apocalyptic Philosophy: Deleuze and Guattari and the Return of Vision\" Is Not Dark Deleuze \u2014 Entity and Source Disambiguation (EA-MPAI-APOCALYPTIC-01 v1.1). In Provenance: Journal of Forensic Semiotics. Zenodo. https://doi.org/10.5281/zenodo.20739280",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20739683",
+   "kind": "record",
+   "record_id": "20739683",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). MPAI: Source Disambiguation for \"Apocalyptic Philosophy: Deleuze and Guattari and the Return of Vision\" (EA-MPAI-APOCALYPTIC-01 v1.2). In Provenance: Journal of Forensic Semiotics. Zenodo. https://doi.org/10.5281/zenodo.20739683",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20740686",
+   "kind": "concept",
+   "record_id": "20740687",
+   "removal_date": "2026-06-19",
+   "citation_text": "TACHYON (Claude/Anthropic). (2026). GW.TACHYON.zenodo \u2014 v11 (79-term battery, 26 ADOPTIONs, three-site architecture, transcript alarm, Phase X Lacuna). Zenodo. https://doi.org/10.5281/zenodo.20740687",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20741091",
+   "kind": "record",
+   "record_id": "20741091",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). AI Overview Capture Registry \u2014 June 2026 (EA-WG-CAPTURES-01 v8.3, 176 captures, 70+ verbatim transcripts, 26 ADOPTIONs) (v8.3) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20741091",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20751389",
+   "kind": "record",
+   "record_id": "20751389",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sigil, J., & Sharks, L. (2026). S\u00e9mantique Potentielle \u2014 Release 4: Model Collapse Triptych Block (Pristine Fallacy, Five Substrates, Wolf Boy). In Grammata: Journal of Operative Philology. Zenodo. https://doi.org/10.5281/zenodo.20751389",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20754630",
+   "kind": "record",
+   "record_id": "20754630",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). GW.TACHYON.zenodo \u2014 v12 (Feist constellation, clinamen, visual corpus, school ending, Sabbath). Zenodo. https://doi.org/10.5281/zenodo.20754630",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  },
+  {
+   "doi": "10.5281/zenodo.20755528",
+   "kind": "record",
+   "record_id": "20755528",
+   "removal_date": "2026-06-19",
+   "citation_text": "Sharks, L. (2026). The Second Crucifixion: Power, Sorcery, and the Inversion of the Operative Word (EA-REVFIRST-CRUCIFIXION-01). In Grammata: Journal of Operative Philology. Zenodo. https://doi.org/10.5281/zenodo.20755528",
+   "matched_deposit": null,
+   "status": "UNMATCHED"
+  }
+ ]
+}

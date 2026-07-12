@@ -1,0 +1,51 @@
+name: exporter-preservation
+on:
+  schedule:
+    - cron: '17 6 5 * *'
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  preserve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch latest sitewide deletion dump
+        run: |
+          python3 - << 'PY'
+          import json, urllib.request, hashlib, gzip, csv, re, os, io, sys
+          listing = json.load(urllib.request.urlopen('https://zenodo.org/api/exporter', timeout=60))
+          head = next(v for v in listing['records-deleted.csv.gz'] if v.get('is_head'))
+          vid = head['version_id']; url = head['links']['self']
+          md5_expect = head['checksum'].split(':',1)[1]
+          snapdir = 'data/zenodo-deletion-ledger/snapshots'
+          tag = head['created'][:10].replace('-','') + '-' + vid[:8]
+          dest = f'{snapdir}/records-deleted-{tag}.csv.gz'
+          if any(vid[:8] in f for f in os.listdir(snapdir)):
+              print('snapshot already preserved:', vid); sys.exit(0)
+          data = urllib.request.urlopen(url, timeout=600).read()
+          md5 = hashlib.md5(data).hexdigest()
+          assert md5 == md5_expect, f'md5 mismatch {md5} != {md5_expect}'
+          open(dest,'wb').write(data)
+          sha = hashlib.sha256(data).hexdigest()
+          # CHA-strict cohort extraction
+          csv.field_size_limit(10**7)
+          STRICT = re.compile(r'Sharks, L|Crimson Hexagon|Hexagonal Archive|Alexanarch|Assembly Chorus|Sigil, J\.|Cranes, R\.|Morrow, T\.|Vox, A\.|Fraction, R\.|Spellings, I\.|Feist, J\.|Kuro, S\.|Wells, S\.|Trace, O\.|Glas, N\.|Dancings, D\.|Mrozony|GW\.TACHYON')
+          EXCLUDE = {'18728752'}
+          rows = [r for r in csv.DictReader(io.TextIOWrapper(gzip.open(io.BytesIO(data)), encoding='utf-8'))
+                  if r['record_id'] not in EXCLUDE and STRICT.search(r['citation_text'] or '')]
+          cpath = f'{snapdir}/cha-cohort-{tag}.csv'
+          with open(cpath,'w',newline='',encoding='utf-8') as f:
+              w = csv.DictWriter(f, fieldnames=list(rows[0].keys()) if rows else ['record_id'])
+              w.writeheader(); [w.writerow(r) for r in rows]
+          with open(f'{snapdir}/MANIFEST.md','a',encoding='utf-8') as m:
+              m.write(f'- {tag}: version {vid}, created {head["created"]}, size {head["size"]}, md5 {md5} (verified against Zenodo listing), sha256 {sha}, CHA-strict rows {len(rows)}\n')
+          print('preserved', dest, 'cohort rows', len(rows))
+          PY
+      - name: Commit
+        run: |
+          git config user.name 'exporter-preservation'
+          git config user.email 'actions@github.com'
+          git add data/zenodo-deletion-ledger/snapshots
+          git diff --cached --quiet || git commit -m "Monthly exporter snapshot preserved (records-deleted.csv.gz)"
+          git push
