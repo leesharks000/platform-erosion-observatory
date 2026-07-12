@@ -108,7 +108,7 @@ footer a{color:var(--navy);}
 <p class="axiom">An identifier is a <b>maintained relation</b> between a string and an object. A string of numbers divorced from its identified object is no longer an identifier.</p>
 <p class="corollary">The persistence of the string is not the persistence of the identifier — it is what conceals the relation's death.</p>
 <div class="axfig">
-<svg viewBox="0 0 640 168" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Figure: an identifier is a maintained relation; when the relation is severed the string persists but no identifier remains, and no record of the cut is written">
+<svg viewBox="0 0 640 186" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Figure: an identifier is a maintained relation; when the relation is severed the string persists but no identifier remains, and no record of the cut is written">
   <!-- row 1: maintained relation -->
   <circle cx="70" cy="42" r="9" fill="#16181d"/>
   <text x="70" y="72" font-family="IBM Plex Mono,monospace" font-size="11" fill="#16181d" text-anchor="middle">STRING</text>
@@ -116,7 +116,7 @@ footer a{color:var(--navy);}
   <text x="260" y="30" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#6d6f66" text-anchor="middle" letter-spacing="1">MAINTAINED RELATION</text>
   <circle cx="450" cy="42" r="9" fill="#16181d"/>
   <text x="450" y="72" font-family="IBM Plex Mono,monospace" font-size="11" fill="#16181d" text-anchor="middle">OBJECT</text>
-  <text x="530" y="46" font-family="Source Serif 4,Georgia,serif" font-size="14" fill="#16181d">an identifier</text>
+  <text x="540" y="46" font-family="Source Serif 4,Georgia,serif" font-size="14" fill="#16181d" text-anchor="middle">an identifier</text>
   <!-- row 2: severed -->
   <circle cx="70" cy="118" r="9" fill="#16181d"/>
   <text x="70" y="148" font-family="IBM Plex Mono,monospace" font-size="11" fill="#16181d" text-anchor="middle">STRING</text>
@@ -126,9 +126,8 @@ footer a{color:var(--navy);}
   <circle cx="450" cy="118" r="9" fill="none" stroke="#6d6f66" stroke-width="1.5" stroke-dasharray="3 3"/>
   <text x="450" y="148" font-family="IBM Plex Mono,monospace" font-size="11" fill="#6d6f66" text-anchor="middle">OBJECT</text>
   <text x="261" y="95" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#a41623" text-anchor="middle" letter-spacing="1">SEVERED</text>
-  <text x="530" y="112" font-family="Source Serif 4,Georgia,serif" font-size="14" fill="#16181d">a numeral with the</text>
-  <text x="530" y="129" font-family="Source Serif 4,Georgia,serif" font-size="14" fill="#16181d">history of having</text>
-  <text x="530" y="146" font-family="Source Serif 4,Georgia,serif" font-size="14" fill="#16181d">identified</text>
+  <text x="540" y="122" font-family="Source Serif 4,Georgia,serif" font-size="14" fill="#16181d" text-anchor="middle">not an identifier</text>
+  <text x="320" y="176" font-family="Source Serif 4,Georgia,serif" font-size="13.5" font-style="italic" fill="#3c3e37" text-anchor="middle">what remains: a numeral with the history of having identified</text>
 </svg>
 <p class="figcap">FIG. 1 — the cut is an obelus, the Alexandrian mark of custodial severance. In the registry it is written nowhere: no activity record, no tombstone, no delta but the count.</p>
 </div>
@@ -164,6 +163,21 @@ footer a{color:var(--navy);}
 <p>DataCite's policy is that Findable and Registered DOIs cannot be deleted (<a href="https://support.datacite.org/docs/can-i-delete-or-change-my-dois">DataCite Support: deletion policy</a>) — but a <em>Findable</em> DOI can be moved to <em>Registered</em> state, which removes its metadata from public search, DataCite Commons, and the unauthenticated public API (<a href="https://support.datacite.org/docs/doi-states">DataCite Support: DOI states</a>). The Handle may survive while public discoverability, metadata access, citation continuity, and provenance function are severed — and each of those functions must be measured separately.</p>
 <p>No public registry-wide state-transition ledger has been identified by the Observatory. This was tested, not assumed: DataCite's per-DOI activities endpoint (<span class="mono">/dois/{id}/activities</span>) was probed for sampled founding-case DOIs and returned <strong>zero activity records</strong> — no creation history, and no severance event. (For at least one other publicly-absent DOI, historical create/update activities — including original metadata payloads — remain publicly served, while the departure from findability itself appears in no activity record.) The transition is unlogged. <strong>A DOI that stops being counted stops silently.</strong></p>
 <p><strong>Therefore the only public severance signal is the delta.</strong> The Observatory takes dated snapshots of findability state — registry-wide per-client counts, and per-DOI state for watched sets — and records what changed between epochs. A present-state check tells you what exists now. Only custody of the state history can tell you what existed, when it changed, what was lost, and whether it was restored.</p>
+<div class="axfig">
+<svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Figure 2: a findability count steps down between two observation epochs; the transition itself is written nowhere — the activities ledger holds zero records">
+  <line x1="50" y1="150" x2="600" y2="150" stroke="#d9d9d0" stroke-width="1.5"/>
+  <polyline points="60,52 300,52 300,102 590,102" fill="none" stroke="#16181d" stroke-width="2.2"/>
+  <line x1="300" y1="44" x2="300" y2="110" stroke="#a41623" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <text x="300" y="34" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#a41623" text-anchor="middle" letter-spacing="1">UNLOGGED TRANSITION</text>
+  <text x="120" y="44" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#6d6f66">findable count, epoch t</text>
+  <text x="445" y="94" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#6d6f66">epoch t+1</text>
+  <circle cx="60" cy="52" r="3.4" fill="#16181d"/><circle cx="590" cy="102" r="3.4" fill="#16181d"/>
+  <rect x="60" y="160" width="530" height="30" fill="#f1f1ec" stroke="#d9d9d0" rx="4"/>
+  <text x="74" y="179" font-family="IBM Plex Mono,monospace" font-size="11" fill="#16181d">/dois/{id}/activities  →  0 records</text>
+  <text x="576" y="179" font-family="IBM Plex Mono,monospace" font-size="11" fill="#a41623" text-anchor="end">∅</text>
+</svg>
+<p class="figcap">FIG. 2 — a DOI that stops being counted stops silently. The step is real; the event is written nowhere. The delta between dated snapshots is the only public signal — custody of the snapshots is this instrument.</p>
+</div>
 
 <h2>Epoch ledger</h2>
 <p style="font-size:14px;color:var(--dim)">Epochs are namespaced by lane: <span class="mono">DC</span> (DataCite registry census) · <span class="mono">FC</span> (founding-case DOI probes) · <span class="mono">ZD</span> (Zenodo deletion-export snapshots) · <span class="mono">XR</span> (cross-registry propagation sampling) · <span class="mono">ZD-A</span> (deletion-export analyses). From <span class="mono">DC-E1</span> forward, each capture preserves: observed-at UTC · endpoint · exact request · scope · expected/completed/error counts · response hashes · harness commit.</p>
@@ -182,6 +196,26 @@ footer a{color:var(--navy);}
 <tr><td class="mono">ZD-A3</td><td class="mono">2026-07-12</td><td><strong>Temporal audit: regime periodization and label migration.</strong> The removal taxonomy has four eras (exact, population-level): pre-taxonomy 2017&ndash;2019 (86% of 2017 removals carry no reason); spam wars 2020&ndash;2024 (spam = 95&ndash;99.7% of every year, culminating in the 2024 account-block purge, 761,778 rows); curation interlude 2025 (record-level categories diversify); <span class="sevword">scope enforcement 2026</span> — the out-of-scope category has 0 rows before 2024 and 68,215 in the first half of 2026 (53.9% of the year's removals). <strong>Label migration:</strong> the account-block bulk pathway is born in 2024 labeled <em>spam</em> and fires in 2026 labeled <em>out-of-scope</em> — the mechanism is constant, the label migrated, and the destination label carries 10&times; the measured collateral (ZD-A2 vs ZD-A1). Sampled within-spam drift: scholarship-signal <span class="mono">0.0%</span> across 2020&ndash;2024 (three bins, n=105) rising to <span class="sevword">14.3% (2025) and 8.6% (2026)</span> with ORCID emergence — late-era catches include serially-numbered theory work, activist self-archiving, and a Japanese essay series; no commercial signature. Two readings are held open — enforcement-band narrowing vs LLM-era spam mimicry — with a <strong>pre-registered prediction</strong> (2026-07-12, in the capture): if the band is narrowing, the diversity of the <em>retained</em> corpus will show contraction in step; the hosted-corpus study is designed and deferred.</td><td class="mono"><a href="https://www.alexanarch.org/data/zd-a3-temporal-audit-2026-07-12.json">JSON</a></td></tr>
 </table>
 
+<div class="axfig">
+<svg viewBox="0 0 640 232" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Figure 3: one deleted record queried across three machine memories returns three incompatible states: absent from DataCite, present and unflagged in OpenAlex, silently absent from the OpenAIRE Graph">
+  <circle cx="88" cy="116" r="11" fill="#16181d"/>
+  <text x="88" y="148" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#16181d" text-anchor="middle">DELETED RECORD</text>
+  <text x="88" y="162" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#6d6f66" text-anchor="middle">(one DOI)</text>
+  <line x1="102" y1="108" x2="308" y2="42" stroke="#6d6f66" stroke-width="1.4"/>
+  <line x1="102" y1="116" x2="308" y2="116" stroke="#6d6f66" stroke-width="1.4"/>
+  <line x1="102" y1="124" x2="308" y2="190" stroke="#6d6f66" stroke-width="1.4"/>
+  <rect x="316" y="24" width="300" height="42" fill="#f1f1ec" stroke="#d9d9d0" rx="4"/>
+  <text x="330" y="42" font-family="IBM Plex Mono,monospace" font-size="11.5" fill="#16181d">DataCite public index</text>
+  <text x="330" y="58" font-family="IBM Plex Mono,monospace" font-size="11" fill="#a41623">404 — absent (203/204 sampled)</text>
+  <rect x="316" y="96" width="300" height="42" fill="#f1f1ec" stroke="#d9d9d0" rx="4"/>
+  <text x="330" y="114" font-family="IBM Plex Mono,monospace" font-size="11.5" fill="#16181d">OpenAlex</text>
+  <text x="330" y="130" font-family="IBM Plex Mono,monospace" font-size="11" fill="#16181d">present, unflagged (0/25 retraction marks)</text>
+  <rect x="316" y="168" width="300" height="42" fill="#f1f1ec" stroke="#d9d9d0" rx="4"/>
+  <text x="330" y="186" font-family="IBM Plex Mono,monospace" font-size="11.5" fill="#16181d">OpenAIRE Graph</text>
+  <text x="330" y="202" font-family="IBM Plex Mono,monospace" font-size="11" fill="#a41623">numFound: 0 — no tombstone (0/54)</text>
+</svg>
+<p class="figcap">FIG. 3 — after upstream deletion, reception diverges per machine memory: one graph forgets the record existed, another remembers the record but not the verdict, the registry's public index serves neither. No authority reconciles them.</p>
+</div>
 <h2>Severance taxonomy</h2>
 <p>A DOI can remain technically extant while its documentary functions are severed. The functions fail separately and must be classified separately:</p>
 <dl class="tax">
@@ -234,6 +268,30 @@ footer a{color:var(--navy);}
 <p class="plabel">Content-derived identifiers</p>
 <p class="theorem">A string divorced from its object is no longer an identifier. An identifier <em>derived from</em> its object cannot be divorced from it undetected: either half verifies the other.</p>
 <p>Assigned identifiers — DOIs among them — depend on an institution maintaining the relation between string and object; the epochs above measure what happens when the institution stops. Content-derived identifiers compute the string <em>from</em> the object, so the relation is a mathematical property rather than an institutional promise. The class is established practice, not proposal: <a href="https://www.swhid.org/">SWHIDs</a> (Software Heritage's ISO-standardized intrinsic identifiers), IPFS CIDs, and git commit hashes all identify by content. Severance of a content-derived identifier is detectable by anyone holding either half — which is to say, the alternative to institutional memory is not better institutions but identifiers that do not need them.</p>
+<div class="axfig">
+<svg viewBox="0 0 640 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Figure 4: an assigned identifier depends on an institution maintaining the relation and fails silently when the institution stops; a content-derived identifier computes the string from the object, so either half verifies the other">
+  <circle cx="70" cy="46" r="8" fill="#16181d"/>
+  <text x="70" y="74" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#16181d" text-anchor="middle">STRING</text>
+  <line x1="82" y1="46" x2="288" y2="46" stroke="#16181d" stroke-width="2"/>
+  <rect x="292" y="30" width="76" height="32" fill="#fff" stroke="#16181d" stroke-width="1.6" rx="3"/>
+  <text x="330" y="50" font-family="IBM Plex Mono,monospace" font-size="10" fill="#16181d" text-anchor="middle">INSTITUTION</text>
+  <line x1="372" y1="46" x2="560" y2="46" stroke="#16181d" stroke-width="2"/>
+  <circle cx="570" cy="46" r="8" fill="#16181d"/>
+  <text x="570" y="74" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#16181d" text-anchor="middle">OBJECT</text>
+  <line x1="312" y1="20" x2="350" y2="70" stroke="#a41623" stroke-width="2.6"/>
+  <text x="330" y="92" font-family="Source Serif 4,Georgia,serif" font-size="13" font-style="italic" fill="#3c3e37" text-anchor="middle">assigned: the relation lives in a third party; when it stops, nothing detects the cut</text>
+  <circle cx="70" cy="132" r="8" fill="#16181d"/>
+  <text x="70" y="160" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#16181d" text-anchor="middle">STRING</text>
+  <line x1="86" y1="132" x2="552" y2="132" stroke="#16181d" stroke-width="2"/>
+  <path d="M 96 132 l 9 -5 v 10 z" fill="#16181d"/>
+  <path d="M 544 132 l -9 -5 v 10 z" fill="#16181d"/>
+  <text x="320" y="124" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#1c6e4a" text-anchor="middle" letter-spacing="1">STRING = HASH(OBJECT)</text>
+  <circle cx="570" cy="132" r="8" fill="#16181d"/>
+  <text x="570" y="160" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#16181d" text-anchor="middle">OBJECT</text>
+  <text x="320" y="182" font-family="Source Serif 4,Georgia,serif" font-size="13" font-style="italic" fill="#3c3e37" text-anchor="middle">content-derived: no third party holds the relation; either half verifies the other</text>
+</svg>
+<p class="figcap">FIG. 4 — severance of a content-derived identifier is detectable, provable, and reversible from any surviving copy.</p>
+</div>
 <p>The <strong>AXN</strong> is this archive's implementation: a content-derived hex identifier paired with a six-emoji glyph serving as a human-verifiable checksum, chained under SHA-256 integrity. This instrument is itself identified by one:</p>
 <div class="axnbox">AXN:0421.EMPIRICAL.🎭📐🐝🎪🏷️🎇 &nbsp;→&nbsp; EA-EROSION-01, <a href="https://www.alexanarch.org/s/records/1045/">deposit #1045</a> (the PID Erosion Observatory's own charter)<br>verification: recompute from content · registry: <a href="https://www.alexanarch.org/">alexanarch.org</a> data spine · no institution required to hold the relation open</div>
 <p style="margin:0">Had the 1,817 DOIs of the founding case been paired with content-derived identifiers, their severance would have been detectable, provable, and reversible from any surviving copy. The records above show what the assigned-identifier regime does instead.</p>
