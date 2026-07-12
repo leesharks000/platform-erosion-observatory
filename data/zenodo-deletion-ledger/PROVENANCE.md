@@ -30,3 +30,13 @@ Tombstone JSON continues to serve full record metadata — file entries with che
 
 ## Reconciliation vs sovereign DOI Resolution Index (2026-07-11)
 Index tracks 1,940 DOIs; ledger∖index = 212 (`cha-untracked-dead-dois.json` — remediation lane); index∖ledger = 125 (to classify).
+
+## v3 — Tombstone mirror harvest (2026-07-12)
+
+**tombstones/tombstone-api.jsonl** — full API-tombstone census: all 1,136 deleted records + 891 concept parents (2,027 objects), each returning HTTP 410 with tombstone block (removal timestamp to microsecond precision, removed_by, removal_reason, citation_text). Complete sweep chronology: first staff removal 2026-06-19T11:34:17.929620Z, last 11:48:50.039372Z — 872 seconds; 1,915 of 2,005 staff removals in the first five minutes at ~6.6 objects/second sustained. removed_by total enumeration: 2,005 by staff user 1060945; 19 (10 records + 9 parents, 2026-05-16 through 2026-06-15) by uploader user 1505735; 3 objects (18135984, 19359656, 19500795) return 410 with an empty tombstone block. Zero staff deletions before 2026-06-19.
+
+**tombstones/tombstone-mirror.jsonl** — 57 rich HTML-tombstone captures containing the complete embedded record JSON: full metadata, all creators with affiliations, abstracts, related-identifier mesh (152 edges), file inventories with names/sizes/md5 checksums (1,279,828 bytes described), terminal usage statistics (157 downloads, 2,134 unique views at death across the 57).
+
+**Surface-shrink event, documented live:** rich embedded record JSON was served on HTML tombstone pages through 2026-07-12T01:50:52Z (57th capture) and absent from 02:03:55Z onward — under every user-agent tested and via /export/ endpoints, including on records verified rich hours earlier (19013315, 20070462, 20722680; those three full captures preserved in session transcript). Cause indeterminate from a single vantage: platform-side change vs. per-client stripped rendering. **tombstones/raw-tombstone-pages-20260712.tar.gz** preserves all 1,079 post-shrink stripped pages as evidence of the reduced surface state.
+
+Reception finding carried from harvest: the platform continues to serve, for every deleted record, the full citation text naming every heteronym — while the works themselves are gone. The tombstone is the last surface on which the Dodecad still publishes.

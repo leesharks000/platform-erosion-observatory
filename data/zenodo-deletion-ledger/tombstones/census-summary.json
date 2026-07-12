@@ -1,0 +1,44 @@
+{
+ "harvest_date": "2026-07-12",
+ "api_census": {
+  "objects": 2027,
+  "records": 1136,
+  "parents": 891,
+  "all_http_status": 410,
+  "removed_by": {
+   "1060945_staff": 2005,
+   "1505735_uploader": 19,
+   "absent": 3
+  },
+  "sweep": {
+   "first": "2026-06-19T11:34:17.929620+00:00",
+   "last": "2026-06-19T11:48:50.039372+00:00",
+   "duration_seconds": 872.1,
+   "per_minute": {
+    "11:34": 297,
+    "11:35": 432,
+    "11:36": 418,
+    "11:37": 411,
+    "11:38": 357,
+    "11:39": 12,
+    "11:42": 14,
+    "11:43": 57,
+    "11:44": 5,
+    "11:48": 2
+   },
+   "peak_rate_per_second": 7.2,
+   "bulk_phase": "1,915 of 2,005 staff removals in the first five minutes (11:34-11:38), ~6.6 objects/second sustained"
+  }
+ },
+ "rich_html_captures": {
+  "count": 57,
+  "window_closed": "last rich 2026-07-12T01:50:52Z, first stripped 02:03:55Z",
+  "notes": "Rich embedded record JSON (full metadata, creators+affiliations, abstracts, related_identifiers, file inventories with md5 checksums, terminal stats) served on HTML tombstone pages until ~02:00Z 2026-07-12, then absent under all user-agents and via export endpoints; afternoon probe captures of 19013315/20070462/20722680 preserved in session transcript 2026-07-12-01-48-10.",
+  "aggregates": {
+   "file_bytes_in_metadata": 1279828,
+   "downloads_at_death": 157,
+   "unique_views_at_death": 2134,
+   "related_identifier_edges": 152
+  }
+ }
+}
