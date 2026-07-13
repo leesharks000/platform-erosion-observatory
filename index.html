@@ -75,6 +75,23 @@ a{color:var(--navy);text-underline-offset:2px;}
 .repl b{color:#9fd3b4;font-weight:500;}
 .logorow{display:flex;align-items:center;gap:12px;margin:0 0 22px;}
 .logorow .site{margin:0;}
+blockquote.odp{border-left:3px solid var(--sev,#a41623);margin:18px 0;padding:4px 0 4px 18px;font-family:'Source Serif 4',Georgia,serif;font-size:0.98em;line-height:1.7;color:#2c2e29;}
+blockquote.odp p{margin:0 0 10px;}
+blockquote.odp cite{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;font-style:normal;color:var(--dim);margin-top:8px;}
+details.sec{border-top:1px solid var(--rule,#d9d9d0);padding:6px 0;}
+details.sec summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:10px 0;}
+details.sec summary::-webkit-details-marker{display:none;}
+details.sec summary::before{content:'▸';font-size:0.8em;color:var(--dim);}
+details.sec[open] summary::before{content:'▾';}
+details.sec summary h2{margin:0;display:inline;}
+details.sec summary .kick{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--dim);letter-spacing:0.02em;}
+.kernel{border:1px solid var(--rule,#d9d9d0);background:var(--panel,#f6f6f2);padding:18px 20px;margin:30px 0;}
+.kernel .khead{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:var(--dim);margin:0 0 10px;}
+.kernel ol{margin:0;padding-left:0;list-style:none;counter-reset:k;}
+.kernel li{counter-increment:k;margin:7px 0;font-family:'Source Serif 4',Georgia,serif;font-size:0.95em;line-height:1.55;}
+.kernel li::before{content:counter(k,upper-roman) '. ';font-family:'IBM Plex Mono',monospace;font-size:0.78em;color:var(--dim);}
+.kernel a{color:inherit;text-decoration:none;border-bottom:1px solid var(--rule,#c9c9c0);}
+.kernel a:hover{border-bottom-color:#a41623;}
 .axfig{margin:26px 0 6px;}
 .axfig svg{display:block;max-width:640px;width:100%;height:auto;}
 .axfig .figcap{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--dim);margin:6px 0 0;letter-spacing:0.04em;}
@@ -131,6 +148,20 @@ footer a{color:var(--navy);}
 </svg>
 <p class="figcap">FIG. 1 — the cut is an obelus, the Alexandrian mark of custodial severance. In the registry it is written nowhere: no activity record, no tombstone, no delta but the count.</p>
 </div>
+<nav class="kernel" aria-label="Navigation kernel: the site compressed to one sentence per section">
+<p class="khead">NAVIGATION KERNEL &mdash; THE WHOLE, COMPRESSED. EACH SENTENCE IS A DOOR.</p>
+<ol>
+<li><a href="#sec-ledger">Six analyses of the operator&rsquo;s own deletion export find the removal process evidence-free, account-wholesale, and run in themed waves.</a></li>
+<li><a href="#sec-taxonomy">A relation can die more than one way; the taxonomy types the deaths.</a></li>
+<li><a href="#sec-exhibit">One founding case is measured end to end &mdash; 1,148 records, one day, one note, and the registry&rsquo;s own pipeline writing the bibliography it deleted.</a></li>
+<li><a href="#sec-coverage">The operator states on record that for accounts owned by legal persons or shared among natural persons, &ldquo;OC 11 would not apply&rdquo; &mdash; institutional depositors face the mechanism without the remedy.</a></li>
+<li><a href="#sec-operator">The fix requested is small: reclassify instead of severing, type the labels, write a citation in every removal tool.</a></li>
+<li><a href="#sec-derived">One identifier class cannot be severed silently: where string = hash(object), the cut is detectable, provable, and reversible from any surviving copy.</a></li>
+<li><a href="#sec-replicate">Every number on this page resolves to a dated capture; the curls are published.</a></li>
+<li><a href="#sec-essays">Behind the measurements, two texts: the obelus and the tombstone, and the charter sentence.</a></li>
+</ol>
+</nav>
+
 <div class="qa">
 <div><span class="q">What is a persistent identifier?</span> <span class="a">A string whose relation to its object is maintained indefinitely by a responsible organization — resolution, metadata, and citation continuity included.</span></div>
 <div><span class="q">What does persistence require?</span> <span class="a">Custody of state: a record of what the string identified, since when, and what has changed. No public state-transition ledger exists for the world's largest research-data registry — <a href="#premise">0 activity records</a> logged any departure from findability.</span></div>
@@ -179,7 +210,8 @@ footer a{color:var(--navy);}
 <p class="figcap">FIG. 2 — a DOI that stops being counted stops silently. The step is real; the event is written nowhere. The delta between dated snapshots is the only public signal — custody of the snapshots is this instrument.</p>
 </div>
 
-<h2>Epoch ledger</h2>
+<details class="sec" id="sec-ledger"><summary><h2>Epoch ledger</h2><span class="kick">six analyses of the operator’s own export: evidence-free, account-wholesale, in themed waves</span></summary>
+
 <p style="font-size:14px;color:var(--dim)">Epochs are namespaced by lane: <span class="mono">DC</span> (DataCite registry census) · <span class="mono">FC</span> (founding-case DOI probes) · <span class="mono">ZD</span> (Zenodo deletion-export snapshots) · <span class="mono">XR</span> (cross-registry propagation sampling) · <span class="mono">ZD-A</span> (deletion-export analyses). From <span class="mono">DC-E1</span> forward, each capture preserves: observed-at UTC · endpoint · exact request · scope · expected/completed/error counts · response hashes · harness commit.</p>
 <table>
 <tr><th>Epoch</th><th>Date</th><th>Finding</th><th>Capture</th></tr>
@@ -219,7 +251,9 @@ footer a{color:var(--navy);}
 </svg>
 <p class="figcap">FIG. 3 — after upstream deletion, reception diverges per machine memory: one graph forgets the record existed, another remembers the record but not the verdict, the registry's public index serves neither. No authority reconciles them.</p>
 </div>
-<h2>Severance taxonomy</h2>
+</details>
+<details class="sec" id="sec-taxonomy"><summary><h2>Severance taxonomy</h2><span class="kick">the ways a relation dies, typed</span></summary>
+
 <p>A DOI can remain technically extant while its documentary functions are severed. The functions fail separately and must be classified separately:</p>
 <dl class="tax">
 <dt>Public-findability severance</dt><dd>A previously Findable DOI ceases to appear in DataCite Commons and the unauthenticated public API. Where the Handle continues to resolve, the condition is consistent with a Findable → Registered transition unless contrary evidence appears; a public-API 404 establishes absence from public findability, and the state interpretation is recorded as inference, not observation.</dd>
@@ -233,7 +267,9 @@ footer a{color:var(--navy);}
 <dt>Partial restoration</dt><dd>Resolution returns; the prior object, metadata, or provenance does not.</dd>
 </dl>
 
-<h2>Exhibit A: the founding case — application of the taxonomy</h2>
+</details>
+<details class="sec" id="sec-exhibit"><summary><h2>Exhibit A: the founding case — application of the taxonomy</h2><span class="kick">the founding case, measured end to end</span></summary>
+
 <div class="incident">
 <h3>Zenodo account termination → public-findability severance, June 2026</h3>
 <p style="font-size:15px;margin:6px 0 0">862 scholarly deposits · 1,817 DOIs registered through DataCite · one enforcement action</p>
@@ -259,12 +295,20 @@ footer a{color:var(--navy);}
 </dl></div>
 <p style="font-size:14.5px">This incident is Exhibit A because every element is publicly reconstructible: the pre-event state, the event, the epochs, the shadow copies, the reception layer, and the non-restoration. Most severance events in the registry have none of this — which is the point of the instrument.</p>
 
-<h2>Institutional exposure: the coverage question</h2>
+</details>
+<details class="sec" id="sec-coverage"><summary><h2>Institutional exposure: the coverage question</h2><span class="kick">“OC 11 would not apply” — the mechanism without the remedy</span></summary>
+
 <p>Four measured properties of the removal mechanism, each documented in the ledger above: scope judgment is <strong>account-wholesale</strong> (99.5% of the last quarter's out-of-scope rows fall in account-level sweeps; individual-record removal barely exists — ZD-A6); the process <strong>writes no per-record evidence</strong> in either direction, so its errors are invisible to the operator and uncorrectable by design (ZD-A1, ZD-A4); the public index serves <strong>no tombstone</strong> (XR-E2); and <strong>review initiation has no field</strong> — a deliberated termination enters the data as a single-day monolith (ZD-A4).</p>
-<p>Against that mechanism, one remedy pathway is known to produce a record: the data-protection track. The deletion export analyzed throughout this ledger exists because a natural person exercised an access right. Which makes the operator's own on-record doctrine, stated by the CERN Office of Data Privacy in July 2026 correspondence, the load-bearing sentence of this section. Declining to accept email registration, GitHub authentication, ORCID linkage, and consistent correspondence as establishing natural personhood, the ODP wrote that such identifiers <em>&ldquo;may be owned by legal persons, or may be used by or shared among several natural persons.&rdquo;</em> The exchange is preserved verbatim in the documentary record (<a href="https://www.alexanarch.org/s/records/1047/">EA-CORRESPONDENCE-CERN-04, AXN:0423.GOVERNANCE.📎🌪️🟡🧬🧲💥</a>; doctrinal analysis at <a href="https://www.alexanarch.org/s/records/1073/">EA-CORRESPONDENCE-CERN-05, AXN:0442.GOVERNANCE.🌺🔄⛳🌳💧🟠</a>).</p>
-<p>Read as the general rule its quantifier states, the doctrine's implication is not about one depositor. Identifiers owned by legal persons, or shared among several natural persons, do not establish a natural person &mdash; and institutional, laboratory, community, and project accounts are precisely such identifiers. The open question, asked on record and not yet answered: <strong>what remedy pathway exists for an institutional depositor whose account meets the evidence-free wholesale mechanism?</strong> On the operator's own construction, the one pathway known to produce a record is the pathway such depositors may not hold.</p>
+<p>Against that mechanism, one remedy pathway is known to produce a record: the data-protection track. The deletion export analyzed throughout this ledger exists because a natural person exercised an access right. Which makes the operator's own on-record doctrine — stated by the CERN Office of Data Privacy in July 2026 under RQF3807508, declining email registration, GitHub authentication, ORCID linkage, and consistent correspondence as establishing natural personhood — the load-bearing passage of this section. Quoted in full, so its context strengthens rather than qualifies it:</p>
+<blockquote class="odp">
+<p>&ldquo;The fact that you created your Zenodo account via your GitLab account, linked your Zenodo account to your ORCID, or consistently communicate with CERN via the same email address does not demonstrate that you are a data subject within the meaning of OC 11. This is because an email address, a Zenodo or GitLab account, or an ORCID identifier may be owned by legal persons, or may be used by or shared among several natural persons. <strong>In such cases, the associated data in Zenodo would not necessarily constitute personal data, and OC 11 would not apply.</strong></p>
+<p>As CERN does not have any other information about you (for instance in our data bases), we consider that that an identity verification is indeed necessary to ensure that you are a natural person.</p>
+<p>The presentation of a passport or ID card constitutes an appropriate measure for verifying the identity of a natural person, as such documents are not issued to legal persons or to groups of persons.&rdquo;</p>
+<cite>&mdash; CERN Office of Data Privacy, RQF3807508, July 2026. Reproduced verbatim (including the ODP's own emphasis-free text; bolding added here) in <a href="https://www.alexanarch.org/s/records/1047/">EA-CORRESPONDENCE-CERN-04, AXN:0423.GOVERNANCE.📎🌪️🟡🧬🧲💥</a>; doctrinal analysis at <a href="https://www.alexanarch.org/s/records/1073/">EA-CORRESPONDENCE-CERN-05, AXN:0442.GOVERNANCE.🌺🔄⛳🌳💧🟠</a>.</cite>
+</blockquote>
+<p>No inference is required. The operator states it: where accounts are owned by legal persons or shared among natural persons &mdash; which is the definition of institutional, laboratory, community, and project accounts &mdash; the associated data <em>&ldquo;would not necessarily constitute personal data, and OC 11 would not apply.&rdquo;</em> The open question, asked on record and not yet answered: <strong>what remedy pathway exists for an institutional depositor whose account meets the evidence-free wholesale mechanism?</strong> On the operator's own words, the one pathway known to produce a record is the pathway such depositors may not hold.</p>
 <div class="axfig">
-<svg viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Figure 5: the coverage question. A natural person reaches the data-protection remedy path, gated by a civil-identity demand. An institutional account's path to the same remedy is severed by the operator's own doctrine, marked with a question.">
+<svg viewBox="0 0 640 216" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Figure 5: the coverage question. A natural person reaches the data-protection remedy path, gated by a civil-identity demand. An institutional account's path to the same remedy is severed by the operator's own doctrine, marked with a question.">
   <circle cx="80" cy="52" r="9" fill="#16181d"/>
   <text x="80" y="82" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#16181d" text-anchor="middle">NATURAL PERSON</text>
   <line x1="94" y1="52" x2="300" y2="52" stroke="#16181d" stroke-width="2"/>
@@ -281,19 +325,24 @@ footer a{color:var(--navy);}
   <text x="311" y="124" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#a41623" text-anchor="middle" letter-spacing="1">PER OPERATOR DOCTRINE</text>
   <line x1="332" y1="148" x2="540" y2="148" stroke="#6d6f66" stroke-width="1.4" stroke-dasharray="4 5"/>
   <text x="587" y="152" font-family="Source Serif 4,Georgia,serif" font-size="20" fill="#a41623" text-anchor="middle">?</text>
-  <text x="320" y="196" font-family="Source Serif 4,Georgia,serif" font-size="13" font-style="italic" fill="#3c3e37" text-anchor="middle">&ldquo;may be owned by legal persons, or may be used by or shared among several natural persons&rdquo;</text>
+  <text x="320" y="188" font-family="Source Serif 4,Georgia,serif" font-size="13" font-style="italic" fill="#3c3e37" text-anchor="middle">&ldquo;the associated data in Zenodo would not necessarily constitute</text>
+  <text x="320" y="204" font-family="Source Serif 4,Georgia,serif" font-size="13" font-style="italic" fill="#3c3e37" text-anchor="middle">personal data, and OC 11 would not apply&rdquo;</text>
 </svg>
 <p class="figcap">FIG. 5 — the coverage question. The one remedy path known to produce a record is gated for natural persons and, on the operator's stated doctrine, uncertain for everyone else.</p>
 </div>
 <p>What this means for an institutional depositor, stated plainly: grant-mandated data deposits, thesis archives, and supplementary datasets behind published DOIs sit under exactly the account class the doctrine describes. A silent step-down (FIG. 2) can falsify a paper's data-availability statement without any event the institution can detect, and &mdash; on the operator's own construction &mdash; without a data-protection remedy through which to compel the record of what happened. This section states the question; it does not adjudicate it. The correspondence that would answer it is preserved, ongoing, and linked above.</p>
 
-<h2>Operator position — policy proposal</h2>
+</details>
+<details class="sec" id="sec-operator"><summary><h2>Operator position — policy proposal</h2><span class="kick">the fix requested: reclassify, don’t sever; typed labels; a citation in every removal tool</span></summary>
+
 <div class="policy">
 <p class="plabel">Operator commentary · distinct from the empirical record above</p>
 <p style="margin:0">Severance is not the only available response to classifier or policy flags. A controlled metadata value — <span class="mono">classifier-flagged</span>, with genre refinements — asserts a fact about the registrar's process rather than a verdict about the work: it can be applied without requiring the registrar to adjudicate the scholarly truth, merit, or final status of the work. Reclassification preserves the citation graph, creates the first public baseline of what content classifiers remove from the scholarly record, and gives training-ingestion pipelines exactly what they claim to want: labeled material to filter at their own discretion. <strong>You cannot filter what you have deleted the labels for.</strong> A formal proposal is in preparation.</p>
 </div>
 
-<h2>The class that cannot be severed silently</h2>
+</details>
+<details class="sec" id="sec-derived"><summary><h2>The class that cannot be severed silently</h2><span class="kick">string = hash(object): severance detectable, provable, reversible</span></summary>
+
 <p style="font-size:14px;color:var(--dim)">Operator commentary · distinct from the empirical record above</p>
 <div class="altid">
 <p class="plabel">Content-derived identifiers</p>
@@ -328,7 +377,9 @@ footer a{color:var(--navy);}
 <p style="margin:0">Had the 1,817 DOIs of the founding case been paired with content-derived identifiers, their severance would have been detectable, provable, and reversible from any surviving copy. The records above show what the assigned-identifier regime does instead.</p>
 </div>
 
-<h2>Replication</h2>
+</details>
+<details class="sec" id="sec-replicate"><summary><h2>Replication</h2><span class="kick">every number resolves to a dated capture</span></summary>
+
 <div class="repl">
 <b># live registry findable total (compare to the DC-E0 snapshot above)</b><br>
 curl "https://api.datacite.org/dois?page[size]=1" | jq .meta.total<br>
@@ -380,6 +431,14 @@ License: CC BY 4.0 (content/data) · MIT (code) · network: <a href="https://mac
   panel.textContent = lines.join('  ·  ');
 })();
 </script>
-<section id="essays"><h2>Essays</h2><ul><li><a href="/essays/obelus-and-the-tombstone.md">The Obelus and the Tombstone: On the Two Marks of Custody, and the Erasure of Zenodotus at the Eponym Layer</a> — Johannes Sigil · <a href="https://www.alexanarch.org/s/records/1068/">AXN:043D (sovereign)</a> · built from the deletion-ledger evidence preserved in <a href="/data/zenodo-deletion-ledger/PROVENANCE.md">data/zenodo-deletion-ledger/</a></li></ul><h2>Foundations</h2><ul><li><a href="https://www.alexanarch.org/s/records/1070/">EA-PRIOR-01: The Voice of the Dead (AXN:043F, sovereign)</a> — the Observatory's charter sentence: the dead have acquired a generative voice before they have acquired a provenance system adequate to that voice.</li></ul></section>
+</details>
+<details class="sec" id="sec-essays"><summary><h2>Essays &amp; foundations</h2><span class="kick">the obelus and the tombstone; the charter sentence</span></summary>
+<section id="essays"><h2>Essays</h2><ul><li><a href="/essays/obelus-and-the-tombstone.md">The Obelus and the Tombstone: On the Two Marks of Custody, and the Erasure of Zenodotus at the Eponym Layer</a> — Johannes Sigil · <a href="https://www.alexanarch.org/s/records/1068/">AXN:043D (sovereign)</a> · built from the deletion-ledger evidence preserved in <a href="/data/zenodo-deletion-ledger/PROVENANCE.md">data/zenodo-deletion-ledger/</a></li></ul><h2>Foundations</h2><ul><li><a href="https://www.alexanarch.org/s/records/1070/">EA-PRIOR-01: The Voice of the Dead (AXN:043F, sovereign)</a> — the Observatory's charter sentence: the dead have acquired a generative voice before they have acquired a provenance system adequate to that voice.</li></ul></section></details>
+
+<script>
+(function(){function openTo(h){if(!h)return;var el=document.querySelector(h);if(el&&el.tagName==='DETAILS'){el.open=true;el.scrollIntoView({behavior:'smooth'});}}
+document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#sec-"]');if(a){e.preventDefault();history.replaceState(null,'',a.getAttribute('href'));openTo(a.getAttribute('href'));}});
+if(location.hash)openTo(location.hash);})();
+</script>
 </body>
 </html>
