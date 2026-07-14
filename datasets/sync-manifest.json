@@ -1,0 +1,101 @@
+{
+  "instrument": {
+    "name": "The PID Erosion Observatory",
+    "axn": "AXN:0421.EMPIRICAL.🎭📐🐝🎪🏷️🎇",
+    "deposit": "https://alexanarch.org/s/records/1045/",
+    "code": "EA-EROSION-01",
+    "surface": "https://persistentidentifiers.org/"
+  },
+  "canonical_registry": "https://www.alexanarch.org/",
+  "sync_note": "This manifest enumerates the cumulative datasets associated with the EA-EROSION-01 instrument. Some datasets are stored canonically at alexanarch.org and referenced here; others have local mirror copies under /datasets/<name>/ for offline durability. Mirrors are pulled from alexanarch via datasets/sync-from-alexanarch.sh. The canonical location is always the authoritative version.",
+  "generated_at": "2026-07-14T16:43:15.064036+00:00",
+  "datasets": [
+    {
+      "sovereign_id": "EA-EROSION-01-EPOCHS",
+      "title": "PID Erosion Observatory — Epoch Captures (DC/FC/ZD/XR/ZD-A lanes)",
+      "governing_deposit": "https://alexanarch.org/s/records/1045/",
+      "canonical_location": "https://www.alexanarch.org/data/",
+      "local_mirror": null,
+      "description": "Cumulative epoch captures across five lanes: DC (registry-wide census), FC (founding-case), ZD (Zenodo deletion snapshots), XR (cross-registry propagation), ZD-A (deletion-classifier audits). Sixteen epoch records to date, each with its own JSON. Canonical URLs enumerated in the epochs table at persistentidentifiers.org/#sec-epochs.",
+      "epochs": [
+        "DC-E0 (2026-07-11)",
+        "FC-E1 (2026-06-22)",
+        "FC-E2 (2026-07-03)",
+        "FC-E3 (2026-07-11)",
+        "ZD-S1 (2026-06-07)",
+        "ZD-S2 (2026-07-12)",
+        "XR-E1 (2026-07-12)",
+        "XR-E2 (2026-07-12)",
+        "ZD-A1 (2026-07-12)",
+        "ZD-A2 (2026-07-12)",
+        "ZD-A3 (2026-07-12)",
+        "ZD-A4 (2026-07-12)",
+        "ZD-A5 (2026-07-12)",
+        "ZD-A6 (2026-07-12)"
+      ]
+    },
+    {
+      "sovereign_id": "ZENODO-DELETION-LEDGER",
+      "title": "Zenodo Deletion Ledger — CHA-Cohort Extraction + Full Exports",
+      "governing_deposit": "https://alexanarch.org/s/records/1045/",
+      "canonical_location": "https://www.alexanarch.org/data/",
+      "local_mirror": "/datasets/../data/zenodo-deletion-ledger/",
+      "description": "The two Zenodo bulk deletion exports (2026-06-07 and 2026-07-10) plus the CHA-cohort extraction (1,136 CHA rows from the June 19 event) and the tombstone census (2,005 API tombstones for the CHA event). Includes the raw gzipped CSVs, per-record tombstone JSON, and the tombstone-mirror captures. This is the raw substrate the audit datasets are derived from.",
+      "files": [
+        "PROVENANCE.md",
+        "cha-kill-ledger-20260619.csv",
+        "deleted-20260607.csv.gz",
+        "deleted-head-20260710.csv.gz",
+        "cha-remediation-lane.json",
+        "cha-untracked-dead-dois.json",
+        "tombstones/tombstone-api.jsonl",
+        "tombstones/tombstone-mirror.jsonl",
+        "tombstones/raw-tombstone-pages-20260712.tar.gz",
+        "snapshots/"
+      ]
+    },
+    {
+      "sovereign_id": "EROSION-EMPIRICAL-AUDIT-01",
+      "title": "Provenance Erasure at Outcome Level — 33-Day Set-Comparison Test",
+      "governing_deposit": "PENDING (candidate for mint at alexanarch as EA-EROSION-EMPIRICAL-01 v0.1)",
+      "canonical_location": "https://www.alexanarch.org/datasets/erosion-empirical-audit-01/",
+      "local_mirror": "/datasets/erosion-empirical-audit-01/",
+      "description": "Companion datasets for EA-EROSION-EMPIRICAL-01 v0.1. Set-comparison test of Zenodo's classifier as accrual-sorting apparatus, following NEGSHAPE-01 (AXN:0444, #1075) citation discipline. Empirical confirmation of Provenance Debt (AXN:03B7, #939) §3 at outcome level: ~30x differential in survival between institutional and independent AI-augmented composition. Sovereign identifiers for the two Zenodo exports, the Wu withdrawal cascade, and 15 terminated-independent cascades enumerated.",
+      "files": [
+        "contingency-matrix.json",
+        "wu-restoration-verification.json",
+        "terminated-cohort-citations.json",
+        "alive-side-control.json",
+        "REJECTED-LEDGER-EMPTY.md",
+        "generate_audit.py",
+        "MANIFEST.json"
+      ]
+    },
+    {
+      "sovereign_id": "NEGSHAPE-DELETION-BIBLIOGRAPHY",
+      "title": "The Negative Shape of the Work — Deletion Bibliography & Bibliographic Matrix",
+      "governing_deposit": "https://alexanarch.org/s/records/1075/",
+      "canonical_location": "https://www.alexanarch.org/datasets/negshape-deletion-bibliography/",
+      "local_mirror": null,
+      "note": "referenced only; not locally mirrored at PEO. Canonical is the primary access point.",
+      "description": "Appendix A + B of EA-NEGSHAPE-01 v0.2 (AXN:0444, #1075). 1,834 identifier entries enumerated; 1,621 membership-confirmed; 6,484 formal citations rendered across four formats; container-object citation for CHA-DELETION-CORPUS-20260619; rejected-candidate ledger (68 entries). Establishes the citation discipline this observatory's audit datasets follow.",
+      "files": [
+        "EA-NEGSHAPE-01_v0.2_AXN-0444.md",
+        "deletion-bibliography.csv (1.3 MB)",
+        "deletion-bibliography.json (5.0 MB)",
+        "adversarial-citations.csv (2.2 MB)",
+        "adversarial-citations.json (4.2 MB)",
+        "SAMPLE-{APA,MLA,CHICAGO,BIBTEX}.md",
+        "SAMPLE-INCONTAINER-{APA,MLA,CHICAGO,BIBTEX}.md",
+        "deletion-container-object.md",
+        "MANIFEST.json"
+      ]
+    }
+  ],
+  "sync_protocol": {
+    "canonical_authority": "alexanarch.org",
+    "mirror_directive": "For every dataset with a `local_mirror` path, the mirror copies the canonical files verbatim. Mirrors are refreshed by executing datasets/sync-from-alexanarch.sh from the PEO repo root. The script uses curl against alexanarch.org's static endpoints and writes into the appropriate /datasets/<name>/ directory; sha256 is verified against the manifest at time of pull.",
+    "on_conflict": "If canonical and mirror diverge, canonical always wins. Any local edit to a mirror is treated as a merge conflict requiring resolution at the canonical source, not at the mirror.",
+    "cadence": "Manual for now. A GitHub Action on the PEO repo can be scheduled to run sync-from-alexanarch.sh nightly and commit changes on drift; not yet wired."
+  }
+}

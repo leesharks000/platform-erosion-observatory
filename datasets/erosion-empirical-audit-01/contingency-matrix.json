@@ -1,0 +1,124 @@
+{
+  "sovereign_identifier": "EROSION-EMPIRICAL-AUDIT-01-CONTINGENCY-20260714",
+  "governing_deposit": "EA-EROSION-EMPIRICAL-01 v0.1",
+  "audit_date": "2026-07-14",
+  "source_containers": [
+    {
+      "identifier": "ZENODO-DELETION-EXPORT-20260710",
+      "role": "primary"
+    },
+    {
+      "identifier": "ZENODO-DELETION-EXPORT-20260607",
+      "role": "reference"
+    }
+  ],
+  "population": {
+    "description": "All rows of ZENODO-DELETION-EXPORT-20260710 with removal_date in 2026 and non-empty citation_text",
+    "n": 100313,
+    "filter_rationale": "Restricted to 2026 to establish the current classifier regime's behavior. Restricted to non-empty citation_text because spam-classified rows have citation_text stripped (\u00a77 finding) and cannot be classified on either dimension."
+  },
+  "classifiers": {
+    "ai_signal": {
+      "detection": "case-insensitive substring match on citation_text",
+      "term_panel": [
+        "chatgpt",
+        " claude ",
+        "gpt-4",
+        "gpt4",
+        "gpt ",
+        "llm ",
+        "large language model",
+        "artificial intelligence",
+        " ai ",
+        "ai system",
+        "ai review",
+        "ai evolution",
+        "ai coauthor",
+        "gemini",
+        "grok",
+        "openai",
+        "anthropic",
+        "ai governance",
+        "cognitive orchestration",
+        "triune superintelligence",
+        "agentic ai",
+        "ai-assisted",
+        "ai assisted"
+      ]
+    },
+    "institutional_signal": {
+      "detection": "case-insensitive substring match on citation_text",
+      "term_panel": [
+        "university",
+        "universit",
+        "universidad",
+        "institut",
+        " college ",
+        "laboratory",
+        " cern ",
+        " nasa",
+        " cnrs",
+        "max planck",
+        "lbnl",
+        "ornl",
+        "inria",
+        "polytech",
+        "school of",
+        "department of"
+      ]
+    }
+  },
+  "contingency_matrix": {
+    "cells": {
+      "ai_and_institutional": {
+        "count": 60,
+        "row": "institutional",
+        "col": "ai_signal"
+      },
+      "ai_and_not_institutional": {
+        "count": 5965,
+        "row": "not_institutional",
+        "col": "ai_signal"
+      },
+      "not_ai_and_institutional": {
+        "count": 1136,
+        "row": "institutional",
+        "col": "not_ai_signal"
+      },
+      "not_ai_and_not_institutional": {
+        "count": 93152,
+        "row": "not_institutional",
+        "col": "not_ai_signal"
+      }
+    },
+    "row_marginals": {
+      "institutional": 1196,
+      "not_institutional": 99117
+    },
+    "column_marginals": {
+      "ai_signal": 6025,
+      "not_ai_signal": 94288
+    },
+    "total": 100313
+  },
+  "derived_ratios": {
+    "ai_signaled_institutional_fraction": 0.00996,
+    "non_ai_institutional_fraction": 0.01205,
+    "alive_side_institutional_fraction_estimate": 0.311,
+    "compression_ratio": 31.2,
+    "compression_interpretation": "Institutional AI-augmented composition is present in the alive-side sample at approximately 30x its representation in the AI-signaled deletion pool."
+  },
+  "underdetection_notes": {
+    "field_scope": "Signal detection uses citation_text field only (essentially the record's citation string). Full-text detection of both AI signals and institutional signals would find higher absolute rates. Underdetection is expected on both dimensions.",
+    "expected_symmetry": "Undercounting is expected to be roughly symmetric between the two dimensions (both use short-text substring matching on the same field). The compression ratio is therefore robust to symmetric undercounting.",
+    "asymmetric_risks": "Independent-institution self-signaling in citation_text (e.g., 'EPINOVA LLC') is not caught by the institutional term panel. This means the deletion-side institutional presence estimate could be slightly higher under a more permissive institutional panel. The Wu case study shows an EPINOVA-affiliated uploader whose deletion event would not be caught by the current panel."
+  },
+  "reproducibility": {
+    "script": "generate_audit.py",
+    "input_files": [
+      "deleted-head-20260710.csv.gz",
+      "deleted-20260607.csv.gz"
+    ],
+    "runtime_seconds_approximate": 30
+  }
+}

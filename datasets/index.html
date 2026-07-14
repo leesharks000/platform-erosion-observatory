@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datasets — The PID Erosion Observatory</title>
+<meta name="description" content="Cumulative datasets associated with the EA-EROSION-01 instrument. Canonical at alexanarch.org; mirrored locally for durability. Each dataset carries a sovereign identifier and a governing deposit.">
+<link rel="canonical" href="https://persistentidentifiers.org/datasets/">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23fbfbf9"/><circle cx="8" cy="16" r="4.2" fill="%2316181d"/><line x1="12.5" y1="16" x2="20" y2="16" stroke="%2316181d" stroke-width="2"/><circle cx="24.5" cy="16" r="4.2" fill="none" stroke="%236d6f66" stroke-width="1.6" stroke-dasharray="2.4 2.2"/><line x1="14.2" y1="9" x2="19.4" y2="23" stroke="%23a41623" stroke-width="2.4"/></svg>'>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16181d;--paper:#fbfbf9;--panel:#f1f1ec;--rule:#d9d9d0;--dim:#6d6f66;--navy:#123a5e;--sev:#a41623;--ok:#1c6e4a;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:17px;line-height:1.6;}
+.wrap{max-width:880px;margin:0 auto;padding:56px 24px 90px;}
+header{margin:0 0 34px;}
+header .breadcrumb{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--dim);margin:0 0 8px;}
+header .breadcrumb a{color:var(--dim);}
+header h1{font-size:34px;line-height:1.12;margin:0 0 6px;font-weight:600;letter-spacing:-0.01em;}
+header .tag{font-size:18px;color:var(--navy);margin:0 0 12px;}
+header .inst{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--dim);margin:0 0 14px;}
+.axnbox{font-family:'IBM Plex Mono',monospace;font-size:13px;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:10px 14px;margin:0 0 22px;color:#3c3e37;}
+.axnbox a{color:var(--navy);}
+h2{font-size:22px;font-weight:600;margin:38px 0 12px;letter-spacing:-0.01em;}
+p{margin:0 0 16px;}
+.principle{font-size:15px;background:var(--panel);border:1px solid var(--rule);border-left:3px solid var(--navy);border-radius:4px;padding:14px 18px;margin:0 0 26px;color:#3c3e37;}
+.principle b{color:var(--ink);}
+.dataset{border:1px solid var(--rule);border-radius:6px;background:#fff;padding:22px 26px;margin:0 0 18px;}
+.dataset h3{font-size:18px;font-weight:600;margin:0 0 4px;letter-spacing:-0.005em;}
+.dataset .sovereign{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--navy);margin:0 0 12px;}
+.dataset .meta{display:grid;grid-template-columns:auto 1fr;column-gap:16px;row-gap:6px;font-size:14px;margin:0 0 14px;}
+.dataset .meta .k{font-family:'IBM Plex Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:0.06em;color:var(--dim);padding-top:2px;}
+.dataset .meta .v{color:#3c3e37;}
+.dataset .meta .v a{color:var(--navy);}
+.dataset .desc{font-size:15px;color:#3c3e37;margin:12px 0 14px;line-height:1.55;}
+.dataset .files{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--dim);margin:0;}
+.dataset .files a{color:var(--navy);}
+.dataset .files .fentry{display:inline-block;background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:2px 8px;margin:2px 4px 2px 0;}
+.dataset .status{font-family:'IBM Plex Mono',monospace;font-size:11.5px;padding:3px 8px;border-radius:3px;background:var(--panel);color:var(--dim);display:inline-block;margin:0 6px 0 0;}
+.dataset .status.pending{color:var(--sev);border-left:2px solid var(--sev);}
+.dataset .status.canonical{color:var(--ok);border-left:2px solid var(--ok);}
+.dataset .status.mirror{color:var(--navy);border-left:2px solid var(--navy);}
+.epochs-list{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--dim);line-height:1.8;}
+.epochs-list span{background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:2px 8px;margin:2px 4px 2px 0;display:inline-block;}
+.sync-block{background:var(--ink);color:#e8e8e2;border-radius:6px;padding:18px 22px;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.7;overflow-x:auto;margin:14px 0;}
+.sync-block b{color:#9fd3b4;font-weight:500;}
+footer{border-top:1px solid var(--rule);padding-top:22px;margin-top:44px;font-size:13.5px;color:var(--dim);}
+footer a{color:var(--dim);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="breadcrumb"><a href="/">persistentidentifiers.org</a> / datasets</div>
+  <h1>Datasets of the Instrument</h1>
+  <p class="tag">Cumulative datasets associated with EA-EROSION-01, canonical at alexanarch.org and mirrored here for durability.</p>
+  <p class="inst">Instrument: <a href="/">The PID Erosion Observatory</a> · Governing deposit: <a href="https://www.alexanarch.org/s/records/1045/">alexanarch.org/s/records/1045/</a></p>
+</header>
+
+<div class="axnbox">AXN:0421.EMPIRICAL.🎭📐🐝🎪🏷️🎇 &nbsp;→&nbsp; EA-EROSION-01, deposit #1045 &middot; instrument-of-record</div>
+
+<div class="principle"><b>Reading discipline.</b> Every dataset here carries a sovereign identifier assigned by this archive and a governing deposit at alexanarch.org. The canonical location is always authoritative; local mirrors exist for durability and to permit reading when the canonical is unavailable. Per NEGSHAPE-01 (AXN:0444, #1075), the network of these datasets is a reading surface — a bibliographic object read by traversal — and this page is its index.</div>
+
+<h2>1. PID Erosion Observatory — Epoch Captures</h2>
+
+<div class="dataset">
+  <h3>EA-EROSION-01-EPOCHS &nbsp;<span class="status canonical">canonical @ alexanarch</span></h3>
+  <div class="sovereign">Sovereign: EA-EROSION-01-EPOCHS</div>
+  <div class="meta">
+    <div class="k">Governing deposit</div><div class="v"><a href="https://www.alexanarch.org/s/records/1045/">alexanarch.org/s/records/1045/</a></div>
+    <div class="k">Canonical location</div><div class="v"><a href="https://www.alexanarch.org/data/">alexanarch.org/data/</a></div>
+    <div class="k">Local mirror</div><div class="v">Referenced only. Each epoch's JSON is linked from the epochs table at the instrument's main surface.</div>
+    <div class="k">Lanes</div><div class="v">DC (registry-wide), FC (founding-case), ZD (Zenodo deletion), XR (cross-registry), ZD-A (deletion classifier audits)</div>
+  </div>
+  <div class="desc">Cumulative epoch captures across five lanes. Each epoch has its own JSON at alexanarch.org, listed in the epochs table on the instrument's main page. Deltas between epochs are the public severance signal this instrument reports.</div>
+  <div class="epochs-list">
+    <span>DC-E0 2026-07-11</span>
+    <span>FC-E1 2026-06-22</span>
+    <span>FC-E2 2026-07-03</span>
+    <span>FC-E3 2026-07-11</span>
+    <span>ZD-S1 2026-06-07</span>
+    <span>ZD-S2 2026-07-12</span>
+    <span>XR-E1 2026-07-12</span>
+    <span>XR-E2 2026-07-12</span>
+    <span>ZD-A1 2026-07-12</span>
+    <span>ZD-A2 2026-07-12</span>
+    <span>ZD-A3 2026-07-12</span>
+    <span>ZD-A4 2026-07-12</span>
+    <span>ZD-A5 2026-07-12</span>
+    <span>ZD-A6 2026-07-12</span>
+  </div>
+</div>
+
+<h2>2. Zenodo Deletion Ledger</h2>
+
+<div class="dataset">
+  <h3>ZENODO-DELETION-LEDGER &nbsp;<span class="status mirror">local mirror active</span></h3>
+  <div class="sovereign">Sovereign: ZENODO-DELETION-LEDGER</div>
+  <div class="meta">
+    <div class="k">Governing deposit</div><div class="v"><a href="https://www.alexanarch.org/s/records/1045/">alexanarch.org/s/records/1045/</a></div>
+    <div class="k">Canonical location</div><div class="v">Zenodo public exporter, snapshots preserved at alexanarch.org</div>
+    <div class="k">Local mirror</div><div class="v"><a href="../data/zenodo-deletion-ledger/">/data/zenodo-deletion-ledger/</a></div>
+    <div class="k">Population</div><div class="v">1,309,351 rows (2026-06-07 snapshot) → 1,322,007 rows (2026-07-10 snapshot); CHA-cohort extraction of 1,136 rows; tombstone census of 2,005 API tombstones</div>
+  </div>
+  <div class="desc">The two Zenodo bulk deletion exports, the CHA-cohort extraction from the June 19 event, and the tombstone census. The raw substrate the audit datasets are derived from. Every unpreserved month of the export is permanent substrate loss — Zenodo retains only the last three snapshots.</div>
+  <div class="files">
+    <span class="fentry">PROVENANCE.md</span>
+    <span class="fentry">cha-kill-ledger-20260619.csv</span>
+    <span class="fentry">deleted-20260607.csv.gz</span>
+    <span class="fentry">deleted-head-20260710.csv.gz</span>
+    <span class="fentry">cha-remediation-lane.json</span>
+    <span class="fentry">tombstones/tombstone-api.jsonl</span>
+    <span class="fentry">tombstones/tombstone-mirror.jsonl</span>
+    <span class="fentry">tombstones/raw-tombstone-pages-20260712.tar.gz</span>
+  </div>
+</div>
+
+<h2>3. Erosion Empirical Audit 01</h2>
+
+<div class="dataset">
+  <h3>EROSION-EMPIRICAL-AUDIT-01 &nbsp;<span class="status mirror">local mirror active</span>&nbsp;<span class="status pending">canonical pending mint</span></h3>
+  <div class="sovereign">Sovereign: EROSION-EMPIRICAL-AUDIT-01</div>
+  <div class="meta">
+    <div class="k">Governing deposit</div><div class="v"><span style="color:var(--sev)">pending mint as AXN v0.1 at alexanarch (candidate #1081)</span></div>
+    <div class="k">Canonical location</div><div class="v">Will resolve to alexanarch.org/datasets/erosion-empirical-audit-01/ after mint</div>
+    <div class="k">Local mirror</div><div class="v"><a href="./erosion-empirical-audit-01/">/datasets/erosion-empirical-audit-01/</a></div>
+    <div class="k">Follows</div><div class="v">NEGSHAPE-01 v0.2 citation discipline (<a href="https://www.alexanarch.org/s/records/1075/">alexanarch.org/s/records/1075/</a>)</div>
+    <div class="k">Confirms</div><div class="v">Provenance Debt §3 at outcome level (<a href="https://www.alexanarch.org/s/records/939/">alexanarch.org/s/records/939/</a>)</div>
+    <div class="k">Companion</div><div class="v">EA-CORRESPONDENCE-CERN-06 (<a href="https://www.alexanarch.org/s/records/1080/">#1080</a>)</div>
+  </div>
+  <div class="desc">Set-comparison test of Zenodo's classifier as accrual-sorting apparatus. 33-day window (2026-06-07 → 2026-07-10). Empirical result: ~30× differential in survival between institutional and independent AI-augmented composition. Sovereign identifiers proposed for the two Zenodo exports, the Wu Shaoyuan withdrawal cascade, and 15 mid-scale terminated-independent cascades. 1,360 identifier entries membership-confirmed across the terminated cohort. Alive-side control at 324 records, zero in deletion set.</div>
+  <div class="files">
+    <span class="fentry"><a href="./erosion-empirical-audit-01/MANIFEST.json">MANIFEST.json</a></span>
+    <span class="fentry"><a href="./erosion-empirical-audit-01/contingency-matrix.json">contingency-matrix.json</a></span>
+    <span class="fentry"><a href="./erosion-empirical-audit-01/wu-restoration-verification.json">wu-restoration-verification.json</a></span>
+    <span class="fentry"><a href="./erosion-empirical-audit-01/terminated-cohort-citations.json">terminated-cohort-citations.json</a></span>
+    <span class="fentry"><a href="./erosion-empirical-audit-01/alive-side-control.json">alive-side-control.json</a></span>
+    <span class="fentry"><a href="./erosion-empirical-audit-01/REJECTED-LEDGER-EMPTY.md">REJECTED-LEDGER-EMPTY.md</a></span>
+    <span class="fentry"><a href="./erosion-empirical-audit-01/generate_audit.py">generate_audit.py</a></span>
+  </div>
+</div>
+
+<h2>4. NEGSHAPE — Deletion Bibliography &amp; Matrix</h2>
+
+<div class="dataset">
+  <h3>NEGSHAPE-DELETION-BIBLIOGRAPHY &nbsp;<span class="status canonical">canonical @ alexanarch</span></h3>
+  <div class="sovereign">Sovereign: NEGSHAPE-DELETION-BIBLIOGRAPHY</div>
+  <div class="meta">
+    <div class="k">Governing deposit</div><div class="v"><a href="https://www.alexanarch.org/s/records/1075/">alexanarch.org/s/records/1075/</a></div>
+    <div class="k">Canonical location</div><div class="v"><a href="https://www.alexanarch.org/datasets/negshape-deletion-bibliography/">alexanarch.org/datasets/negshape-deletion-bibliography/</a></div>
+    <div class="k">Local mirror</div><div class="v">Referenced only. Canonical is primary; 13 MB of citation renderings held at alexanarch.</div>
+  </div>
+  <div class="desc">Appendix A + B of EA-NEGSHAPE-01 v0.2. 1,834 identifier entries enumerated by the 2026-06-19 bulk deletion of the Crimson Hexagonal Archive; 1,621 membership-confirmed; 6,484 formal citations rendered across four formats (APA 7, MLA 9, Chicago 17, BibTeX); container-object citation for CHA-DELETION-CORPUS-20260619; rejected-candidate ledger preserving 68 collisions. Establishes the citation discipline the audit datasets above follow.</div>
+</div>
+
+<h2>Sync protocol</h2>
+
+<p>Canonical authority is <b>alexanarch.org</b>. Mirror copies at this observatory exist to permit reading when the canonical is unavailable, and to preserve state at the moment of mirroring. Mirrors are refreshed by executing the following from the observatory's repo root:</p>
+
+<div class="sync-block">
+$ <b>./datasets/sync-from-alexanarch.sh</b><br>
+&nbsp; ↓ pulls each mirrored dataset from alexanarch.org<br>
+&nbsp; ↓ writes to /datasets/&lt;name&gt;/<br>
+&nbsp; ↓ verifies sha256 against MANIFEST.json where present<br>
+&nbsp; ✓ canonical always wins on conflict
+</div>
+
+<p style="font-size:14px;color:var(--dim)">Machine-readable dataset registry: <a href="./sync-manifest.json">sync-manifest.json</a></p>
+
+<footer>
+  <p>The PID Erosion Observatory · <a href="/">persistentidentifiers.org</a> · instrument identified by AXN:0421.EMPIRICAL.🎭📐🐝🎪🏷️🎇 · governing deposit <a href="https://www.alexanarch.org/s/records/1045/">alexanarch.org/s/records/1045/</a></p>
+</footer>
+
+</div>
+</body>
+</html>

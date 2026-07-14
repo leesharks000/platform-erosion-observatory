@@ -1,0 +1,109 @@
+{
+  "name": "erosion-empirical-audit-01",
+  "title": "Provenance Erasure at Outcome Level — 33-Day Set-Comparison Test of Zenodo's Classifier as Accrual-Sorting Apparatus",
+  "version": "0.1",
+  "date": "2026-07-14",
+  "deposit_pending": {
+    "target_repo": "leesharks000/alexanarch",
+    "target_workflow": "self-serve issue-body direct mint",
+    "target_family": "EMPIRICAL",
+    "issue_body_path": "/home/claude/erosion-empirical-audit/issue-body.md"
+  },
+  "governing_deposits": [
+    {
+      "axn": "AXN:0444.OPERATIVE.🕘♾️♾️🕙♃🗝️",
+      "record": "https://alexanarch.org/s/records/1075/",
+      "role": "citation_discipline_apparatus"
+    },
+    {
+      "axn": "AXN:03B7.GOVERNANCE.🔐🎇🦋🍃🗿🌗",
+      "record": "https://alexanarch.org/s/records/939/",
+      "role": "theoretical_anchor"
+    },
+    {
+      "axn": "AXN:0449.GOVERNANCE.▲⊗🏰✋🟣🃏",
+      "record": "https://alexanarch.org/s/records/1080/",
+      "role": "correspondence_layer_companion"
+    },
+    {
+      "axn": "AXN:0446.OPERATIVE.🏛️🛡️🌅🎆📏🔎",
+      "record": "https://alexanarch.org/s/records/1077/",
+      "role": "surface_apparatus"
+    }
+  ],
+  "source_containers": [
+    {
+      "identifier": "ZENODO-DELETION-EXPORT-20260607",
+      "source": "https://zenodo.org/api/exporter",
+      "version_id": "ab4e273f-40a2-49e6-84f6-87dc66af87c7",
+      "md5": "104e2f5c2603dc56217ece0d5519bff8",
+      "n_identifier_entries": 1309351
+    },
+    {
+      "identifier": "ZENODO-DELETION-EXPORT-20260710",
+      "source": "https://zenodo.org/api/exporter",
+      "version_id": "c7571d4c-28ef-46ff-b0f0-235abaac58bf",
+      "md5": "33877aba1fb5684f86758cb86ddc1ad4",
+      "n_identifier_entries": 1322007
+    }
+  ],
+  "sovereign_identifiers_proposed_by_this_dataset": [
+    "ZENODO-DELETION-CASCADE-20260425-WU",
+    "ZENODO-DELETION-WITHDRAWAL-20260626-WU",
+    "ZENODO-DELETION-CASCADE-20260504-KRZYSZTOŃ",
+    "ZENODO-DELETION-CASCADE-20260507-AKTAŞ",
+    "ZENODO-DELETION-CASCADE-20260508-SWEET",
+    "ZENODO-DELETION-CASCADE-20260512-WARBURTON",
+    "ZENODO-DELETION-CASCADE-20260513-YOSHINO",
+    "ZENODO-DELETION-CASCADE-20260515-KUSUMI",
+    "ZENODO-DELETION-CASCADE-20260518-PARKES",
+    "ZENODO-DELETION-CASCADE-20260520-ASSARY",
+    "ZENODO-DELETION-CASCADE-20260521-PANDOLFI-CUADRADO",
+    "ZENODO-DELETION-CASCADE-20260526-LIVOLSI",
+    "ZENODO-DELETION-CASCADE-20260527-SHU",
+    "ZENODO-DELETION-CASCADE-20260529-THOMPSON",
+    "ZENODO-DELETION-CASCADE-20260602-BRAZIL",
+    "ZENODO-DELETION-CASCADE-20260603-BEN-TAIEB",
+    "ZENODO-DELETION-CASCADE-20260604-MENDEZ"
+  ],
+  "summary": {
+    "population_2026_non_spam_with_citation": 100313,
+    "contingency_ai_and_institutional": 60,
+    "contingency_ai_and_not_institutional": 5965,
+    "contingency_not_ai_and_institutional": 1136,
+    "contingency_not_ai_and_not_institutional": 93152,
+    "wu_withdrawal_records": 67,
+    "wu_withdrawal_verified_published": 67,
+    "terminated_independent_cohort_records": 1360,
+    "alive_side_control_records": 324,
+    "alive_side_control_in_deletion_set": 0,
+    "compression_ratio_alive_to_deleted_institutional_ai_augmentation": 31.2
+  },
+  "files": {
+    "REJECTED-LEDGER-EMPTY.md": {
+      "sha256": "972b8c9d7a357fa494608e17d50f832ba7897d1f141a253cb0955b416f3cb081",
+      "bytes": 2910
+    },
+    "alive-side-control.json": {
+      "sha256": "4efd05cfced3d302a84e25b889cb9ee47030ddfca853e81d6b111df340836080",
+      "bytes": 155883
+    },
+    "contingency-matrix.json": {
+      "sha256": "9b1f9d9b5342dc3dfd2fc6bc6a591c1df07662f4276f6626f027afa7ddf3d8f5",
+      "bytes": 4214
+    },
+    "generate_audit.py": {
+      "sha256": "04b1983e95c5336ba2d328cbe82aae7bc22e0bed3f77fca9ed0a21c12c537b58",
+      "bytes": 8304
+    },
+    "terminated-cohort-citations.json": {
+      "sha256": "2e8091efae05d037a55649192d2085ad2bb02ae46f411c03c26798dcb34ee862",
+      "bytes": 473149
+    },
+    "wu-restoration-verification.json": {
+      "sha256": "5b6c48eba148a7e2b98220ca8ab952eed114d22eb9643eb9307aa2341c640852",
+      "bytes": 39821
+    }
+  },
+  "manifest_generated_at": "2026-07-14T16:41:27.058342+00:00"
+}
