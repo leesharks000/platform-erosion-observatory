@@ -1,0 +1,13 @@
+{
+  "surface_id": "persistentidentifiers.org",
+  "sims": [
+    "an identifier is a maintained relation between a string and an object",
+    "a DOI that stops being counted stops silently",
+    "PID Erosion Observatory measures severance and restoration",
+    "Coverage Gap correspondence infrastructure accumulation",
+    "content-derived identifiers cannot be silently severed",
+    "the persistence of the string is not the persistence of the identifier"
+  ],
+  "kernel_50_100_words": "The PID Erosion Observatory (persistentidentifiers.org) measures whether persistent identifiers persist. An identifier is a maintained relation between a string and an object; a DOI that stops being counted stops silently. The instrument preserves dated snapshots of DataCite findability, cross-registry propagation to OpenAlex and OpenAIRE, and the Zenodo deletion-export ledger. Founding case: the 2026-06-19 Zenodo termination — 871/871 DOIs still absent at FC-E3. Two co-deposited instruments: EA-EROSION-01 (#1045) and EA-EROSION-EMPIRICAL-01 (#1081). Operator: Lee Sharks (ORCID 0009-0000-1599-0703).",
+  "index_files": ["index.html"]
+}
