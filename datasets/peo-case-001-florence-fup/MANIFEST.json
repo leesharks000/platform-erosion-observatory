@@ -1,0 +1,96 @@
+{
+  "name": "peo-case-001-florence-fup",
+  "title": "PEO Case 001 \u2014 T0 Enumeration of the Firenze crui.unifi Corpus",
+  "version": "1.0",
+  "date": "2026-07-22",
+  "deposit_pending": {
+    "target_repo": "leesharks000/alexanarch",
+    "target_workflow": "self-serve issue-body direct mint",
+    "target_family": "EMPIRICAL",
+    "issue_body_path": "/deposit-package/issue-body.md"
+  },
+  "governing_deposits": [
+    {
+      "axn": "PENDING-#1408",
+      "record": "https://alexanarch.org/s/records/1408/",
+      "role": "primary_governing_deposit_this_dataset"
+    }
+  ],
+  "source_containers": [
+    {
+      "identifier": "DATACITE-PUBLIC-DATA-FILE-2025",
+      "source": "https://datafiles.datacite.org/datafiles/public-2025/",
+      "landing_doi": "10.14454/t5qb-d995",
+      "snapshot_frozen_at": "2026-01-06T20:11:59Z",
+      "tar_size_bytes": 34409103360,
+      "n_records_total": 108468906,
+      "license": "CC-BY-4.0",
+      "publisher": "DataCite"
+    }
+  ],
+  "extraction": {
+    "method": "streaming tar member scan; per-month client_id CSVs; global client filter",
+    "columns_source": [
+      "doi",
+      "state",
+      "client_id",
+      "updated"
+    ],
+    "columns_added": [
+      "source_month"
+    ],
+    "target_client_id": "crui.unifi"
+  },
+  "results_summary": {
+    "unique_dois": 14284,
+    "by_state": {
+      "findable": 14282,
+      "registered": 2
+    },
+    "by_doi_prefix": {
+      "10.13128": 14284
+    },
+    "by_update_year": {
+      "2020": 12717,
+      "2021": 1104,
+      "2022": 79,
+      "2023": 379,
+      "2024": 4,
+      "2025": 1
+    }
+  },
+  "reconciliation_with_tier1": {
+    "tier1_epoch_2026_07_13_findable_count": 14283,
+    "t0_snapshot_findable_count": 14282,
+    "t0_snapshot_registered_count": 2,
+    "t0_snapshot_all_states_count": 14284,
+    "note": "DataCite client-count APIs report findable-state DOIs. T0 enumeration retains all states including 2 in 'registered' state, for a total of 14284 unique identifiers under prefix 10.13128."
+  },
+  "current_resolution_state": {
+    "deletion_event": "2026-07-16T07:23:35Z",
+    "resolution_target": "https://journals.fupress.net/inactive-doi/",
+    "note": "Every DOI in this enumeration currently dead-ends at FUP's inactive-DOI page. This dataset is the recovery map for the corpus."
+  },
+  "data_quality_notes": {
+    "malformed_double_prefix_count": 2,
+    "malformed_double_prefix_pattern": "10.13128/10.13128/*",
+    "note": "2 DOIs in the corpus embed the prefix a second time in the suffix (10.13128/10.13128/*). These resolve as valid DataCite identifiers at t0 but should be inspected during any re-registration pass."
+  },
+  "files": [
+    {
+      "path": "enumeration.tsv",
+      "description": "The 14,284 DOIs sorted alphabetically. Columns: doi, state, client_id, updated, source_month.",
+      "size_bytes": 1029309,
+      "record_count": 14284
+    },
+    {
+      "path": "t0-summary.json",
+      "description": "Structured summary of the corpus: state, prefix, update-year, source-month distributions.",
+      "size_bytes": 2130
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "license_note": "Redistributed from the DataCite Public Data File 2025 under CC-BY-4.0. See landing DOI 10.14454/t5qb-d995.",
+  "generated": "2026-07-22T05:43:05Z",
+  "generator": "TACHYON via streaming tar extractor (chunked HTTP Range fetches; see MANIFEST.methodology)"
+}

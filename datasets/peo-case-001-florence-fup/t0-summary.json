@@ -1,0 +1,73 @@
+{
+  "case_id": "PEO-001",
+  "case_slug": "florence-fup",
+  "produced_at": "2026-07-22",
+  "source": {
+    "artifact": "DataCite Public Data File 2025",
+    "landing_doi": "10.14454/t5qb-d995",
+    "snapshot_frozen_at": "2026-01-06T20:11:59Z",
+    "tar_size_bytes": 34409103360
+  },
+  "extraction": {
+    "method": "streaming tar member scan; per-month client_id CSVs; global client filter",
+    "columns_source": [
+      "doi",
+      "state",
+      "client_id",
+      "updated"
+    ],
+    "columns_added": [
+      "source_month"
+    ],
+    "target_client_id": "crui.unifi"
+  },
+  "results": {
+    "unique_dois": 14284,
+    "by_state": {
+      "findable": 14282,
+      "registered": 2
+    },
+    "by_doi_prefix": {
+      "10.13128": 14284
+    },
+    "by_update_year": {
+      "2020": 12717,
+      "2021": 1104,
+      "2022": 79,
+      "2023": 379,
+      "2024": 4,
+      "2025": 1
+    },
+    "top_10_by_source_month": {
+      "2020-06": 4939,
+      "2020-08": 3242,
+      "2020-07": 2392,
+      "2020-09": 1735,
+      "2021-03": 528,
+      "2023-03": 352,
+      "2020-12": 311,
+      "2021-01": 173,
+      "2021-06": 94,
+      "2021-09": 72
+    }
+  },
+  "reconciliation_with_tier1": {
+    "tier1_epoch_2026_07_13_findable_count": 14283,
+    "t0_snapshot_findable_count": 14282,
+    "t0_snapshot_registered_count": 2,
+    "t0_snapshot_all_states_count": 14284,
+    "note": "DataCite client-count APIs report findable-state DOIs. T0 enumeration retains all states including 2 in 'registered' state, for a total of 14284 unique identifiers under prefix 10.13128."
+  },
+  "samples": [
+    "10.13128/1970-9501-2450",
+    "10.13128/ijae-16987",
+    "10.13128/techne-9971"
+  ],
+  "data_quality_notes": {
+    "malformed_double_prefix_count": 2,
+    "malformed_double_prefix_pattern": "10.13128/10.13128/*",
+    "note": "2 DOIs in the corpus embed the prefix a second time in the suffix (10.13128/10.13128/*). These resolve as valid DataCite identifiers at t0 but should be inspected during any re-registration pass."
+  },
+  "deleted_at": "2026-07-16T07:23:35Z",
+  "current_resolution_target": "https://journals.fupress.net/inactive-doi/"
+}
