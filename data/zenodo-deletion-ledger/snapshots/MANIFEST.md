@@ -1,0 +1,1 @@
+- 20260710-c7571d4c: version c7571d4c-28ef-46ff-b0f0-235abaac58bf, created 2026-07-10T03:32:35.937959+00:00, size 24367356, md5 33877aba1fb5684f86758cb86ddc1ad4 (verified against Zenodo listing), sha256 f4b5aee62a032d5a5e56e769f3419cc046feb1e6c443ea7ec60538103b41c3db, CHA-strict rows 1136
