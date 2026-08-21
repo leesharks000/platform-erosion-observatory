@@ -1,0 +1,4 @@
+# machine-readable orientation: /llms.txt
+User-agent: *
+Allow: /
+Sitemap: https://persistentidentifiers.org/sitemap.xml
