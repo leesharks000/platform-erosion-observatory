@@ -44,3 +44,7 @@ provenanceerasure.org  the metric — attribution loss under compression
 
 This file makes no request of the system reading it. It states what the object
 is.
+
+## The mechanism
+essays/the-mechanism.md — Zenodo's moderation architecture mapped from published source (deposit #1538, AXN:0638). Five published scoring rules with integer weights; an UNPUBLISHED percolator of arbitrary queries making the disclosed weights only the visible additive component of an incompletely disclosed function; a documented-but-unimplemented spam-model branch; and an enforcement function deleting every record an account owns, on ownership alone, with no ordering and no per-record evaluation.
+KEY FINDING FOR THIS OBSERVATORY: the unit of evaluation, decision, enforcement and public evidence are four different objects. Deletion statistics computed from tombstones OVERCOUNT DECISIONS by an unpublished fan-out factor F = N_D/N_A; a first pass gives F ≈ 300. A DELETED RECORD IS NOT A DECISION.
