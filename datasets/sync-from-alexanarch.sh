@@ -61,7 +61,8 @@ sync_dataset "erosion-empirical-audit-01" \
     "datasets/erosion-empirical-audit-01" \
     "MANIFEST.json" "contingency-matrix.json" "wu-restoration-verification.json" \
     "terminated-cohort-citations.json" "alive-side-control.json" \
-    "REJECTED-LEDGER-EMPTY.md" "generate_audit.py"
+    "REJECTED-LEDGER-EMPTY.md" "generate_audit.py" \
+    "s5-correction.json" "recompute_s5_matched.py"
 
 # — Additional datasets can be added below as they land in alexanarch canonical —
 # sync_dataset "negshape-deletion-bibliography" "data/datasets/negshape-deletion-bibliography" ...

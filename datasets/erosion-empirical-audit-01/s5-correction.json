@@ -1,0 +1,88 @@
+{
+ "sovereign_identifier": "EROSION-EMPIRICAL-AUDIT-01-S5-CORRECTION-20260827",
+ "supersedes": "EROSION-EMPIRICAL-AUDIT-01-CONTINGENCY-20260714 (derived_ratios only)",
+ "governing_deposit": "EA-EROSION-EMPIRICAL-01 v0.1 (AXN:044A, deposit #1081)",
+ "correction_date": "2026-08-27",
+ "status": "WITHDRAWAL AND REPLACEMENT of the §5 compression ratio. The 2x2 contingency counts of the 20260714 dataset are UNAFFECTED and independently reproduced (see verification below).",
+ "what_was_wrong": {
+  "published_claim": {
+   "alive_side_institutional_fraction_estimate": 0.311,
+   "ai_signaled_institutional_fraction": 0.00996,
+   "compression_ratio": 31.2
+  },
+  "defect": "instrument mismatch across the two sides of the ratio",
+  "detail": "The alive side measured institutional affiliation through the Zenodo Search API against full record metadata including creators[].affiliation. The deletion side measured a substring match on citation_text, which is 'Author. (Year). Title. Publisher. DOI' and contains no affiliation field. The deletion side could not measure the construct the alive side measured; the ratio between them is dominated by the gap between instruments.",
+  "defect_measured": {
+   "same_alive_records_n": 400,
+   "institutional_by_affiliation_field": "207/400 (51.8%)",
+   "institutional_by_citation_string": "5/400 (1.2%)",
+   "instrument_gap": "41.4x",
+   "records_where_both_instruments_fire": 1,
+   "note": "The two instruments agree on 1 record in 400. They are not noisy versions of one measurement."
+  },
+  "matched_instrument_check": "Applying the deletion-side instrument to BOTH sides gives alive 1.3% vs deleted 1.0% — the published effect disappears entirely under the published instrument."
+ },
+ "how_it_was_repaired": {
+  "method": "reconstruct affiliation for deleted records from a registry that ingested them before deletion, then hold both sides to the same AI classifier and the same affiliation instrument",
+  "reconstruction_source_selection": {
+   "datacite": {
+    "coverage": "1/400 random, 1/250 AI-signalled (~0.2-0.4%)",
+    "verdict": "unusable",
+    "finding": "Zenodo deletion cascades into destruction of the DataCite descriptive record for essentially every deleted record, not only the CHA cohort. Recorded as a finding in its own right."
+   },
+   "openaire": {
+    "coverage": "0/25",
+    "verdict": "unusable"
+   },
+   "openalex": {
+    "coverage": "66% deleted / 77% alive",
+    "verdict": "USED",
+    "fields": "authorships[].institutions and raw_affiliation_strings"
+   }
+  },
+  "ai_classifier": "the audit's own 23-term panel, applied to a citation string constructed identically on both sides",
+  "script": "recompute_s5_matched.py"
+ },
+ "corrected_result": {
+  "alive_ai_signalled": {
+   "institutional": 107,
+   "n": 231,
+   "fraction": 0.463,
+   "ci95": [
+    40.0,
+    52.8
+   ]
+  },
+  "deleted_ai_signalled": {
+   "institutional": 10,
+   "n": 165,
+   "fraction": 0.061,
+   "ci95": [
+    3.3,
+    10.8
+   ]
+  },
+  "risk_ratio": 7.64,
+  "odds_ratio": 13.38,
+  "fisher_exact_p": 8.67e-16,
+  "interpretation": "The direction and statistical significance of the v0.1 finding survive instrument correction. The magnitude does not. 31.2x is withdrawn; 7.6x replaces it."
+ },
+ "secondary_defects_found": {
+  "institutional_classifier_field_scope": "In the not_ai_and_institutional cell (n=1136), the institutional term sits in the TITLE rather than an author or publisher field in 787 rows (69.3%). Romance-language topic adjectives ('universitaria', 'universitarios') score as institutional. Author field 12.1%, publisher field 18.6%.",
+  "cell_non_independence": "474 of those 1136 rows (41.7%) are one author (de la Serna Tuya, J. M., two spellings) depositing multilingual variants of the same study, one record per language. The cell's rows are not independent observations.",
+  "population_concentration": "One depositor accounts for 60,527 of the 100,313-row population (60.3%); the top ten account for 65.6%. Any population-level claim from this export must disclose this. NOTE: that depositor is only ~6% of the AI-signalled deletion sample, so the corrected §5 comparison is NOT driven by the cascade.",
+  "self_inclusion": "The Crimson Hexagonal Archive's own deleted records sit inside the audit population: 63 rows in the not_ai_and_institutional cell, 25 of them under 'Sharks, L.' Small, but declared."
+ },
+ "what_is_unaffected": {
+  "contingency_counts": "Independently recomputed 2026-08-27 from the md5-verified container (deleted-head-20260710.csv.gz, md5 33877aba1fb5684f86758cb86ddc1ad4, 1,322,007 rows). All four cells and the population reproduce exactly: population 100313, ai_inst 60, ai_no_inst 5965, no_ai_inst 1136, no_ai_no_inst 93152.",
+  "coincidence_resolved": "The value 1136 appears in three places. Two are the same population counted twice (the CHA kill-ledger row count and the tombstone census 'records' figure). The third, the not_ai_and_institutional cell, is an independent quantity that lands on the same number by coincidence; it is not a plumbing error, and generate_audit.py contains no CHA reference.",
+  "other_findings": "The programmed-suppression finding (exporter source stripping citation_text under the spam label; EXPORTER_NUMBER_VERSIONS_TO_KEEP = 3), the Wu restoration cascade, and the tombstone census do not route through this comparison and are unaffected. The corpus-level LLM contamination finding uses a separate methodology and was not examined here."
+ },
+ "carried_limitations": [
+  "OpenAlex coverage differs by side (77% alive / 66% deleted); the reconstructable subset is the population and non-coverage may not be random",
+  "the alive sampling frame is search-enriched, not random; only the classifier is matched, not the frame",
+  "affiliation-data density ran 49% alive against 77% deleted in the AI subset — backwards from expectation, unexplained",
+  "single seeded realization; intervals are Wilson score on the reconstructable subset"
+ ],
+ "erratum_status": "The canonical deposit text (AXN:044A, #1081) is NOT rewritten. Following the ruling on deposit #199 (2026-08-27), correction is registry-level: this dataset supersedes the derived_ratios of the 20260714 contingency dataset, and a separate erratum deposit cross-referenced to #1081 is OWED and not yet minted."
+}
