@@ -86,6 +86,7 @@ def main():
         for ext in exts:
             for p in sorted(PAGES.rglob(f'*.{ext}')):
                 if any(sk in p.relative_to(PAGES).parts for sk in skip): continue
+                if p.name.upper() in ('README.MD', 'LICENSE.MD', 'CHANGELOG.MD'): continue   # repository files, not publications
                 lines.append(f'  <url><loc>{WWW}/{p.relative_to(PAGES).as_posix()}</loc><lastmod>{lastmod(p)}</lastmod><priority>0.5</priority></url>')
         lines.append('</urlset>'); xml = '\n'.join(lines)+'\n'
         out = (ROOT/a.sitemap_out)
