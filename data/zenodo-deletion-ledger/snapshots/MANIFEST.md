@@ -1,1 +1,2 @@
 - 20260710-c7571d4c: version c7571d4c-28ef-46ff-b0f0-235abaac58bf, created 2026-07-10T03:32:35.937959+00:00, size 24367356, md5 33877aba1fb5684f86758cb86ddc1ad4 (verified against Zenodo listing), sha256 f4b5aee62a032d5a5e56e769f3419cc046feb1e6c443ea7ec60538103b41c3db, CHA-strict rows 1136
+- 20261003-8609b60f: version 8609b60f-c6a3-4e68-b093-b34ef7d4b7ec, created 2026-10-03T00:57:06.755960+00:00, size 27423086, md5 ae0a20c27dacfa074f60b8cdecc7451b (verified against Zenodo listing), sha256 81f844b584bca9789cec2a565ca7817262671265c3f75530c087d78e62b6be4f, CHA-strict rows 1136
