@@ -1,0 +1,101 @@
+{
+ "name": "SPXI instruments: the methods of spxi.dev/methods carried on other surfaces",
+ "inventory": "https://www.spxi.dev/methods/",
+ "inventory_data": "https://www.spxi.dev/methods.json",
+ "itemCount": 85,
+ "levelCount": 9,
+ "rule": "A surface listed here labels itself, visibly and in its machine-readable head, with the method it carries, its level and a link to its row in the inventory. 'Instrument of' is kept apart from 'treated by': the SPXI-TLP layer a surface also carries says how it was built, the instrument label says what it is.",
+ "instruments": [
+  {
+   "method": "0.6",
+   "name": "Provenance Erasure Rate (PER, with PER-M / PER-C / PER-D)",
+   "what": "Frequency with which attribution is dropped from compositions that use the entity's content; target < 0.2. Three atomic dimensions (mention, citation, definition) scored separately.",
+   "source": "Arsenal §3.7; deposit 1469",
+   "level": 0,
+   "level_name": "Measurement",
+   "url": "https://www.spxi.dev/methods/#m-0-6",
+   "surfaces": [
+    {
+     "surface": "https://www.provenanceerasure.org/",
+     "note": "The Provenance Erasure Rate is also the Semantic Economy's measure of provenance loss.",
+     "also": []
+    }
+   ]
+  },
+  {
+   "method": "0.8",
+   "name": "Semantic Addresses Framework",
+   "what": "A query string plus its operators is an address; observations at an address are classed and canonicalized; one record per address. The unit the Capture Registry is keyed on.",
+   "source": "EA-SEMANTIC-ADDRESSES-01 §1–§6",
+   "level": 0,
+   "level_name": "Measurement",
+   "url": "https://www.spxi.dev/methods/#m-0-8",
+   "surfaces": [
+    {
+     "surface": "https://www.alexanarch.org/addresses/",
+     "also": []
+    }
+   ]
+  },
+  {
+   "method": "0.9",
+   "name": "Capture Registry (longitudinal observation)",
+   "what": "Dated compositions at named addresses with surface, sign-in condition, verbatim transcript, re-run URL. Nulls recorded as nulls. 484 addresses, 651 observations at v12.1.",
+   "source": "EA-WG-CAPTURES-01; EA-SPXI-16 §7",
+   "level": 0,
+   "level_name": "Measurement",
+   "url": "https://www.spxi.dev/methods/#m-0-9",
+   "surfaces": [
+    {
+     "surface": "https://www.alexanarch.org/captures/",
+     "also": []
+    },
+    {
+     "surface": "https://www.machinemediation.org/captures/",
+     "also": [
+      {
+       "method": "6.14",
+       "name": "Fleet capture windows",
+       "url": "https://www.spxi.dev/methods/#m-6-14"
+      }
+     ]
+    },
+    {
+     "surface": "https://www.leesharks.com/captures/",
+     "also": [
+      {
+       "method": "6.14",
+       "name": "Fleet capture windows",
+       "url": "https://www.spxi.dev/methods/#m-6-14"
+      }
+     ]
+    },
+    {
+     "surface": "https://www.godkinggoogle.com/captures/",
+     "also": [
+      {
+       "method": "6.14",
+       "name": "Fleet capture windows",
+       "url": "https://www.spxi.dev/methods/#m-6-14"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "method": "0.15",
+   "name": "Platform Erosion Observatory",
+   "what": "Measurement of what happens to records after removal from a host: survival in aggregators, tombstone behaviour, the shape of absence; a 14,284-DOI control cohort.",
+   "source": "platform-erosion-observatory, Case 001",
+   "level": 0,
+   "level_name": "Measurement",
+   "url": "https://www.spxi.dev/methods/#m-0-15",
+   "surfaces": [
+    {
+     "surface": "https://www.persistentidentifiers.org/",
+     "also": []
+    }
+   ]
+  }
+ ]
+}
