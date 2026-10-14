@@ -40,7 +40,7 @@
   {
    "method": "0.9",
    "name": "Capture Registry (longitudinal observation)",
-   "what": "Dated compositions at named addresses with surface, sign-in condition, verbatim transcript, re-run URL. Nulls recorded as nulls. 484 addresses, 651 observations at v12.1.",
+   "what": "Dated compositions at named addresses with surface, sign-in condition, verbatim transcript, re-run URL. Nulls recorded as nulls. 484 addresses, 651 observations at v12.1; current counts at alexanarch.org/captures/index.json.",
    "source": "EA-WG-CAPTURES-01; EA-SPXI-16 §7",
    "level": 0,
    "level_name": "Measurement",
@@ -83,6 +83,21 @@
    ]
   },
   {
+   "method": "0.10",
+   "name": "Conformance Instrument",
+   "what": "Runnable audit of the twelve deliverables of the standing protocol against server-delivered HTML; per-deliverable pass/fail and a score. JS-dependent identity content scores absent by design.",
+   "source": "EA-SPXI-CONF-01; WEB-01 §XIV",
+   "level": 0,
+   "level_name": "Measurement",
+   "url": "https://www.spxi.dev/methods/#m-0-10",
+   "surfaces": [
+    {
+     "surface": "https://www.spxi.dev/conformance",
+     "also": []
+    }
+   ]
+  },
+  {
    "method": "0.15",
    "name": "Platform Erosion Observatory",
    "what": "Measurement of what happens to records after removal from a host: survival in aggregators, tombstone behaviour, the shape of absence; a 14,284-DOI control cohort.",
@@ -93,6 +108,27 @@
    "surfaces": [
     {
      "surface": "https://www.persistentidentifiers.org/",
+     "also": [
+      {
+       "method": "7.9",
+       "name": "Record of deletion",
+       "url": "https://www.spxi.dev/methods/#m-7-9"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "method": "5.4",
+   "name": "Canary sequences and the Canary Registry",
+   "what": "Planted strings whose appearance in a model's output is evidence of ingestion; public audit surface.",
+   "source": "SPXI-TLP §V.1; spxi.dev/canary-registry",
+   "level": 5,
+   "level_name": "Protection",
+   "url": "https://www.spxi.dev/methods/#m-5-4",
+   "surfaces": [
+    {
+     "surface": "https://www.spxi.dev/canary-registry",
      "also": []
     }
    ]
