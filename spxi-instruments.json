@@ -2,7 +2,7 @@
  "name": "SPXI instruments: the methods of spxi.dev/methods carried on other surfaces",
  "inventory": "https://www.spxi.dev/methods/",
  "inventory_data": "https://www.spxi.dev/methods.json",
- "itemCount": 85,
+ "itemCount": 87,
  "levelCount": 9,
  "rule": "A surface listed here labels itself, visibly and in its machine-readable head, with the method it carries, its level and a link to its row in the inventory. 'Instrument of' is kept apart from 'treated by': the SPXI-TLP layer a surface also carries says how it was built, the instrument label says what it is.",
  "instruments": [
@@ -113,6 +113,42 @@
        "method": "7.9",
        "name": "Record of deletion",
        "url": "https://www.spxi.dev/methods/#m-7-9"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "method": "0.16",
+   "name": "The Negative of the Negative (/non)",
+   "what": "Public knowledge of an entity composed three ways and kept as one row: as the composition layer gave it at its addresses, as its own disclosed sources give it (the field, L(B)), and with the Crimson Hexagonal Archive admitted on equal terms, ontology included; the row records what the composition at an address does with the field it disclosed, and is adjudicated later against what the world does. Each entry carries an AXN in the family NON; entries at alexanarch.org/non/index.json.",
+   "source": "EA-NEGONT-02 v0.9 (#1690); EA-NEGONT-01 (#1611)",
+   "level": 0,
+   "level_name": "Measurement",
+   "url": "https://www.spxi.dev/methods/#m-0-16",
+   "surfaces": [
+    {
+     "surface": "https://www.alexanarch.org/non/",
+     "also": []
+    }
+   ]
+  },
+  {
+   "method": "0.17",
+   "name": "The opening (a pinned Wikipedia revision, read sentence by sentence)",
+   "what": "Each sentence of a pinned revision read against the sources it cites and the sources its article cites elsewhere, under the policy texts it was written against: the innocent reading first; source fidelity, primary-text adequacy and operative retention kept apart; every quotation checked against the full source; two independent passes; the reading kept as evidence. Run as a service at gnosis.spxi.dev (SPXI-gnΩsis), priced from measured cost; a commission also composes the entity's /non row (0.16).",
+   "source": "EA-WIKI-OPEN-01 v1.1 (#1697)",
+   "level": 0,
+   "level_name": "Measurement",
+   "url": "https://www.spxi.dev/methods/#m-0-17",
+   "surfaces": [
+    {
+     "surface": "https://gnosis.spxi.dev/",
+     "also": [
+      {
+       "method": "0.16",
+       "name": "The Negative of the Negative (/non)",
+       "url": "https://www.spxi.dev/methods/#m-0-16"
       }
      ]
     }
